@@ -5,9 +5,9 @@
 
 把电脑上的编程智能体变成你的助手。给每位 Bot 设置职责，在私聊或群聊中交代目标，选择项目文件夹，再查看回复、文件和检查结果。
 
-**下载状态：暂未开放。** macOS Apple Silicon、macOS Intel 和 Windows x64 候选安装包已完成构建与 CI 检查；平台安装及发行审核尚未完成，因此未公开上架。只有 Releases 中实际列出的安装包才可下载。此仓库用于安装包和用户说明，不存放私有源码；下载已发布的安装包不需要私有源码仓库权限。目前没有已发布的 npm 包。
+**Apple Silicon Mac 预览版已开放下载：**[下载 v0.1.0-preview.1 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.1/Botogether-0.1.0-preview.1-mac-arm64.dmg)。Intel Mac 和 Windows 候选包仍在验收，暂未开放。本版为未签名、未公证的公开测试预览版，不是稳定版。
 
-计划首发版本为 **v0.1.0-preview.1 未签名预览版**，尚未通过全部平台门槛前不提供下载。
+此仓库用于安装包和用户说明，应用源码私有。安装桌面包无需私有仓库权限、Node.js 或 npm。目前没有已发布的 npm 包。
 
 ## 界面预览
 
@@ -29,23 +29,19 @@
 
 ## 下载与安装
 
-[**前往发布页选择安装包 →**](https://github.com/DmiyDing/botogether/releases)
-
-**如果发布页为空，目前就没有可下载的版本。**克隆仓库或下载仓库的源码 ZIP 都不能安装 Botogether。版本上架后，打开对应 Release，展开 **Assets（附件）**，再按下表选择安装文件。
-
-第一期计划提供 macOS 和 Windows 桌面包。请按电脑架构选择；文件名中的 `<version>` 对应发布版本，不是需要照抄的命令。
-
-| 电脑 | 安装包 | 怎么安装 |
+| 电脑 | 下载 | 怎么安装 |
 | --- | --- | --- |
-| Apple M 系列芯片 Mac | `Botogether-<version>-mac-arm64.dmg` | 打开 DMG，把 Botogether 拖入 Applications，再从 Applications 打开。 |
-| Intel 芯片 Mac | `Botogether-<version>-mac-x64.dmg` | 选择 Intel 版本，安装到 Applications。 |
-| Windows x64 | `Botogether-<version>-win-x64.exe` | 运行安装向导，按提示完成当前用户安装。 |
+| Apple M 系列芯片 Mac | [v0.1.0-preview.1 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.1/Botogether-0.1.0-preview.1-mac-arm64.dmg) | 打开 DMG，把 Botogether 拖入 Applications，再从 Applications 打开。 |
+| Intel 芯片 Mac | 暂未开放 | 候选包仍待安装和升级验收。 |
+| Windows x64 | 暂未开放 | 候选包仍待平台及发行验收。 |
 
-桌面包不要求安装 Node.js 或 npm。发布页如提供 ZIP，可作为备用解压格式；首次安装优先选择 DMG/EXE。实际列出且通过该平台审核的文件才代表可下载，不把计划支持当成已提供。系统要求、签名和已知问题会写在对应版本说明中；遇到安装失败先核对来源和说明，不关闭系统保护来强行运行未知文件。
+[版本说明](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.1) · [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.1/Botogether-0.1.0-preview.1-mac-arm64.zip) · [SHA256SUMS 校验文件](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.1/Botogether-0.1.0-preview.1-mac-arm64-SHA256SUMS.txt)
 
-首发计划采用**未签名公开测试版**：尚无 Apple Developer ID 签名／公证或 Windows 代码签名。系统可能拦截安装，部分 Windows 安全策略下不能运行。请先阅读[安装限制](docs/troubleshooting.md)，确认来源与摘要；不要关闭系统保护。测试版仍须完成该平台验收才会上架。
+安装桌面包无需 Node.js 或 npm，首次安装建议使用 DMG。GitHub 自动生成的 **Source code** 压缩包仅包含此下载仓库的文档，不是应用安装包，也不包含私有应用源码。
 
-可对照发布页的 `Botogether-<version>-<platform>-<arch>-SHA256SUMS.txt` 检查下载：Mac 使用 `shasum -a 256 文件名`，PowerShell 使用 `Get-FileHash 文件名 -Algorithm SHA256`，与同一版本、同一文件名的摘要比较。摘要只能检查文件是否一致，不能替代签名与可信来源。
+本版已做 ad-hoc 完整性签名，尚无 Apple Developer ID 签名和公证。macOS 可能拦截首次打开，请先阅读[安装帮助](docs/troubleshooting.md)，核对来源和校验和，保留系统安全保护。
+
+运行 `shasum -a 256 Botogether-0.1.0-preview.1-mac-arm64.dmg`，与上面的 SHA256SUMS 文件比较。校验和用于核对文件完整性，不能替代厂商签名。
 
 ## 第一次使用
 
@@ -79,4 +75,4 @@ Botogether 自有软件使用[专有发行许可证](LICENSE.md)。允许使用�
 
 ## 发布状态
 
-macOS Apple Silicon、macOS Intel 和 Windows x64 分别构建。CI 候选产物与草稿不等于已公开下载；草稿仅包含版本匹配的安装包和各平台校验和，通过平台及许可审核后才公开。当前没有 Apple Developer ID／公证或 Windows 厂商签名条件。
+Apple Silicon Mac v0.1.0-preview.1 已公开发布。Intel Mac 和 Windows 候选包保留在独立草稿中继续验收。当前没有 Apple Developer ID／公证或 Windows 厂商签名条件。

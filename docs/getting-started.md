@@ -2,11 +2,13 @@
 
 ## A first useful result / 第一个有用的结果
 
-First check that a published release contains a DMG or EXE for your computer. If Releases is empty, downloads are not available yet; the repository ZIP is not an application installer. Install the build listed for your operating system in [Releases](https://github.com/DmiyDing/botogether/releases). Open **Settings → Agents**, check local installations and follow the selected agent’s login guidance. Detection of a version does not prove authentication or every control capability.
+Apple Silicon Mac users can [download v0.1.0-preview.1 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.1/Botogether-0.1.0-preview.1-mac-arm64.dmg). Open it, drag Botogether into Applications, and read the unsigned-preview installation help if macOS blocks the first launch. Intel Mac and Windows downloads are not yet available. Repository source archives are not application installers.
 
-先确认发布页已列出适合本机的 DMG 或 EXE。发布页为空时尚未开放下载；仓库 ZIP 不是应用安装包。
+Apple Silicon Mac 用户可[下载 v0.1.0-preview.1 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.1/Botogether-0.1.0-preview.1-mac-arm64.dmg)，打开并拖入 Applications。如果 macOS 拦截首次启动，请查看未签名预览版的安装帮助。Intel Mac 和 Windows 暂未开放下载；仓库源码压缩包不能安装应用。
 
-在[发布页](https://github.com/DmiyDing/botogether/releases)选择对应系统安装包。打开**设置 → 智能体**检测安装，按所选智能体的引导完成登录。检测到版本，不等于已登录或所有控制能力都已验证。
+Open **Settings → Agents**, check local installations and follow your agent’s login guidance. Detection of a version does not prove authentication or every control capability.
+
+打开**设置 → 智能体**检测安装，按所选智能体的引导完成登录。检测到版本，不等于已登录或所有控制能力都已验证。
 
 Create a bot from `+`. Choose a local agent; optional instructions describe its long-term role. Open the chat and choose the folder for this conversation. The selected folder determines where tasks execute; selecting a bot alone does not select a project. Start with a read-only request and inspect the answer before requesting changes.
 

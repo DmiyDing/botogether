@@ -5,9 +5,9 @@
 
 Botogether brings the coding agents on your computer into direct and group chats. Give each bot a role, choose a project folder, and ask for a result. Your agents execute the work; Botogether keeps conversations, permissions, files and review history together.
 
-**Download status: not available yet.** macOS Apple Silicon, macOS Intel and Windows x64 candidate installers have been built and checked in CI. They have not been published while final platform and distribution reviews are outstanding. Installers are available only when listed in Releases. This repository holds download documentation and reviewed release assets, not private application source. Downloading a published installer does not require private repository access. No npm package has been published yet.
+**Apple Silicon Mac preview is available:** [Download v0.1.0-preview.1 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.1/Botogether-0.1.0-preview.1-mac-arm64.dmg). Intel Mac and Windows candidates are still under acceptance review and are not available yet. This is an unsigned, unnotarized public preview, not a stable release.
 
-The first planned release is **v0.1.0-preview.1, an unsigned preview**. Downloads are provided only after platform gates pass.
+This repository contains download documentation and release assets; application source is private. No private repository access, Node.js or npm is needed to install the desktop app. No npm package has been published.
 
 ## Interface preview
 
@@ -29,23 +29,19 @@ English-mode screens from a fresh isolated workspace: no private chats and no si
 
 ## Download and install
 
-[**View releases and installation files →**](https://github.com/DmiyDing/botogether/releases)
-
-**If Releases is empty, there is currently nothing to download.** Cloning this repository or clicking its source ZIP will not install Botogether. Once a release is published, open it and expand **Assets**, then choose the file below.
-
-The first desktop release targets macOS and Windows. Choose the architecture of your computer. `<version>` in the filenames below means the version listed in the release.
-
-| Computer | Installer | Installation |
+| Computer | Download | Installation |
 | --- | --- | --- |
-| Mac with Apple M-series chip | `Botogether-<version>-mac-arm64.dmg` | Open the DMG, drag Botogether into Applications, then open it from Applications. |
-| Mac with Intel processor | `Botogether-<version>-mac-x64.dmg` | Choose the Intel build and install it in Applications. |
-| Windows x64 | `Botogether-<version>-win-x64.exe` | Run the installer and follow its per-user setup. |
+| Mac with Apple M-series chip | [v0.1.0-preview.1 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.1/Botogether-0.1.0-preview.1-mac-arm64.dmg) | Open the DMG, drag Botogether into Applications, then open it from Applications. |
+| Mac with Intel processor | Not available yet | Candidate installation and upgrade acceptance is pending. |
+| Windows x64 | Not available yet | Candidate platform and distribution acceptance is pending. |
 
-Desktop installers do not require Node.js or npm. ZIP builds, when included, are secondary formats; prefer DMG/EXE for a first installation. A planned platform is not a download guarantee. Signing, system requirements and known issues must be stated in each release’s notes. Do not disable system protection to bypass an unknown installation error.
+[Release notes](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.1) · [ZIP alternative](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.1/Botogether-0.1.0-preview.1-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.1/Botogether-0.1.0-preview.1-mac-arm64-SHA256SUMS.txt)
 
-The first release is planned as an **unsigned public preview**, without Apple Developer ID signing/notarization or Windows code signing. Your OS may block installation; some Windows security policies will prevent it from running. Read the [installation limitations](docs/troubleshooting.md), verify the source and checksum, and keep system protections enabled. Each platform must still pass acceptance before its installer is published.
+Desktop installers do not require Node.js or npm. Prefer the DMG for your first installation. The automatically generated **Source code** archives contain this distribution repository's documentation, not the application or its private source.
 
-Compare downloads with the release’s `Botogether-<version>-<platform>-<arch>-SHA256SUMS.txt`: macOS `shasum -a 256 <file>`; PowerShell `Get-FileHash <file> -Algorithm SHA256`. Match the exact filename and version. A checksum verifies file consistency, not publisher identity; it does not replace code signing or a trusted download source.
+This preview has an ad-hoc integrity signature, without Apple Developer ID or notarization. macOS may block the first launch. Read the [installation help](docs/troubleshooting.md), verify the download source and checksum, and keep system protections enabled.
+
+Check the download with `shasum -a 256 Botogether-0.1.0-preview.1-mac-arm64.dmg` and compare it with the SHA256SUMS file above. A checksum verifies file consistency, not publisher identity.
 
 ## Your first task
 
@@ -79,4 +75,4 @@ Botogether-owned software uses a [proprietary distribution license](LICENSE.md).
 
 ## Release status
 
-macOS Apple Silicon, macOS Intel and Windows x64 are built separately. Candidate CI artifacts and draft releases are not public downloads. Drafts contain only version-matched installers and platform checksums; publishing requires platform and license review. No Apple Developer ID / notarization or Windows publisher certificate is currently available.
+Apple Silicon Mac v0.1.0-preview.1 is published. Intel Mac and Windows candidates remain in a separate draft pending acceptance. No Apple Developer ID / notarization or Windows publisher certificate is currently available.
