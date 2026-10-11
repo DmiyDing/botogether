@@ -9,7 +9,7 @@
 
 此仓库用于安装包和用户说明，应用源码私有。安装桌面包无需私有仓库权限、Node.js 或 npm。目前没有已发布的 npm 包。
 
-> **上传状态：** preview.2 的三平台包已构建并核验，安装附件仍在上传，目前尚不能确认下载。可先使用已核验的 [Apple Silicon preview.1 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.1/Botogether-0.1.0-preview.1-mac-arm64.dmg)。下方 preview.2 链接须等发布页出现对应安装文件后使用。
+> **下载状态：** Apple Silicon DMG 和 Windows EXE 已完成公开下载与校验，可以使用。Intel Mac DMG 和备用 ZIP 仍在补传；请等发布页出现对应文件后下载。
 
 ## 界面预览
 

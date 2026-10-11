@@ -9,7 +9,7 @@ Botogether brings the coding agents on your computer into direct and group chats
 
 This repository contains download documentation and release assets; application source is private. No private repository access, Node.js or npm is needed to install the desktop app. No npm package has been published.
 
-> **Upload status:** preview.2 packages are built and verified, but installer uploads are not yet confirmed. The verified [Apple Silicon preview.1 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.1/Botogether-0.1.0-preview.1-mac-arm64.dmg) remains available. Use the preview.2 links below only once their installer files appear on the release page.
+> **Download status:** the Apple Silicon DMG and Windows EXE have passed public download and checksum verification and are available now. The Intel Mac DMG and ZIP alternatives are still being uploaded; download them once their files appear on the release page.
 
 ## Interface preview
 
