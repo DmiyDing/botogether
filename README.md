@@ -9,7 +9,7 @@ Botogether brings the coding agents on your computer into direct and group chats
 
 This repository contains download documentation and release assets; application source is private. No private repository access, Node.js or npm is needed to install the desktop app. No npm package has been published.
 
-> **Download status:** the Apple Silicon DMG / ZIP and Windows EXE have passed public download and checksum verification and are available now. Intel Mac DMG / ZIP and Windows ZIP uploads are not yet confirmed; download them once their files appear on the release page.
+> **Download status:** Apple Silicon DMG / ZIP, Intel Mac DMG and Windows EXE have been fully downloaded and checksum-verified from the public release. Intel Mac ZIP and Windows ZIP alternatives are still being uploaded and verified; use the DMG / EXE links below for installation.
 
 ## Interface preview
 
