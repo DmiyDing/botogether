@@ -9,7 +9,7 @@
 
 此仓库用于安装包和用户说明，应用源码私有。安装桌面包无需私有仓库权限、Node.js 或 npm。目前没有已发布的 npm 包。
 
-> **下载状态：** Apple Silicon DMG 和 Windows EXE 已完成公开下载与校验，可以使用。Intel Mac DMG 和备用 ZIP 仍在补传；请等发布页出现对应文件后下载。
+> **下载状态：** Apple Silicon DMG / ZIP 和 Windows EXE 已完成公开下载与校验，可以使用。Intel Mac DMG / ZIP 和 Windows ZIP 尚未确认上传成功；请等发布页出现对应文件后下载。
 
 ## 界面预览
 
