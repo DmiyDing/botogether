@@ -2,7 +2,9 @@
 
 ## A first useful result / 第一个有用的结果
 
-Install the build listed for your operating system in [Releases](https://github.com/DmiyDing/botogether/releases). Open **Settings → Agents**, check local installations and follow the selected agent’s login guidance. Detection of a version does not prove authentication or every control capability.
+First check that a published release contains a DMG or EXE for your computer. If Releases is empty, downloads are not available yet; the repository ZIP is not an application installer. Install the build listed for your operating system in [Releases](https://github.com/DmiyDing/botogether/releases). Open **Settings → Agents**, check local installations and follow the selected agent’s login guidance. Detection of a version does not prove authentication or every control capability.
+
+先确认发布页已列出适合本机的 DMG 或 EXE。发布页为空时尚未开放下载；仓库 ZIP 不是应用安装包。
 
 在[发布页](https://github.com/DmiyDing/botogether/releases)选择对应系统安装包。打开**设置 → 智能体**检测安装，按所选智能体的引导完成登录。检测到版本，不等于已登录或所有控制能力都已验证。
 

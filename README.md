@@ -5,17 +5,17 @@
 
 Botogether brings the coding agents on your computer into direct and group chats. Give each bot a role, choose a project folder, and ask for a result. Your agents execute the work; Botogether keeps conversations, permissions, files and review history together.
 
-**Release preparation:** installers are available only when listed in Releases. This repository holds download documentation and reviewed release assets, not private application source. Downloading a published installer does not require private repository access. No npm package has been published yet.
+**Download status: not available yet.** macOS Apple Silicon, macOS Intel and Windows x64 candidate installers have been built and checked in CI. They have not been published while final platform and distribution reviews are outstanding. Installers are available only when listed in Releases. This repository holds download documentation and reviewed release assets, not private application source. Downloading a published installer does not require private repository access. No npm package has been published yet.
 
 The first planned release is **v0.1.0-preview.1, an unsigned preview**. Downloads are provided only after platform gates pass.
 
 ## Interface preview
 
-Actual screens from a fresh isolated workspace: no private chats and no simulated task results. Tool cards currently provide configuration guides, not general one-click deployment.
+English-mode screens from a fresh isolated workspace: no private chats and no simulated task results. Tool cards currently provide configuration guides, not general one-click deployment.
 
-![Create your first assistant](assets/screenshots/welcome.png)
-![Local memory and scope](assets/screenshots/memory.png)
-![Tool configuration guides](assets/screenshots/tools.png)
+![Create your first assistant](assets/screenshots/en/welcome.png)
+![Local memory and scope](assets/screenshots/en/memory.png)
+![Tool configuration guides](assets/screenshots/en/tools.png)
 
 ## What you can do
 
@@ -30,6 +30,8 @@ Actual screens from a fresh isolated workspace: no private chats and no simulate
 ## Download and install
 
 [**View releases and installation files →**](https://github.com/DmiyDing/botogether/releases)
+
+**If Releases is empty, there is currently nothing to download.** Cloning this repository or clicking its source ZIP will not install Botogether. Once a release is published, open it and expand **Assets**, then choose the file below.
 
 The first desktop release targets macOS and Windows. Choose the architecture of your computer. `<version>` in the filenames below means the version listed in the release.
 
