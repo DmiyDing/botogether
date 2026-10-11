@@ -9,6 +9,8 @@
 
 此仓库用于安装包和用户说明，应用源码私有。安装桌面包无需私有仓库权限、Node.js 或 npm。目前没有已发布的 npm 包。
 
+> **上传状态：** preview.2 的三平台包已构建并核验，安装附件仍在上传，目前尚不能确认下载。可先使用已核验的 [Apple Silicon preview.1 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.1/Botogether-0.1.0-preview.1-mac-arm64.dmg)。下方 preview.2 链接须等发布页出现对应安装文件后使用。
+
 ## 界面预览
 
 以下为中文模式下、干净隔离工作区的真实界面，不含私人聊天或模拟完成的任务。工具卡片目前提供配置指南，不代表已支持通用一键部署。
