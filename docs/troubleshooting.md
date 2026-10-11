@@ -8,9 +8,9 @@ A platform is not available until its installation file appears in a published r
 
 ## No usable agent / 没有可用智能体
 
-Open **Settings → Agents**, re-detect and use the agent’s installation/login guidance. A packaged Codex CLI still needs authentication. If login or capability checks fail, inspect their reason rather than repeatedly creating bots. Other engines may require their own CLI installation. Never enter an API key into a bot name, prompt or memory.
+Open **Settings → Agents**, re-detect and use the agent’s installation/login guidance. Botogether does not bundle Agent CLIs; install and authenticate them using their official guidance. If login or capability checks fail, inspect their reason rather than repeatedly creating bots. Other engines may require their own CLI installation. Never enter an API key into a bot name, prompt or memory.
 
-打开**设置 → 智能体**重新检测，使用对应安装与登录引导。内置 Codex CLI 仍需登录。登录或能力检查失败时先查看原因，不要反复创建助手。其他引擎可能需单独安装 CLI。不要把密钥写在助手名称、提示词或记忆中。
+打开**设置 → 智能体**重新检测，使用对应安装与登录引导。安装包不内置 Agent。请按官方指南自行安装并登录。登录或能力检查失败时先查看原因，不要反复创建助手。其他引擎可能需单独安装 CLI。不要把密钥写在助手名称、提示词或记忆中。
 
 ## Old interface or wrong download link / 旧界面或错误下载链接
 
@@ -20,9 +20,17 @@ Application source changes do not update an already installed app. Quit the old 
 
 ## Cannot check for updates / 无法检查更新
 
-The app checks stable GitHub Releases. No stable release, network failure or GitHub limits can prevent checking; “cannot check” does not mean “latest.” Use the [official release page](https://github.com/DmiyDing/botogether/releases). Quit only after current work has stopped; updates do not silently kill tasks. Back up data before installing. Stable checks do not promote alpha/beta releases automatically.
+Preview builds check published prereleases and stable releases; stable builds check only stable releases. No published release, network failure or GitHub limits can prevent checking; “cannot check” does not mean “latest.” Use the [official release page](https://github.com/DmiyDing/botogether/releases). Quit only after current work has stopped; updates do not silently kill tasks. Back up data before installing.
 
-应用检测 GitHub 稳定版。尚无稳定版、网络失败或 GitHub 限制都可能导致无法检查；“无法检查”不等于“最新”。可查看[官方发布页](https://github.com/DmiyDing/botogether/releases)。先确认工作已停止再退出，更新不会自动杀任务。安装前备份数据；稳定版检测不自动推荐 alpha/beta。
+测试版检查已发布测试版及稳定版，稳定版只检查稳定更新。尚无发布版本、网络失败或 GitHub 限制都可能导致无法检查；“无法检查”不等于“最新”。可查看[官方发布页](https://github.com/DmiyDing/botogether/releases)。先确认工作已停止再退出，更新不会自动杀任务。安装前备份数据。
+
+<a id="unsigned-preview-installation"></a>
+
+## Unsigned preview installation / 未签名测试版安装
+
+Preview release notes must state signing status and supported OS/architecture. A checksum confirms matching bytes, not that a file is safe or its publisher is authenticated. Download only from the official release page. On macOS, after verifying the source, use the per-app **Open Anyway** option in Privacy & Security if offered; see [Apple’s instructions](https://support.apple.com/en-us/102445). Do not disable Gatekeeper or remove quarantine automatically. On Windows, SmartScreen or [Smart App Control](https://learn.microsoft.com/en-us/windows/apps/develop/smart-app-control/overview) may block unsigned apps. If policy prevents installation, keep protections enabled and wait for a compatible signed release; do not turn off antivirus or security controls. Report the exact warning with personal details redacted.
+
+测试版说明必须标明签名状态及支持的系统／架构。摘要仅证明文件字节一致，不代表文件安全或发布者已认证；只从官方发布页下载。macOS 核对来源后，如系统提供该选项，可按 [Apple 官方说明](https://support.apple.com/zh-cn/102445)在“隐私与安全性”中对这一个应用选择“仍要打开”，不关闭 Gatekeeper、不自动清除隔离属性。Windows 的 SmartScreen 或 [Smart App Control](https://learn.microsoft.com/en-us/windows/apps/develop/smart-app-control/overview)可能阻止未签名应用；若安全策略不允许，请保留保护并等待兼容的签名版本，不关闭杀毒软件或安全控制。反馈时提供警告原文并遮盖私人信息。
 
 ## Image preview fails / 图片预览失败
 

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Installation help / 安装说明
+    url: https://github.com/DmiyDing/botogether/blob/main/docs/troubleshooting.md#unsigned-preview-installation
+    about: Read the unsigned-preview limitations / 了解未签名预览版的限制

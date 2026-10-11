@@ -1,0 +1,32 @@
+name: Bug report / 问题反馈
+description: Help improve the preview / 帮助完善预览版
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "This issue is PUBLIC. Do not share keys, private chats, project files or local data. 反馈公开可见，请勿提供密钥、私聊、项目文件或本地数据。"
+  - type: input
+    id: version
+    attributes:
+      label: App version and build / 版本与构建
+      description: "Settings → About & updates → Build details / 设置 → 关于与更新 → 构建详情"
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: OS and architecture / 系统及架构
+      placeholder: "macOS 15, Apple M-series"
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps, expected result and actual result / 操作步骤、预期与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: warning
+    attributes:
+      label: Error or OS warning / 报错或系统提示
+      description: "Optional; remove all private information / 可选，请移除私人信息"

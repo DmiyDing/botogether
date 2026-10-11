@@ -7,6 +7,16 @@ Botogether brings the coding agents on your computer into direct and group chats
 
 **Release preparation:** installers are available only when listed in Releases. This repository holds download documentation and reviewed release assets, not private application source. Downloading a published installer does not require private repository access. No npm package has been published yet.
 
+The first planned release is **v0.1.0-preview.1, an unsigned preview**. Downloads are provided only after platform gates pass.
+
+## Interface preview
+
+Actual screens from a fresh isolated workspace: no private chats and no simulated task results. Tool cards currently provide configuration guides, not general one-click deployment.
+
+![Create your first assistant](assets/screenshots/welcome.png)
+![Local memory and scope](assets/screenshots/memory.png)
+![Tool configuration guides](assets/screenshots/tools.png)
+
 ## What you can do
 
 - Chat with a bot, or create a group and use `@` to select one or more members.
@@ -31,11 +41,13 @@ The first desktop release targets macOS and Windows. Choose the architecture of 
 
 Desktop installers do not require Node.js or npm. ZIP builds, when included, are secondary formats; prefer DMG/EXE for a first installation. A planned platform is not a download guarantee. Signing, system requirements and known issues must be stated in each release’s notes. Do not disable system protection to bypass an unknown installation error.
 
-Compare downloads with the release’s `SHA256SUMS.txt`: macOS `shasum -a 256 <file>`; PowerShell `Get-FileHash <file> -Algorithm SHA256`. Match the exact filename and version. A checksum verifies file consistency, not publisher identity; it does not replace code signing or a trusted download source.
+The first release is planned as an **unsigned public preview**, without Apple Developer ID signing/notarization or Windows code signing. Your OS may block installation; some Windows security policies will prevent it from running. Read the [installation limitations](docs/troubleshooting.md), verify the source and checksum, and keep system protections enabled. Each platform must still pass acceptance before its installer is published.
+
+Compare downloads with the release’s `Botogether-<version>-<platform>-<arch>-SHA256SUMS.txt`: macOS `shasum -a 256 <file>`; PowerShell `Get-FileHash <file> -Algorithm SHA256`. Match the exact filename and version. A checksum verifies file consistency, not publisher identity; it does not replace code signing or a trusted download source.
 
 ## Your first task
 
-1. Open **Settings → Agents**. Botogether detects supported local installations. The desktop package supplies a Codex CLI; it still needs the agent’s own login. Other agents may require installation and authentication using their official guides.
+1. Open **Settings → Agents**. Botogether detects supported local installations. The desktop package does not bundle Codex, Claude or Cursor. Follow the official setup/sign-in links in the app, then scan again.
 2. Create a bot from the sidebar `+` menu. Choose a name and an available local agent.
 3. Open its chat and choose a project folder. Try: “Read this project and list three improvements. Do not change files yet.”
 4. Send your message and inspect any permission requests. Model use is billed by your agent/provider; Botogether does not include model credits.
@@ -45,7 +57,7 @@ Read [Getting started](docs/getting-started.md), [Help and updates](docs/trouble
 
 ## Updates and boundaries
 
-**Settings → About & updates** checks stable releases from this repository. Downloads and installation are manual; updating does not silently interrupt running tasks. Quit the old app before installing a new version. Keep one normal installed copy and back up data before upgrading.
+**Settings → About & updates** checks this repository. Preview builds (alpha/beta/rc) check both prereleases and stable releases; stable builds only check stable updates. Build details show the active channel. Downloads and installation are manual; updating does not silently interrupt running tasks. Quit the old app before installing a new version. Keep one normal installed copy and back up data before upgrading.
 
 Mobile remote control, general plugin installation, complete MCP tool management, automatic memory extraction and autonomous cross-group dispatch are not currently available. Agent capabilities vary by engine and version. Release notes remain the source of truth for supported platforms, signing and known issues.
 
@@ -53,10 +65,16 @@ Mobile remote control, general plugin installation, complete MCP tool management
 
 No `npm install` or `npx` command is advertised until a separate audited npm package is published. The private application project is not published wholesale to npm or copied into this download repository.
 
+Long mixed-engine tasks remain under validation. Parallel worktrees, remote access, generic plugins, npm installation and automatic memory extraction are outside this preview.
+
 ## Feedback
 
-[Report a problem](https://github.com/DmiyDing/botogether/issues) with the version, operating system, steps and a redacted screenshot. Do not include credentials, chat exports, memory backups or private project files. Third-party licenses and notices ship inside the installer; each component retains its own terms.
+[Report a problem](https://github.com/DmiyDing/botogether/issues) with the version, operating system, steps and a redacted screenshot. Issues are public. Do not include credentials, chat exports, memory backups or private project files. Third-party licenses and notices ship inside the installer; each component retains its own terms.
 
 ## License
 
 Botogether-owned software uses a [proprietary distribution license](LICENSE.md). You may use the official unmodified release for personal or internal business use; private source code is not licensed for redistribution. Third-party components retain their own licenses and notices.
+
+## Release status
+
+macOS Apple Silicon, macOS Intel and Windows x64 are built separately. Candidate CI artifacts and draft releases are not public downloads. Drafts contain only version-matched installers and platform checksums; publishing requires platform and license review. No Apple Developer ID / notarization or Windows publisher certificate is currently available.
