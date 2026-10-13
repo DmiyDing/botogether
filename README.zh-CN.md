@@ -13,11 +13,11 @@
 
 ## 界面预览
 
-以下为中文模式下、干净隔离工作区的真实界面，不含私人聊天或模拟完成的任务。工具卡片目前提供配置指南，不代表已支持通用一键部署。
+以下为中文模式的宣传示例：群聊参考提供的对话展示 Bot 的交流方式，明确标注为示例，不代表真实模型运行验收。智能体页展示可选的本地 Agent。
 
 ![创建第一位助手](assets/screenshots/zh-CN/welcome.png)
-![本地记忆与使用范围](assets/screenshots/zh-CN/memory.png)
-![工具配置指南](assets/screenshots/zh-CN/tools.png)
+![Bot 团队群聊](assets/screenshots/zh-CN/group.png)
+![选择与安装本地 Agent](assets/screenshots/zh-CN/agents.png)
 
 ## 可以做什么
 
@@ -34,7 +34,7 @@
 | 电脑 | 下载 | 怎么安装 |
 | --- | --- | --- |
 | Apple M 系列芯片 Mac | [v0.1.0-preview.2 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-mac-arm64.dmg) | 打开 DMG，把 Botogether 拖入 Applications，再从 Applications 打开。 |
-| Intel 芯片 Mac | [实验性 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-mac-x64.dmg) | 拖入 Applications；尚待实机安装与升级验证。 |
+| Intel 芯片 Mac | [实验性 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-mac-x64.dmg) | 拖入 Applications；已有用户实机安装反馈；新版升级仍待验证。 |
 | Windows x64 | [实验性 EXE](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-win-x64.exe) | 运行安装程序；未签名，尚待实机界面与升级验证。 |
 
 [版本说明](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.2) · [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-mac-arm64.zip) · [SHA256SUMS 校验文件](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-mac-arm64-SHA256SUMS.txt)

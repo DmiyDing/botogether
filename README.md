@@ -5,7 +5,7 @@
 
 Botogether brings the coding agents on your computer into direct and group chats. Give each bot a role, choose a project folder, and ask for a result. Your agents execute the work; Botogether keeps conversations, permissions, files and review history together.
 
-**Unsigned macOS / Windows preview:** [Download v0.1.0-preview.2 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-mac-arm64.dmg). Intel Mac and Windows are experimental downloads awaiting real-device installation and upgrade feedback. This is an unsigned, unnotarized public preview, not a stable release.
+**Unsigned macOS / Windows preview:** [Download v0.1.0-preview.2 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-mac-arm64.dmg). Intel Mac and Windows are experimental downloads with Intel Mac installation feedback; Windows and upgrade checks remain pending. This is an unsigned, unnotarized public preview, not a stable release.
 
 This repository contains download documentation and release assets; application source is private. No private repository access, Node.js or npm is needed to install the desktop app. No npm package has been published.
 
@@ -13,11 +13,11 @@ This repository contains download documentation and release assets; application 
 
 ## Interface preview
 
-English-mode screens from a fresh isolated workspace: no private chats and no simulated task results. Tool cards currently provide configuration guides, not general one-click deployment.
+English-mode promotional examples. The group conversation is adapted from a supplied transcript and clearly labeled as an example; it does not claim a live model run. Browse the Agent catalog to choose your local tools.
 
 ![Create your first assistant](assets/screenshots/en/welcome.png)
-![Local memory and scope](assets/screenshots/en/memory.png)
-![Tool configuration guides](assets/screenshots/en/tools.png)
+![Group chat with your bot team](assets/screenshots/en/group.png)
+![Explore local Agents](assets/screenshots/en/agents.png)
 
 ## What you can do
 
@@ -34,7 +34,7 @@ English-mode screens from a fresh isolated workspace: no private chats and no si
 | Computer | Download | Installation |
 | --- | --- | --- |
 | Mac with Apple M-series chip | [v0.1.0-preview.2 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-mac-arm64.dmg) | Open the DMG, drag Botogether into Applications, then open it from Applications. |
-| Mac with Intel processor | [Experimental DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-mac-x64.dmg) | Drag into Applications; real-device installation and upgrade validation is pending. |
+| Mac with Intel processor | [Experimental DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-mac-x64.dmg) | Drag into Applications; preview.2 has user-reported Intel installation acceptance; upgrades remain pending. |
 | Windows x64 | [Experimental EXE](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-win-x64.exe) | Run the installer; unsigned, with GUI and upgrade validation pending. |
 
 [Release notes](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.2) · [ZIP alternative](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-mac-arm64-SHA256SUMS.txt)
