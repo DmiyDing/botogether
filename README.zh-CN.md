@@ -9,7 +9,7 @@
 
 此仓库用于安装包和用户说明，应用源码私有。安装桌面包无需私有仓库权限、Node.js 或 npm。目前没有已发布的 npm 包。
 
-> **下载状态：** Apple Silicon DMG / ZIP、Intel Mac DMG 和 Windows EXE 均已完成公开下载与校验，可以使用。Mac 为 preview.3，Windows EXE 为 preview.2；首次安装请使用下方 DMG / EXE，不提供未经下载校验的备用 ZIP 链接。
+> **下载状态：** Apple Silicon 与 Intel Mac 的 DMG / ZIP，以及 Windows EXE 均已完成公开下载与校验，可以使用。Mac 为 preview.3，Windows EXE 为 preview.2；首次安装请使用下方 DMG / EXE；也可选择已完成下载校验的 Mac 备用 ZIP。
 
 ## 界面预览
 
@@ -49,7 +49,7 @@
 
 Intel Mac 与 Windows 备用包和校验文件：
 
-- mac-x64: [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.3/Botogether-0.1.0-preview.3-mac-x64-SHA256SUMS.txt)
+- mac-x64: [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.3/Botogether-0.1.0-preview.3-mac-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.3/Botogether-0.1.0-preview.3-mac-x64-SHA256SUMS.txt)
 - win-x64 (preview.2): [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-win-x64-SHA256SUMS.txt)
 
 Windows 可用 PowerShell 的 `Get-FileHash -Algorithm SHA256 文件名` 核对摘要。

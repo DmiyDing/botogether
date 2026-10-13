@@ -9,7 +9,7 @@ Botogether brings the coding agents on your computer into direct and group chats
 
 This repository contains download documentation and release assets; application source is private. No private repository access, Node.js or npm is needed to install the desktop app. No npm package has been published.
 
-> **Download status:** Apple Silicon DMG / ZIP, Intel Mac DMG and Windows EXE have been fully downloaded and checksum-verified from the public release. Mac downloads are preview.3; Windows EXE remains preview.2. Use the DMG / EXE links below; unverified ZIP alternatives are not linked.
+> **Download status:** Apple Silicon and Intel Mac DMG / ZIP, and Windows EXE have been fully downloaded and checksum-verified from the public release. Mac downloads are preview.3; Windows EXE remains preview.2. For first-time installation, use the DMG / EXE links below; verified Mac ZIP alternatives are also available.
 
 ## Interface preview
 
@@ -49,7 +49,7 @@ Check the download with `shasum -a 256 Botogether-0.1.0-preview.3-mac-arm64.dmg`
 
 Intel Mac and Windows alternatives and checksums:
 
-- mac-x64: [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.3/Botogether-0.1.0-preview.3-mac-x64-SHA256SUMS.txt)
+- mac-x64: [ZIP alternative](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.3/Botogether-0.1.0-preview.3-mac-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.3/Botogether-0.1.0-preview.3-mac-x64-SHA256SUMS.txt)
 - win-x64 (preview.2): [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-win-x64-SHA256SUMS.txt)
 
 On Windows, use PowerShell `Get-FileHash -Algorithm SHA256 filename` to check the download.
