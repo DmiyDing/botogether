@@ -19,6 +19,6 @@ Native Agent sign-in is managed by that Agent. Custom-service system encryption 
 
 原生登录由对应 Agent 管理。自定义服务的系统加密方式将 API Key 密文保存在本机；Mac 钥匙串保护加密密钥，可能要求授权。Botogether 不自动将已有密钥迁移到其他存储方式或写入 Agent 原生配置。
 
-The unreleased preview.4 candidate also offers session-only keys: kept in app memory, cleared on quit, with no Botogether Keychain access for that mode. Re-enter after restarting. Persistent terminal sync is unavailable for these keys. Other tools may still use their own credential storage.
+Mac preview.4 also offers session-only keys: kept in app memory, cleared on quit, with no Botogether Keychain access for that mode. Re-enter after restarting. Persistent terminal sync is unavailable for these keys. Other tools may still use their own credential storage.
 
-尚未公开发布的 preview.4 候选另提供“仅本次打开有效”：密钥保存在应用内存、退出后清除，该方式不访问 Botogether 的钥匙串。重启后重新填写，不支持持久终端同步。其他工具仍可能使用它们自己的凭据存储。
+Mac preview.4 另提供“仅本次打开有效”：密钥保存在应用内存、退出后清除，该方式不访问 Botogether 的钥匙串。重启后重新填写，不支持持久终端同步。其他工具仍可能使用它们自己的凭据存储。

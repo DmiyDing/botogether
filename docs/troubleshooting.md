@@ -53,17 +53,17 @@ Provide version/build identity, OS/architecture and reproduction steps. Redact s
 
 ## Saved result and follow-up / 已保存结果与后续调整
 
-In the unreleased preview.4 candidate, an image awaiting optional review can be viewed or downloaded directly. Ask for changes in chat; you do not need to accept the result first. “Review next steps” points to explicit output checks or important review findings. This does not claim those checks passed. Actual execution failures, missing files and unknown process effects remain separate blockers.
+In Mac preview.4, an image awaiting optional review can be viewed or downloaded directly. Ask for changes in chat; you do not need to accept the result first. “Review next steps” points to explicit output checks or important review findings. This does not claim those checks passed. Actual execution failures, missing files and unknown process effects remain separate blockers.
 
-尚未公开发布的 preview.4 候选中，仅有可选评审待确认的图片可以直接查看、下载；不满意时在聊天中继续提出修改要求，无需先接受结果。“确认与下一步”用于查看指定检查或重要评审问题，不表示检查已经通过。实际执行失败、缺少文件及进程未确认停止仍是独立阻塞项。
+Mac preview.4 中，仅有可选评审待确认的图片可以直接查看、下载；不满意时在聊天中继续提出修改要求，无需先接受结果。“确认与下一步”用于查看指定检查或重要评审问题，不表示检查已经通过。实际执行失败、缺少文件及进程未确认停止仍是独立阻塞项。
 
-For custom-service authentication, Keychain is not mandatory: environment variables and the candidate's session-only mode are alternatives. Choosing session-only requires re-entering the key; Botogether does not decrypt and migrate old keys silently. Avoid putting keys in chat or public reports.
+For custom-service authentication, Keychain is not mandatory: environment variables and Mac preview.4 session-only mode are alternatives. Choosing session-only requires re-entering the key; Botogether does not decrypt and migrate old keys silently. Avoid putting keys in chat or public reports.
 
-自定义服务认证并非必须使用钥匙串：可以配置环境变量，或在候选中选择“仅本次打开有效”并重新填写密钥。不会静默解密迁移旧密钥；不要把密钥发到聊天或公开反馈。
+自定义服务认证并非必须使用钥匙串：可以配置环境变量，或在 Mac preview.4 中选择“仅本次打开有效”并重新填写密钥。不会静默解密迁移旧密钥；不要把密钥发到聊天或公开反馈。
 
 
 ## Agent preparation timeout / 助手准备超时
 
-In preview.4 candidates, protocol initialization, work-session creation and model selection have distinct timeout messages. Cursor Auto resolves to the native session's acknowledged model ID; selecting it again is unnecessary when it is already current. A model-selection timeout occurs before the generation request is sent. No model is silently substituted and the request is not automatically replayed. Inspect the task's execution build; older versions used a shared startup-timeout message.
+In Mac preview.4, protocol initialization, work-session creation and model selection have distinct timeout messages. Cursor Auto resolves to the native session's acknowledged model ID; selecting it again is unnecessary when it is already current. A model-selection timeout occurs before the generation request is sent. No model is silently substituted and the request is not automatically replayed. Inspect the task's execution build; older versions used a shared startup-timeout message.
 
-preview.4 候选区分协议初始化、创建工作会话和选择模型超时。Cursor Auto 映射为原生会话确认的模型 ID；当前已经是该模型时不重复设置。模型选择超时发生在生成请求发送之前，不静默替换模型或自动重放。查看任务的执行构建版本；旧版使用统一的准备超时文案。
+Mac preview.4 区分协议初始化、创建工作会话和选择模型超时。Cursor Auto 映射为原生会话确认的模型 ID；当前已经是该模型时不重复设置。模型选择超时发生在生成请求发送之前，不静默替换模型或自动重放。查看任务的执行构建版本；旧版使用统一的准备超时文案。
