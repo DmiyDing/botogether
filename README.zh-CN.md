@@ -19,6 +19,8 @@
 ![Bot 团队群聊](assets/screenshots/zh-CN/group.png)
 ![选择与安装本地 Agent](assets/screenshots/zh-CN/agents.png)
 
+截图使用隔离的界面示例，不包含私人聊天。具体功能以对应下载版本的发行说明为准。
+
 ## 可以做什么
 
 - 与一个助手聊天，或创建群聊，用 `@` 选择一位或多位成员。
@@ -70,6 +72,14 @@ Windows 可用 PowerShell 的 `Get-FileHash -Algorithm SHA256 文件名` 核对�
 
 手机远程、通用插件安装、完整 MCP 工具管理、记忆自动提取和主助手跨群自动派发目前尚不可用。智能体能力随引擎和版本变化；平台、签名和已知问题以对应版本说明为准。
 
+## 候选改进（尚未发布）
+
+本地 preview.4 候选新增仅本次打开有效的自定义服务密钥、更清楚的图片后续指引、丰富的职责模板、可读记忆导出及资料侧栏。上方 Mac preview.3／Windows preview.2 下载尚不包含这些改动。候选宣传图仅展示界面，不作为模型交付成功的证明。
+
+会话密钥只放应用内存，退出失效，不支持通过终端同步持久保存；已有加密密钥不自动迁移。评审未确认时仍可直接查看图片；指定的结果检查和重要评审问题保留真实状态。候选在 Cursor 已确认当前模型时省略重复设置，并区分准备阶段的超时原因。隔离 Cursor 执行与 Codex 评审已通过问答和图片交付检查。Cursor 未提供原生命令证据时，限定操作的任务仍可能评审不确定；间歇会话创建和长流程仍有待验证。
+
+纯建议问题（例如“这个项目有哪些优化空间？”）在本地候选的自动模式中走讨论；明确要求修改时才进入执行任务。旧任务不会自动重跑，手动模式选择保持优先。
+
 ## npm 与源码
 
 npm 包尚未发布，因此不提供无法使用的 `npm install` 或 `npx` 命令。以后若提供 npm 安装，会采用单独审核的包，不把私有源码项目整体发布到 npm 或此下载仓库。
@@ -87,3 +97,15 @@ Botogether 自有软件使用[专有发行许可证](LICENSE.md)。允许使用�
 ## 发布状态
 
 三平台为公开测试预览版。Apple Silicon Mac 已有本机安装证据；Intel Mac / Windows 的 CI 构建和包启动检查不替代实机界面与升级验收。当前没有 Apple Developer ID／公证或 Windows 厂商签名条件。
+
+## 致谢
+
+感谢以下项目公开分享的设计与实践：
+
+- [DeepSeek-Bot](https://github.com/Fei2411/DeepSeek-Bot)：Bot 角色交互、群聊轮次与可读记忆。
+- [douchat](https://github.com/thinkany-ai/douchat)：本地 Agent 会话、审批体验与桌面发行。
+- [orca](https://github.com/stablyai/orca)：项目工作区、任务归属与协作界面。
+- [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)：插件宿主与会话能力的架构边界。
+- [Hermes Agent](https://github.com/NousResearch/hermes-agent)：长会话连续性与上下文压缩设计。
+
+这些项目是设计参考，相关功能由 Botogether 独立实现；列举项目不表示合作或背书，也不表示所有参考能力均已实现。实际依赖及其许可另见安装包中的第三方说明。

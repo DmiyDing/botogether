@@ -19,6 +19,8 @@ English-mode promotional examples. The group conversation is adapted from a supp
 ![Group chat with your bot team](assets/screenshots/en/group.png)
 ![Explore local Agents](assets/screenshots/en/agents.png)
 
+Screenshots use isolated examples. See the release notes for the features available in each download.
+
 ## What you can do
 
 - Chat with a bot, or create a group and use `@` to select one or more members.
@@ -70,6 +72,14 @@ Read [Getting started](docs/getting-started.md), [Help and updates](docs/trouble
 
 Mobile remote control, general plugin installation, complete MCP tool management, automatic memory extraction and autonomous cross-group dispatch are not currently available. Agent capabilities vary by engine and version. Release notes remain the source of truth for supported platforms, signing and known issues.
 
+## Candidate improvements (not released yet)
+
+The local preview.4 candidate adds session-only custom-service keys, clearer image follow-up guidance, richer role templates, readable memory export and a profile sidebar. These changes are not included in the preview.3 Mac / preview.2 Windows downloads above. Candidate screenshots illustrate the interface; they are not proof of model delivery.
+
+Session keys stay in app memory, expire on quit and cannot be persisted through terminal sync. Existing encrypted keys are not migrated automatically. Image files remain viewable even when independent review is unconfirmed; explicit output checks and important review findings keep their recorded status. The candidate skips redundant selection when Cursor already acknowledges the requested model and distinguishes startup timeout stages. Isolated Cursor execution with Codex review passed advice and image delivery checks. Some command-constrained work remains inconclusive when Cursor supplies no native command evidence; intermittent session creation and long workflows remain limitations.
+
+In the local candidate, automatic mode keeps improvement-advice questions conversational; explicit change requests use execution. Existing tasks are not automatically replayed, and manual mode selection takes priority.
+
 ## npm and source
 
 No `npm install` or `npx` command is advertised until a separate audited npm package is published. The private application project is not published wholesale to npm or copied into this download repository.
@@ -87,3 +97,15 @@ Botogether-owned software uses a [proprietary distribution license](LICENSE.md).
 ## Release status
 
 All three targets are public test previews. Apple Silicon Mac has local installation evidence; Intel Mac / Windows CI builds and packaged startup checks do not replace real-device GUI and upgrade validation. No Apple Developer ID / notarization or Windows publisher certificate is currently available.
+
+## Acknowledgments
+
+Thanks to these projects for sharing their designs and practices:
+
+- [DeepSeek-Bot](https://github.com/Fei2411/DeepSeek-Bot): Bot interaction, group rounds, and readable memory.
+- [douchat](https://github.com/thinkany-ai/douchat): local Agent sessions, approvals, and desktop distribution.
+- [orca](https://github.com/stablyai/orca): project workspaces, task ownership, and collaboration interfaces.
+- [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness): boundaries between a plugin host and session capabilities.
+- [Hermes Agent](https://github.com/NousResearch/hermes-agent): long-running conversations and context compression.
+
+These are design references for Botogether's independently implemented features. This acknowledgment does not imply affiliation, endorsement, or that every referenced capability is implemented. Actual dependencies and licenses are listed separately in the installer's third-party notices.
