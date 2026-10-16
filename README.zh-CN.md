@@ -5,11 +5,11 @@
 
 把电脑上的编程智能体变成你的助手。给每位 Bot 设置职责，在私聊或群聊中交代目标，选择项目文件夹，再查看回复、文件和检查结果。
 
-**macOS / Windows 未签名预览版：**[下载 v0.1.0-preview.5 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.5/Botogether-0.1.0-preview.5-mac-arm64.dmg)。Intel Mac preview.5 首次 Rosetta 冷启动超时，正常停止后串行重测通过；实机界面与升级仍待验证。Windows 暂用 preview.2，新版构建受 CI 账户额度限制。本版为未签名、未公证的公开测试预览版，不是稳定版。
+**macOS / Windows 未签名预览版：**[下载 v0.1.0-preview.6 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.6/Botogether-0.1.0-preview.6-mac-arm64.dmg)。Intel Mac preview.6 已通过 Rosetta 隔离启动与渲染检查；Intel 实机界面与升级仍待验证。Windows 暂用 preview.2，本次不包含 Windows 新包。本版为未签名、未公证的公开测试预览版，不是稳定版。
 
 此仓库用于安装包和用户说明，应用源码私有。安装桌面包无需私有仓库权限、Node.js 或 npm。目前没有已发布的 npm 包。
 
-> **下载状态：** Apple Silicon 与 Intel Mac 的 DMG / ZIP，以及 Windows EXE 均已完成公开下载与校验，可以使用。Mac 为 preview.5，Windows EXE 为 preview.2；首次安装请使用下方 DMG / EXE；也可选择已完成下载校验的 Mac 备用 ZIP。
+> **下载状态：** Apple Silicon 与 Intel Mac 的 DMG / ZIP，以及 Windows EXE 均已完成公开下载与校验，可以使用。Mac 为 preview.6，Windows EXE 为 preview.2；首次安装请使用下方 DMG / EXE；也可选择已完成下载校验的 Mac 备用 ZIP。
 
 ## 为什么选择 Botogether
 
@@ -53,11 +53,11 @@
 
 | 电脑 | 下载 | 怎么安装 |
 | --- | --- | --- |
-| Apple M 系列芯片 Mac | [v0.1.0-preview.5 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.5/Botogether-0.1.0-preview.5-mac-arm64.dmg) | 打开 DMG，把 Botogether 拖入 Applications，再从 Applications 打开。 |
-| Intel 芯片 Mac | [实验性 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.5/Botogether-0.1.0-preview.5-mac-x64.dmg) | 拖入 Applications；新版已通过 Rosetta 隔离启动；新版 Intel 实机界面与升级仍待验证。 |
+| Apple M 系列芯片 Mac | [v0.1.0-preview.6 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.6/Botogether-0.1.0-preview.6-mac-arm64.dmg) | 打开 DMG，把 Botogether 拖入 Applications，再从 Applications 打开。 |
+| Intel 芯片 Mac | [实验性 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.6/Botogether-0.1.0-preview.6-mac-x64.dmg) | 拖入 Applications；新版已通过 Rosetta 隔离启动；新版 Intel 实机界面与升级仍待验证。 |
 | Windows x64 | [实验性 EXE](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-win-x64.exe) | 运行安装程序；未签名，尚待实机界面与升级验证。 |
 
-[版本说明](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.5) · [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.5/Botogether-0.1.0-preview.5-mac-arm64.zip) · [SHA256SUMS 校验文件](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.5/Botogether-0.1.0-preview.5-mac-arm64-SHA256SUMS.txt)
+[版本说明](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.6) · [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.6/Botogether-0.1.0-preview.6-mac-arm64.zip) · [SHA256SUMS 校验文件](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.6/Botogether-0.1.0-preview.6-mac-arm64-SHA256SUMS.txt)
 
 安装桌面包无需 Node.js 或 npm，首次安装建议使用 DMG。GitHub 自动生成的 **Source code** 压缩包仅包含此下载仓库的文档，不是应用安装包，也不包含私有应用源码。
 
@@ -65,11 +65,11 @@
 
 本版已做 ad-hoc 完整性签名，尚无 Apple Developer ID 签名和公证。macOS 可能拦截首次打开，请先阅读[安装帮助](docs/troubleshooting.md)，核对来源和校验和，保留系统安全保护。
 
-运行 `shasum -a 256 Botogether-0.1.0-preview.5-mac-arm64.dmg`，与上面的 SHA256SUMS 文件比较。校验和用于核对文件完整性，不能替代厂商签名。
+运行 `shasum -a 256 Botogether-0.1.0-preview.6-mac-arm64.dmg`，与上面的 SHA256SUMS 文件比较。校验和用于核对文件完整性，不能替代厂商签名。
 
 Intel Mac 与 Windows 备用包和校验文件：
 
-- mac-x64: [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.5/Botogether-0.1.0-preview.5-mac-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.5/Botogether-0.1.0-preview.5-mac-x64-SHA256SUMS.txt)
+- mac-x64: [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.6/Botogether-0.1.0-preview.6-mac-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.6/Botogether-0.1.0-preview.6-mac-x64-SHA256SUMS.txt)
 - win-x64 (preview.2): [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-win-x64-SHA256SUMS.txt)
 
 Windows 可用 PowerShell 的 `Get-FileHash -Algorithm SHA256 文件名` 核对摘要。
@@ -90,13 +90,16 @@ Windows 可用 PowerShell 的 `Get-FileHash -Algorithm SHA256 文件名` 核对�
 
 手机远程、通用插件安装、完整 MCP 工具管理、记忆自动提取和主助手跨群自动派发目前尚不可用。智能体能力随引擎和版本变化；平台、签名和已知问题以对应版本说明为准。
 
-## Mac preview.5 改进
+## Mac preview.6 改进
 
-群聊执行任务保留原目标和检查，在预算内完成执行、独立验证、评审与返工。回复结束不等于交付已验证，接受前仍需核对结果文件。长结果采用统一阅读列；已处理授权和结束后的执行详情默认折叠，待处理决定保持可见。
+- 普通两种保存方式都直接填写 API Key。引用已有环境变量放在独立高级入口；不会生成 shell 明文配置或修改 Agent 全局配置。
+- 静态 HTML 布局检查改用包内隔离 Electron，不再默认启动已安装 Chrome。页面脚本、外部资源、导航和权限禁用，保留固定截图、取消与进程停止验证。
+- 可识别的已安装应用目录请求需单次确认，不继承自动或复用授权。第三方原生工具仍有自己的权限，macOS 仍可能因其行为显示权限通知。
+- 已读通知持久化，任务入队前准备选定服务凭据；结果和已处理授权更紧凑，图片预览的尺寸与下载操作放在同一底栏。
 
-点击重试会在停止/revision检查后立即按原范围新建请求。模型名简化显示，提示保留完整ID。实验性OpenCode接入支持原生v2模型目录和确认后的选择；在助手单聊发送独立切换模型指令，可更新后续请求。人设补充当前任务而不覆盖原生基础指令；推荐页增加原创文字工作流。
+验收：完整检查365通过、7项条件跳过；浏览器77通过、1项宣传截图默认跳过；两架构实际包隔离渲染各3/3。两包的隐私/依赖扫描、严格ad-hoc签名完整性、空数据认证启动退出及DMG/ZIP内容一致通过；Apple Silicon备份升级和实际安装GUI版本核对通过。六个Mac发行附件已匿名完整下载，与审核包字节和SHA-256逐项一致。Intel实机界面/升级与Windows新版仍待验证。
 
-三组隔离Cursor执行与Codex检查/评审通过，其中一组明确注入静态布局故障后真实返工。声明的Node检查与有限静态HTML几何绑定冻结候选独立验证，不覆盖任意网站或全部项目需求。部分引擎仍可能缺少原生命令证据，长时间混合引擎任务仍在验证。OpenCode免费模型的可用性、额度和数据处理取决于服务方，不会自动安装、登录或回退到收费模型。
+群聊仍保留原目标和检查，在预算内执行、验证、评审与返工；回复结束不等于交付已验证。长时间混合引擎任务仍在验证。OpenCode模型的可用性、额度和数据处理取决于服务方，不会自动安装、登录或回退到收费模型。
 
 ## npm 与源码
 
