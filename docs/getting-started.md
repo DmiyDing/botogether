@@ -2,9 +2,9 @@
 
 ## A first useful result / 第一个有用的结果
 
-Apple Silicon Mac users can [download v0.1.0-preview.4 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.4/Botogether-0.1.0-preview.4-mac-arm64.dmg). Open it, drag Botogether into Applications, and read the unsigned-preview installation help if macOS blocks the first launch. Choose Intel Mac preview.4 or Windows x64 preview.2 experimental downloads from the [release page](https://github.com/DmiyDing/botogether/releases); Windows GUI and upgrades remain pending. Repository source archives are not application installers.
+Apple Silicon Mac users can [download v0.1.0-preview.5 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.5/Botogether-0.1.0-preview.5-mac-arm64.dmg). Open it, drag Botogether into Applications, and read the unsigned-preview installation help if macOS blocks the first launch. Choose Intel Mac preview.5 or Windows x64 preview.2 experimental downloads from the [release page](https://github.com/DmiyDing/botogether/releases); Windows GUI and upgrades remain pending. Repository source archives are not application installers.
 
-Apple Silicon Mac 用户可[下载 v0.1.0-preview.4 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.4/Botogether-0.1.0-preview.4-mac-arm64.dmg)，打开并拖入 Applications。如果 macOS 拦截首次启动，请查看未签名预览版的安装帮助。Intel Mac preview.4 / Windows x64 preview.2 可从[发布页](https://github.com/DmiyDing/botogether/releases)选择实验性试用包，Windows 界面与升级仍待验证；仓库源码压缩包不能安装应用。
+Apple Silicon Mac 用户可[下载 v0.1.0-preview.5 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.5/Botogether-0.1.0-preview.5-mac-arm64.dmg)，打开并拖入 Applications。如果 macOS 拦截首次启动，请查看未签名预览版的安装帮助。Intel Mac preview.5 / Windows x64 preview.2 可从[发布页](https://github.com/DmiyDing/botogether/releases)选择实验性试用包，Windows 界面与升级仍待验证；仓库源码压缩包不能安装应用。
 
 Open **Settings → Agents**, check local installations and follow your agent’s login guidance. Detection of a version does not prove authentication or every control capability.
 
