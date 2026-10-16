@@ -11,15 +11,33 @@ This repository contains download documentation and release assets; application 
 
 > **Download status:** Apple Silicon and Intel Mac DMG / ZIP, and Windows EXE have been fully downloaded and checksum-verified from the public release. Mac downloads are preview.5; Windows EXE remains preview.2. For first-time installation, use the DMG / EXE links below; verified Mac ZIP alternatives are also available.
 
+## Why Botogether
+
+- **Free to use.** Botogether adds no app subscription. Your chosen Agent or model provider may charge separately; free model availability and limits are set by that provider.
+- **Local first.** Conversations, task records and project context stay on your device. The Agents and services you choose may send prompts or files to their own cloud services.
+- **Visible control.** Review permission requests, scope credentials to a service and inspect recorded results. System encryption is available for saved keys; you choose which tools and services to trust.
+
 ## Interface preview
 
 English-mode promotional examples. The group conversation is adapted from a supplied transcript and clearly labeled as an example; it does not claim a live model run. Browse the Agent catalog to choose your local tools.
 
 ![Create your first assistant](assets/screenshots/en/welcome.png)
+
+**Create your assistant.** Connect an installed Agent and give the bot a role. The original paper mascot is a stable identity; animated avatars are future work.
+
 ![Group chat with your bot team](assets/screenshots/en/group.png)
+
+**One conversation, multiple bots.** Use roles and mentions to coordinate work. This labeled discussion example does not prove a delivered project.
+
 ![Explore local Agents](assets/screenshots/en/agents.png)
 
-Screenshots use isolated examples. See the release notes for the features available in each download.
+**Bring your local tools.** Discover installed Agents and inspect their individual setup and control capabilities.
+
+![Create and preview visual deliverables](assets/screenshots/en/showcase.png)
+
+**Create, preview and download images.** English localized illustration of the user-supplied Chinese screenshot: a model produces a poster and the conversation offers an image preview and original download. This AI-translated illustration is not a real English model-run receipt. Image generation depends on the chosen Agent/model/tools; the task may still need verification.
+
+The first three screenshots use isolated examples; the final image is an AI-localized illustration of a user-authorized screenshot. See the release notes for the features available in each download.
 
 ## What you can do
 

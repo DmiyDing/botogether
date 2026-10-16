@@ -67,3 +67,10 @@ For custom-service authentication, Keychain is not mandatory: environment variab
 In Mac preview.4, protocol initialization, work-session creation and model selection have distinct timeout messages. Cursor Auto resolves to the native session's acknowledged model ID; selecting it again is unnecessary when it is already current. A model-selection timeout occurs before the generation request is sent. No model is silently substituted and the request is not automatically replayed. Inspect the task's execution build; older versions used a shared startup-timeout message.
 
 Mac preview.4 区分协议初始化、创建工作会话和选择模型超时。Cursor Auto 映射为原生会话确认的模型 ID；当前已经是该模型时不重复设置。模型选择超时发生在生成请求发送之前，不静默替换模型或自动重放。查看任务的执行构建版本；旧版使用统一的准备超时文案。
+
+
+## App management notice / App 管理提示
+
+A macOS notice that Botogether was blocked from modifying apps is distinct from Keychain or Music permission. macOS can attribute a child browser's access to the parent app. Do not grant broad app-management access just to dismiss it. The Mac preview.6 static layout verifier uses the bundled isolated Electron runtime instead of starting installed Chrome by default. A separate Agent browser tool may still request its own native access. Report the time and task with personal data redacted so the actual process can be identified.
+
+macOS 提示“已阻止 Botogether 修改 Mac 上的 App”与钥匙串、音乐权限不同，子浏览器的访问可能被归因到父应用。不要仅为消除提示而授予广泛 App 管理权限。Mac preview.6 的静态布局验证使用包内隔离 Electron，不再默认启动已安装 Chrome；Agent 自己的浏览器工具仍可能触发原生权限。反馈时提供时间和任务并遮盖私人数据，以便定位实际进程。
