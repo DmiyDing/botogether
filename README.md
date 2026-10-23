@@ -90,6 +90,16 @@ Read [Getting started](docs/getting-started.md), [Help and updates](docs/trouble
 
 Mobile remote control, general plugin installation, complete MCP tool management, automatic memory extraction and autonomous cross-group dispatch are not currently available. Agent capabilities vary by engine and version. Release notes remain the source of truth for supported platforms, signing and known issues.
 
+## Mac preview.7 update
+
+- Team questions appear in chat; service connection failures offer a direct review retry and keep completed files.
+- Group role selection checks whether the reviewer can inspect the required files before work starts. Discussion members are shown as discussing.
+- Frozen screenshot previews use bounded image context; local HTML and image links open in a restricted preview.
+- New-user setup supports an optional private OpenCode installation on Apple Silicon. Model availability and provider policies still apply; Intel and Windows use the official setup guide.
+- Continuing beyond the saved Agent-start budget requires explicit confirmation. Task deadlines remain enforced.
+
+The new Mac installers are being verified for publication. The download table below still points to the previously verified preview.6 until preview.7 anonymous downloads pass. Windows is unchanged because current Actions allowance could not be verified. Intel native hardware GUI/upgrade acceptance remains pending.
+
 ## Changes in the Mac preview.6 release
 
 - Both normal service-storage choices accept API keys directly. Existing environment-variable references have a separate advanced entry; no shell plaintext configuration or global Agent configuration is generated.
