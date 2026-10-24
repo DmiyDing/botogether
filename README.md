@@ -5,7 +5,7 @@
 
 Botogether brings the coding agents on your computer into direct and group chats. Give each bot a role, choose a project folder, and ask for a result. Your agents execute the work; Botogether keeps conversations, permissions, files and review history together.
 
-**Unsigned macOS / Windows preview:** [Download v0.1.0-preview.7 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.dmg). Intel Mac preview.7 is experimental: isolated Rosetta startup and renderer checks passed; native Intel GUI and upgrades remain pending. Windows remains on preview.2; no new Windows package is included. This is an unsigned, unnotarized public preview, not a stable release.
+**Unsigned macOS / Windows preview:** [Download v0.1.0-preview.7 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.dmg). Intel Mac preview.7 is experimental: isolated Rosetta daemon startup passed; native Intel GUI and upgrades remain pending. Windows remains on preview.2; no new Windows package is included. This is an unsigned, unnotarized public preview, not a stable release.
 
 This repository contains download documentation and release assets; application source is private. No private repository access, Node.js or npm is needed to install the desktop app. No npm package has been published.
 

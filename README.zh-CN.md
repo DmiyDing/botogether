@@ -5,7 +5,7 @@
 
 把电脑上的编程智能体变成你的助手。给每位 Bot 设置职责，在私聊或群聊中交代目标，选择项目文件夹，再查看回复、文件和检查结果。
 
-**macOS / Windows 未签名预览版：**[下载 v0.1.0-preview.7 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.dmg)。Intel Mac preview.7 已通过 Rosetta 隔离启动与渲染检查；Intel 实机界面与升级仍待验证。Windows 暂用 preview.2，本次不包含 Windows 新包。本版为未签名、未公证的公开测试预览版，不是稳定版。
+**macOS / Windows 未签名预览版：**[下载 v0.1.0-preview.7 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.dmg)。Intel Mac preview.7 已通过 Rosetta 隔离服务启动检查；Intel 实机界面与升级仍待验证。Windows 暂用 preview.2，本次不包含 Windows 新包。本版为未签名、未公证的公开测试预览版，不是稳定版。
 
 此仓库用于安装包和用户说明，应用源码私有。安装桌面包无需私有仓库权限、Node.js 或 npm。目前没有已发布的 npm 包。
 
