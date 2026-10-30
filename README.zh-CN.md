@@ -1,15 +1,26 @@
 <p align="center"><img src="assets/mark.png" width="88" alt="Botogether" /></p>
 <h1 align="center">Botogether</h1>
-<p align="center"><strong>Your bots. One team.</strong><br/>在一个地方聊天、分工，查看电脑上智能体的执行结果。</p>
+<p align="center"><strong>Your bots. One team.</strong><br/>让智能体，合力把事做好。</p>
 <p align="center"><a href="README.md">English</a> · <a href="https://github.com/DmiyDing/botogether/releases">下载安装</a> · <a href="docs/getting-started.md">开始使用</a> · <a href="docs/troubleshooting.md">常见问题</a></p>
 
 把电脑上的编程智能体变成你的助手。给每位 Bot 设置职责，在私聊或群聊中交代目标，选择项目文件夹，再查看回复、文件和检查结果。
 
-**macOS / Windows 未签名预览版：**[下载 v0.1.0-preview.7 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.dmg)。Intel Mac preview.7 已通过 Rosetta 隔离服务启动检查；Intel 实机界面与升级仍待验证。Windows 暂用 preview.2，本次不包含 Windows 新包。本版为未签名、未公证的公开测试预览版，不是稳定版。
+**历史公开下载（未签名预览版）：**[下载 v0.1.0-preview.7 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.dmg)。Intel Mac preview.7 已通过 Rosetta 隔离服务启动检查；Intel 实机界面与升级仍待验证。Windows 暂用 preview.2，本次不包含 Windows 新包。本版为未签名、未公证的公开测试预览版，不是稳定版。
+
+> [!IMPORTANT]
+> **首次安装被系统拦截？请先看这里。** 当前预览版尚无 Apple Developer ID 签名／公证，也没有 Windows 厂商签名。请仅从[官方 Releases](https://github.com/DmiyDing/botogether/releases)下载并核对校验和。
+>
+> **Mac：** 将 Botogether 拖入“应用程序”并尝试打开一次 → 打开 **系统设置 → 隐私与安全性** → 找到 Botogether 的拦截提示，点击 **“仍要打开”** → 按系统要求确认后再次打开。[Apple 图文说明](https://support.apple.com/zh-cn/102445)
+>
+> **Windows：** 如果出现“Windows 已保护你的电脑”，核对来源后点击 **“更多信息” → “仍要运行”**。如果没有该按钮，或被 Smart App Control／单位策略阻止，请停止安装并反馈具体提示，保留系统保护。[Microsoft 说明](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation)
+>
+> 不需要关闭 Gatekeeper、SmartScreen 或杀毒软件。提示“已损坏”或“包含恶意软件”时，请重新核对下载与完整性，不要直接忽略警告。
 
 此仓库用于安装包和用户说明，应用源码私有。安装桌面包无需私有仓库权限、Node.js 或 npm。目前没有已发布的 npm 包。
 
 > **下载状态：** Mac preview.7 六个附件均已匿名完整下载，并核对审核版本的字节数和 SHA-256。Windows 保留 preview.2；本次没有新 Windows 包或新版验收。
+
+> **V2.3 候选尚未公开发布：** Apple Silicon Mac 与 Windows x64 已完成本地安装包、原生安装、免费首任务及升级验收。下方截图来自 local.26；现有下载链接仍是历史公开版，不包含全部新功能。需要新版新手引导，请等待新版发行说明。
 
 ## 为什么选择 Botogether
 
@@ -19,25 +30,23 @@
 
 ## 界面预览
 
-以下为中文模式的宣传示例：群聊参考提供的对话展示 Bot 的交流方式，明确标注为示例，不代表真实模型运行验收。智能体页展示可选的本地 Agent。
+以下均为 **V2.3 local.26 当前界面截图**，使用隔离的界面示例，不含私人聊天。示例对话及手写文件用于展示功能，不代表真实模型交付或效果承诺。
 
-![创建第一位助手](assets/screenshots/zh-CN/welcome.png)
+![从免费助手开始](assets/screenshots/zh-CN/welcome.png)
 
-**创建你的助手。** 接入已安装的Agent并设置职责。现有原创纸灵提供稳定身份，丰富动态头像仍为后续项。
+**没有装过 AI 工具？点“免费开始”。** 在应用内安装 OpenCode，再选择当前可用的免费体验模型。折纸精灵会迎接、眨眼和跟随鼠标，静态截图无法呈现动画。
 
-![Bot 团队群聊](assets/screenshots/zh-CN/group.png)
+![让助手们在群聊里一起商量](assets/screenshots/zh-CN/group.png)
 
-**一个群聊，多位助手。** 用职责和点名组织交流；图中是已标注的讨论示例，不代表项目已交付。
+**一支 AI 小队，一起把事做好。** 在同一个群聊中讨论、点名和分工。图中对话已明确标为界面示例。
 
-![选择与安装本地 Agent](assets/screenshots/zh-CN/agents.png)
+![在应用内安装支持的智能体](assets/screenshots/zh-CN/agents.png)
 
-**连接本地工具。** 检测已安装Agent，分别查看其接入、登录与控制能力。
+**准备工具，少绕一步。** 支持的系统可一键安装 OpenCode、Codex、Claude Code；其他工具明确提供安装说明。安装程序不等于赠送账号或付费模型额度。
 
-上方三张图使用隔离的界面示例。下方为用户授权展示的实际使用截图；具体功能以对应下载版本的发行说明为准。
+![阅读和下载 Markdown 文件](assets/screenshots/zh-CN/showcase.png)
 
-![生成、预览和下载图片成果](assets/screenshots/zh-CN/showcase.png)
-
-**从需求到可查看的视觉文件。** 用户提供的实际使用截图展示了海报回复、图片预览与原图下载。生成图片取决于所选Agent、模型和工具，图片可见不代表任务已验收；英文页为翻译示意。
+**点开文件，就能阅读。** 当前阅读器支持标题、清单和表格，可切换源码、下载，再回到聊天继续修改。这是手工编写的样例文件，不是 AI 生成成果。
 
 ## 可以做什么
 
@@ -55,7 +64,7 @@
 | --- | --- | --- |
 | Apple M 系列芯片 Mac | [v0.1.0-preview.7 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.dmg) | 打开 DMG，把 Botogether 拖入 Applications，再从 Applications 打开。 |
 | Intel 芯片 Mac | [实验性 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64.dmg) | 拖入 Applications；新版已通过 Rosetta 隔离启动；新版 Intel 实机界面与升级仍待验证。 |
-| Windows x64 | [实验性 EXE](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-win-x64.exe) | 运行安装程序；未签名，尚待实机界面与升级验证。 |
+| Windows x64 | [等待新版预览](https://github.com/DmiyDing/botogether/releases) | V2.3 候选已完成本地验收。历史 preview.2 已确认有语言资源缺失／白屏问题，不建议新用户使用。 |
 
 [版本说明](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.7) · [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.zip) · [SHA256SUMS 校验文件](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64-SHA256SUMS.txt)
 
@@ -76,13 +85,15 @@ Windows 可用 PowerShell 的 `Get-FileHash -Algorithm SHA256 文件名` 核对�
 
 ## 第一次使用
 
-1. 打开 **设置 → 智能体**，检测本机安装。桌面包不内置 Codex、Claude 或 Cursor。按界面中的官方指南安装并登录，再回来检测。
-2. 从左侧 `+` 菜单创建助手，填写名称，选择可用的本地智能体。
-3. 打开聊天，选择项目文件夹。先试：“阅读这个项目，列出三个改进建议，暂时不要改文件。”
-4. 发送消息，在需要时查看并批准权限。模型服务由所选智能体或服务商计费，安装包不包含模型额度。
-5. 查看回复和文件。需要协作时创建群聊，选成员和共享目录，再明确谁编码、谁评审。
+以下应用内安装流程已在 V2.3 候选验收，历史下载版本请以对应发行说明为准。
 
-详细步骤见[使用指南](docs/getting-started.md)、[问题排查与更新](docs/troubleshooting.md)、[隐私说明](docs/privacy.md)。
+1. **没装过 AI 工具：** 首页点 **免费开始**。保持应用打开，等待 OpenCode 下载和检查，不需要 Node.js、npm 或终端。
+2. 选择当前可用的 **免费体验模型**，点 **开始聊天**。免费名额会变化，应用会重新检查，不会悄悄切换付费模型。
+3. **已有 AI 工具：** 直接创建助手，选择检测到的工具；需要账号时按工具提示登录。
+4. 先试一个小任务：“帮我做一份周末出行清单。”点开文件检查，再补一句继续修改。执行前留意权限，完成后核对结果。
+5. 需要协作时再组队，选谁制作、谁核对。成员更多会增加用量与协调成本，不保证更快。
+
+详细步骤见[使用指南](docs/getting-started.md)、[安装帮助](docs/troubleshooting.md)、[隐私说明](docs/privacy.md)。
 
 ## 更新与当前边界
 
@@ -109,7 +120,7 @@ Mac preview.7 已公开，提供 Apple Silicon 与实验性 Intel 的 DMG / ZIP 
 
 验收：完整检查365通过、7项条件跳过；浏览器77通过、1项宣传截图默认跳过；两架构实际包隔离渲染各3/3。两包的隐私/依赖扫描、严格ad-hoc签名完整性、空数据认证启动退出及DMG/ZIP内容一致通过；Apple Silicon备份升级和实际安装GUI版本核对通过。六个Mac发行附件已匿名完整下载，与审核包字节和SHA-256逐项一致。Intel实机界面/升级与Windows新版仍待验证。
 
-群聊仍保留原目标和检查，在预算内执行、验证、评审与返工；回复结束不等于交付已验证。长时间混合引擎任务仍在验证。OpenCode模型的可用性、额度和数据处理取决于服务方，不会自动安装、登录或回退到收费模型。
+群聊仍保留原目标和检查，在预算内执行、验证、评审与返工；回复结束不等于交付已验证。长时间混合引擎任务仍在验证。OpenCode模型的可用性、额度和数据处理取决于服务方，不会静默安装、登录或回退到收费模型。
 
 ## npm 与源码
 
@@ -127,7 +138,7 @@ Botogether 自有软件使用[专有发行许可证](LICENSE.md)。允许使用�
 
 ## 发布状态
 
-三平台为公开测试预览版。早期 Apple Silicon 候选已有本机安装证据；本版完成隔离包内 daemon 检查及安装器内容核对，最终 GUI／升级和 Intel 实机仍待验证。Windows 证据只适用于旧版。当前没有 Apple Developer ID／公证或 Windows 厂商签名条件。
+V2.3 local.26 的 Apple Silicon Mac 和 Windows x64 候选已通过本地原生安装、免费首任务、包审计和升级验收；尚未公开发布，旧下载链接不代表新候选。Intel Mac、Windows ARM64 不在本轮真机验收范围。当前没有 Apple Developer ID／公证或 Windows 厂商签名条件；公开预览应明确告知，不能宣传为生产稳定版。
 
 ## 致谢
 

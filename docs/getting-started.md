@@ -2,17 +2,21 @@
 
 ## A first useful result / 第一个有用的结果
 
-Apple Silicon Mac users can [download v0.1.0-preview.5 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.5/Botogether-0.1.0-preview.5-mac-arm64.dmg). Open it, drag Botogether into Applications, and read the unsigned-preview installation help if macOS blocks the first launch. Choose Intel Mac preview.5 or Windows x64 preview.2 experimental downloads from the [release page](https://github.com/DmiyDing/botogether/releases); Windows GUI and upgrades remain pending. Repository source archives are not application installers.
+Get the available installers from the [release page](https://github.com/DmiyDing/botogether/releases) and read the [unsigned-preview installation help](troubleshooting.md). The V2.3 local.26 candidate is validated locally but not yet public; historical downloads may not include the flow below. The old Windows preview.2 has a known blank-window issue; wait for the new preview rather than using it for first setup. Repository source archives are not installers.
 
-Apple Silicon Mac 用户可[下载 v0.1.0-preview.5 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.5/Botogether-0.1.0-preview.5-mac-arm64.dmg)，打开并拖入 Applications。如果 macOS 拦截首次启动，请查看未签名预览版的安装帮助。Intel Mac preview.5 / Windows x64 preview.2 可从[发布页](https://github.com/DmiyDing/botogether/releases)选择实验性试用包，Windows 界面与升级仍待验证；仓库源码压缩包不能安装应用。
+从[发行页](https://github.com/DmiyDing/botogether/releases)选择安装包，并先看[未签名预览安装帮助](troubleshooting.md)。V2.3 local.26 候选已通过本地验收但尚未公开，旧版不一定有下述流程。旧 Windows preview.2 存在已知白屏问题，请等待新版预览，不建议用于首次体验。Source code 压缩包不是安装包。
 
-Open **Settings → Agents**, check local installations and follow your agent’s login guidance. Detection of a version does not prove authentication or every control capability.
+**No Agent installed:** click **Start for free** → wait for OpenCode to download and be checked inside the app → choose an available free trial model → **Start chatting**. No Node.js, npm or terminal is needed. Availability is rechecked and never silently replaced by a paid model.
 
-打开**设置 → 智能体**检测安装，按所选智能体的引导完成登录。检测到版本，不等于已登录或所有控制能力都已验证。
+**没装过 AI 工具：** 点 **免费开始** → 等待应用下载并检查 OpenCode → 选择可用免费体验模型 → **开始聊天**。不需要 Node.js、npm 或终端。免费名额会重新检查，不会自动改用付费模型。
 
-Create a bot from `+`. Choose a local agent; optional instructions describe its long-term role. Open the chat and choose the folder for this conversation. The selected folder determines where tasks execute; selecting a bot alone does not select a project. Start with a read-only request and inspect the answer before requesting changes.
+**Already have an Agent:** create an assistant from `+` and select a detected tool. In **Settings → Agents**, OpenCode, Codex and Claude Code have in-app installers on supported systems; other tools have explicit installation guides. Installation does not include account sign-in, paid usage or proof of every tool capability.
 
-从 `+` 创建助手，选择本地智能体，可选填写长期职责。打开聊天后选择项目目录；任务在这个会话绑定的目录执行，不是只选助手就选好了项目。先试只读请求，确认结果后再要求修改。
+**已有 AI 工具：** 从 `+` 创建助手，选择检测到的工具。**设置 → 智能体**可在支持的系统中一键安装 OpenCode、Codex、Claude Code；其他工具明确提供安装说明。安装完成不等于已登录、赠送付费额度或验证了全部工具能力。
+
+Choose the folder for the conversation, try a small task and inspect its output. You can then add a requirement and continue editing. Use the normal permission controls when the Agent needs access.
+
+选好会话文件夹，先试一个小任务并点开结果检查，再补充要求继续修改。需要访问权限时按正常授权入口处理。
 
 ## Groups / 群聊
 
@@ -42,9 +46,9 @@ In preview.5, a standalone request such as “Switch to MODEL model” in a bot 
 
 preview.5中，在助手单聊发送“请切换 MODEL 模型”，应用会从实际目录唯一匹配并保存；没有匹配或名称不唯一时打开选择器。简短标签的提示仍保留完整原生ID，配置用于后续请求，不热切换当前任务。
 
-If no agent is installed, the setup guide offers OpenCode as an experimental starting point. Some models may be free under the provider’s current conditions. Install using the guide, scan again and choose an actual returned model; installation, login and paid-model selection are not automatic. No models: refresh the list, check the installed version and service access, or choose another agent.
+In the V2.3 candidate, OpenCode setup runs inside the app. Free options are checked against current availability; no paid fallback is selected automatically. Other Agents may require an existing account or subscription.
 
-没有安装Agent时，可从引导中的实验性OpenCode入口开始；部分模型是否免费取决于服务方当前条件。按指南安装、重新检测，再选择实际返回的模型；不会自动安装、登录或改用收费模型。没有模型时可刷新目录、检查工具版本与服务访问，或选择其他Agent。
+V2.3 候选可在应用内安装 OpenCode，免费选项会核对当前可用性，不会自动回退付费模型；其他 Agent 可能需要已有账号或订阅。
 
 Handled permissions and finished execution details are collapsed; pending decisions remain visible. Expand the timeline for individual events. **Retry** immediately creates a new request with the original goal and checks using current bot settings, only after the earlier process is confirmed stopped. It may repeat external effects; inspect the earlier result first.
 

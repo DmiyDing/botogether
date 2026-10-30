@@ -5,11 +5,22 @@
 
 Botogether brings the coding agents on your computer into direct and group chats. Give each bot a role, choose a project folder, and ask for a result. Your agents execute the work; Botogether keeps conversations, permissions, files and review history together.
 
-**Unsigned macOS / Windows preview:** [Download v0.1.0-preview.7 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.dmg). Intel Mac preview.7 is experimental: isolated Rosetta daemon startup passed; native Intel GUI and upgrades remain pending. Windows remains on preview.2; no new Windows package is included. This is an unsigned, unnotarized public preview, not a stable release.
+**Historical public downloads (unsigned previews):** [Download v0.1.0-preview.7 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.dmg). Intel Mac preview.7 is experimental: isolated Rosetta daemon startup passed; native Intel GUI and upgrades remain pending. Windows remains on preview.2; no new Windows package is included. This is an unsigned, unnotarized public preview, not a stable release.
+
+> [!IMPORTANT]
+> **First installation blocked? Read this first.** This preview has no Apple Developer ID signature/notarization or Windows publisher signature. Download only from the [official Releases](https://github.com/DmiyDing/botogether/releases) and compare the checksums.
+>
+> **Mac:** Drag Botogether into Applications and try opening it once → **System Settings → Privacy & Security → Open Anyway** beside the Botogether notice → confirm as prompted and open it again. [Apple's illustrated guide](https://support.apple.com/en-us/102445)
+>
+> **Windows:** For “Windows protected your PC,” verify the source, then choose **More info → Run anyway** when offered. If the option is missing, or Smart App Control or organizational policy blocks it, stop and report the exact notice; keep protections enabled. [Microsoft guidance](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation)
+>
+> Do not disable Gatekeeper, SmartScreen or antivirus. A damaged-app or malware warning calls for checking the download and integrity, not dismissing the warning.
 
 This repository contains download documentation and release assets; application source is private. No private repository access, Node.js or npm is needed to install the desktop app. No npm package has been published.
 
 > **Download status:** All six Mac preview.7 attachments were downloaded anonymously in full and verified against the reviewed byte counts and SHA-256 hashes. Windows remains preview.2; no new Windows build or acceptance is included.
+
+> **V2.3 candidate — not published yet:** Mac Apple Silicon and Windows x64 installers have passed local validation, including native installation, free-model first tasks and upgrades. The screenshots below show local.26. The links below still point to historical public releases; they do not contain all of these changes. Please wait for the new release notes before downloading for the new onboarding flow.
 
 ## Why Botogether
 
@@ -19,25 +30,23 @@ This repository contains download documentation and release assets; application 
 
 ## Interface preview
 
-English-mode promotional examples. The group conversation is adapted from a supplied transcript and clearly labeled as an example; it does not claim a live model run. Browse the Agent catalog to choose your local tools.
+Captured from the **V2.3 local.26 interface** in English. These isolated UI examples contain no private conversations. Example dialogue and hand-written files illustrate the interface, not live AI delivery or performance claims.
 
-![Create your first assistant](assets/screenshots/en/welcome.png)
+![Start with a free assistant](assets/screenshots/en/welcome.png)
 
-**Create your assistant.** Connect an installed Agent and give the bot a role. The original paper mascot is a stable identity; animated avatars are future work.
+**No Agent installed? Start for free.** Install OpenCode inside the app, then choose an available free trial model. Paper companions greet, blink and follow the pointer; a still image cannot show the animation.
 
-![Group chat with your bot team](assets/screenshots/en/group.png)
+![Plan together in a group chat](assets/screenshots/en/group.png)
 
-**One conversation, multiple bots.** Use roles and mentions to coordinate work. This labeled discussion example does not prove a delivered project.
+**Your bots. One team.** Discuss ideas, assign roles and keep the conversation together. This dialogue is clearly marked as a UI example.
 
-![Explore local Agents](assets/screenshots/en/agents.png)
+![Install supported Agents inside the app](assets/screenshots/en/agents.png)
 
-**Bring your local tools.** Discover installed Agents and inspect their individual setup and control capabilities.
+**Set up without the detour.** OpenCode, Codex and Claude Code offer in-app installation on supported systems. Other entries have explicit installation guides. Installing an Agent does not include its account or paid model usage.
 
-![Create and preview visual deliverables](assets/screenshots/en/showcase.png)
+![Read and download a Markdown file](assets/screenshots/en/showcase.png)
 
-**Create, preview and download images.** English localized illustration of the user-supplied Chinese screenshot: a model produces a poster and the conversation offers an image preview and original download. This AI-translated illustration is not a real English model-run receipt. Image generation depends on the chosen Agent/model/tools; the task may still need verification.
-
-The first three screenshots use isolated examples; the final image is an AI-localized illustration of a user-authorized screenshot. See the release notes for the features available in each download.
+**Open a file and keep refining.** The current reader renders headings, checklists and tables, with source and download controls. This hand-written sample is not an AI-generated deliverable.
 
 ## What you can do
 
@@ -55,7 +64,7 @@ The first three screenshots use isolated examples; the final image is an AI-loca
 | --- | --- | --- |
 | Mac with Apple M-series chip | [v0.1.0-preview.7 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.dmg) | Open the DMG, drag Botogether into Applications, then open it from Applications. |
 | Mac with Intel processor | [Experimental DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64.dmg) | Drag into Applications; preview.7 passed isolated Rosetta startup; native Intel GUI and upgrades remain pending. |
-| Windows x64 | [Experimental EXE](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-win-x64.exe) | Run the installer; unsigned, with GUI and upgrade validation pending. |
+| Windows x64 | [Awaiting the new preview](https://github.com/DmiyDing/botogether/releases) | The V2.3 candidate passed local validation. Historical preview.2 has a known language-resource/blank-window issue; it is not recommended for first use. |
 
 [Release notes](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.7) · [ZIP alternative](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64-SHA256SUMS.txt)
 
@@ -76,11 +85,13 @@ On Windows, use PowerShell `Get-FileHash -Algorithm SHA256 filename` to check th
 
 ## Your first task
 
-1. Open **Settings → Agents**. Botogether detects supported local installations. The desktop package does not bundle Codex, Claude or Cursor. Follow the official setup/sign-in links in the app, then scan again.
-2. Create a bot from the sidebar `+` menu. Choose a name and an available local agent.
-3. Open its chat and choose a project folder. Try: “Read this project and list three improvements. Do not change files yet.”
-4. Send your message and inspect any permission requests. Model use is billed by your agent/provider; Botogether does not include model credits.
-5. Inspect replies and files. To collaborate, create a group, choose members and a shared folder, then state who should implement and who should review.
+The following in-app installation flow is available in the validated V2.3 candidate; historical downloads may not include it.
+
+1. **No AI tools installed:** click **Start for free**. OpenCode downloads and is checked inside the app; no Node.js, npm or terminal is needed.
+2. Choose a currently available **free trial model**, then click **Start chatting**. The app rechecks availability and never silently switches to a paid model.
+3. **Already have an Agent:** create an assistant and select the detected tool. Complete account sign-in if requested.
+4. Try a small task: “Create a weekend checklist.” Open the file, then ask for a revision. Inspect permissions and the actual result.
+5. Add teammates when useful. Choose who should prepare the result and who should check it. More members can add usage and coordination costs.
 
 Read [Getting started](docs/getting-started.md), [Help and updates](docs/troubleshooting.md), and [Privacy](docs/privacy.md).
 
@@ -127,7 +138,7 @@ Botogether-owned software uses a [proprietary distribution license](LICENSE.md).
 
 ## Release status
 
-All three targets are public test previews. Earlier Apple Silicon candidates have local installation evidence; this release passed isolated packaged daemon checks and installer content verification. Final GUI/upgrade and native Intel validation remain pending; Windows evidence is for its older version. No Apple Developer ID / notarization or Windows publisher certificate is currently available.
+The V2.3 local.26 Apple Silicon Mac and Windows x64 candidates passed local native installation, free-model first tasks, package audits and upgrade acceptance. They have not been published; historical download links do not refer to these candidates. Intel Mac and Windows ARM64 were not accepted on native devices in this round. Apple Developer ID / notarization and Windows publisher signing are unavailable; this must be disclosed for a public preview, which is not a production-stable release.
 
 ## Acknowledgments
 
