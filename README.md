@@ -5,7 +5,7 @@
 
 Botogether brings the coding agents on your computer into direct and group chats. Give each bot a role, choose a project folder, and ask for a result. Your agents execute the work; Botogether keeps conversations, permissions, files and review history together.
 
-**Historical public downloads (unsigned previews):** [Download v0.1.0-preview.7 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.dmg). Intel Mac preview.7 is experimental: isolated Rosetta daemon startup passed; native Intel GUI and upgrades remain pending. Windows remains on preview.2; no new Windows package is included. This is an unsigned, unnotarized public preview, not a stable release.
+**Unsigned preview.8:** [Apple Silicon Mac DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64.dmg) · [Windows x64 installer](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-win-x64.exe). Intel Mac is not included in this release. This is an unsigned, unnotarized testing preview, not a stable release.
 
 > [!IMPORTANT]
 > **First installation blocked? Read this first.** This preview has no Apple Developer ID signature/notarization or Windows publisher signature. Download only from the [official Releases](https://github.com/DmiyDing/botogether/releases) and compare the checksums.
@@ -18,9 +18,9 @@ Botogether brings the coding agents on your computer into direct and group chats
 
 This repository contains download documentation and release assets; application source is private. No private repository access, Node.js or npm is needed to install the desktop app. No npm package has been published.
 
-> **Download status:** All six Mac preview.7 attachments were downloaded anonymously in full and verified against the reviewed byte counts and SHA-256 hashes. Windows remains preview.2; no new Windows build or acceptance is included.
+> **Download status:** All six preview.8 attachments for Apple Silicon Mac and Windows x64 were downloaded anonymously in full and matched their reviewed byte counts and SHA-256 hashes.
 
-> **V2.3 candidate — not published yet:** Mac Apple Silicon and Windows x64 installers have passed local validation, including native installation, free-model first tasks and upgrades. The screenshots below show local.26. The links below still point to historical public releases; they do not contain all of these changes. Please wait for the new release notes before downloading for the new onboarding flow.
+> **Validated platforms:** Mac ARM64 and Windows x64 passed local native installation, GUI, package and existing-data upgrade checks. Other architectures and the full model/account matrix remain outside this release acceptance.
 
 ## Why Botogether
 
@@ -30,7 +30,7 @@ This repository contains download documentation and release assets; application 
 
 ## Interface preview
 
-Captured from the **V2.3 local.26 interface** in English. These isolated UI examples contain no private conversations. Example dialogue and hand-written files illustrate the interface, not live AI delivery or performance claims.
+Earlier **V2.3 local.26 interface examples** in English; preview.8 adds a simpler assistant greeting and the changes listed below. These isolated UI examples contain no private conversations. Example dialogue and hand-written files illustrate the interface, not live AI delivery or performance claims.
 
 ![Start with a free assistant](assets/screenshots/en/welcome.png)
 
@@ -62,11 +62,11 @@ Captured from the **V2.3 local.26 interface** in English. These isolated UI exam
 
 | Computer | Download | Installation |
 | --- | --- | --- |
-| Mac with Apple M-series chip | [v0.1.0-preview.7 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.dmg) | Open the DMG, drag Botogether into Applications, then open it from Applications. |
-| Mac with Intel processor | [Experimental DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64.dmg) | Drag into Applications; preview.7 passed isolated Rosetta startup; native Intel GUI and upgrades remain pending. |
-| Windows x64 | [Awaiting the new preview](https://github.com/DmiyDing/botogether/releases) | The V2.3 candidate passed local validation. Historical preview.2 has a known language-resource/blank-window issue; it is not recommended for first use. |
+| Mac with Apple M-series chip | [v0.1.0-preview.8 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64.dmg) | Open the DMG, drag Botogether into Applications, then open it from Applications. |
+| Intel Mac (historical preview.7) | [Experimental DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64.dmg) | Drag into Applications; preview.7 passed isolated Rosetta startup; native Intel GUI and upgrades remain pending. |
+| Windows x64 | [v0.1.0-preview.8 installer](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-win-x64.exe) | Run the installer and follow its prompts. It has no publisher signature; read the installation help above. |
 
-[Release notes](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.7) · [ZIP alternative](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64-SHA256SUMS.txt)
+[Release notes](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8) · [ZIP alternative](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64-SHA256SUMS.txt)
 
 Desktop installers do not require Node.js or npm. Prefer the DMG for your first installation. The automatically generated **Source code** archives contain this distribution repository's documentation, not the application or its private source.
 
@@ -74,12 +74,12 @@ This repository publishes user guides, product screenshots, feedback templates a
 
 This preview has an ad-hoc integrity signature, without Apple Developer ID or notarization. macOS may block the first launch. Read the [installation help](docs/troubleshooting.md), verify the download source and checksum, and keep system protections enabled.
 
-Check the download with `shasum -a 256 Botogether-0.1.0-preview.7-mac-arm64.dmg` and compare it with the SHA256SUMS file above. A checksum verifies file consistency, not publisher identity.
+Check the download with `shasum -a 256 Botogether-0.1.0-preview.8-mac-arm64.dmg` and compare it with the SHA256SUMS file above. A checksum verifies file consistency, not publisher identity.
 
 Intel Mac and Windows alternatives and checksums:
 
 - mac-x64: [ZIP alternative](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64-SHA256SUMS.txt)
-- win-x64 (preview.2): [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-win-x64-SHA256SUMS.txt)
+- win-x64: [ZIP alternative](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-win-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-win-x64-SHA256SUMS.txt)
 
 On Windows, use PowerShell `Get-FileHash -Algorithm SHA256 filename` to check the download.
 
@@ -101,15 +101,15 @@ Read [Getting started](docs/getting-started.md), [Help and updates](docs/trouble
 
 Mobile remote control, general plugin installation, complete MCP tool management, automatic memory extraction and autonomous cross-group dispatch are not currently available. Agent capabilities vary by engine and version. Release notes remain the source of truth for supported platforms, signing and known issues.
 
-## Mac preview.7 update
+## preview.8 update
 
-- Team questions appear in chat; service connection failures offer a direct review retry and keep completed files.
-- Group role selection checks whether the reviewer can inspect the required files before work starts. Discussion members are shown as discussing.
-- Frozen screenshot previews use bounded image context; local HTML and image links open in a restricted preview.
-- New-user setup supports an optional private OpenCode installation on Apple Silicon. Model availability and provider policies still apply; Intel and Windows use the official setup guide.
-- Continuing beyond the saved Agent-start budget requires explicit confirmation. Task deadlines remain enforced.
+- Group conversations retain native Agent tool access; actual search and execution depend on the selected engine, model and permissions.
+- Supported connections can prepare while you type, without sending the draft or starting a model task.
+- Pending approvals appear one at a time. Assistant avatars and colors are visible during creation.
+- New assistants use Buddy / 小助 and a short greeting. Conversation context and selected-folder handling were improved.
+- Windows includes supported language resources and five native icon sizes. Both selected platforms passed package, native GUI and existing-data upgrade checks locally.
 
-Mac preview.7 is published with Apple Silicon and experimental Intel DMG / ZIP installers and checksum files. All six attachments passed anonymous complete download verification. Windows is unchanged because current Actions allowance could not be verified; native Intel GUI/upgrade acceptance remains pending.
+External tool delays and free-model availability still vary. This release does not establish an overall speedup or production stability.
 
 ## Changes in the Mac preview.6 release
 
@@ -138,7 +138,7 @@ Botogether-owned software uses a [proprietary distribution license](LICENSE.md).
 
 ## Release status
 
-The V2.3 local.26 Apple Silicon Mac and Windows x64 candidates passed local native installation, free-model first tasks, package audits and upgrade acceptance. They have not been published; historical download links do not refer to these candidates. Intel Mac and Windows ARM64 were not accepted on native devices in this round. Apple Developer ID / notarization and Windows publisher signing are unavailable; this must be disclosed for a public preview, which is not a production-stable release.
+preview.8 is published for Apple Silicon Mac and Windows x64. The six assets passed anonymous full download/hash checks; native installation, GUI and existing-data upgrades passed locally. Intel Mac and Windows ARM64 are not included. macOS has no Developer ID/notarization and Windows has no publisher signature. This is a testing preview; full model/account coverage and production stability are not claimed.
 
 ## Acknowledgments
 

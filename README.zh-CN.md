@@ -5,7 +5,7 @@
 
 把电脑上的编程智能体变成你的助手。给每位 Bot 设置职责，在私聊或群聊中交代目标，选择项目文件夹，再查看回复、文件和检查结果。
 
-**历史公开下载（未签名预览版）：**[下载 v0.1.0-preview.7 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.dmg)。Intel Mac preview.7 已通过 Rosetta 隔离服务启动检查；Intel 实机界面与升级仍待验证。Windows 暂用 preview.2，本次不包含 Windows 新包。本版为未签名、未公证的公开测试预览版，不是稳定版。
+**未签名 preview.8：**[Apple Silicon Mac DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64.dmg) · [Windows x64 安装包](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-win-x64.exe)。本轮不含新版 Intel Mac。这是未签名、未公证的公开测试预览版，不是稳定版。
 
 > [!IMPORTANT]
 > **首次安装被系统拦截？请先看这里。** 当前预览版尚无 Apple Developer ID 签名／公证，也没有 Windows 厂商签名。请仅从[官方 Releases](https://github.com/DmiyDing/botogether/releases)下载并核对校验和。
@@ -18,9 +18,9 @@
 
 此仓库用于安装包和用户说明，应用源码私有。安装桌面包无需私有仓库权限、Node.js 或 npm。目前没有已发布的 npm 包。
 
-> **下载状态：** Mac preview.7 六个附件均已匿名完整下载，并核对审核版本的字节数和 SHA-256。Windows 保留 preview.2；本次没有新 Windows 包或新版验收。
+> **下载状态：** preview.8 的 Apple Silicon Mac 与 Windows x64 六个附件均已匿名完整下载，并核对审核版本的字节数和 SHA-256。
 
-> **V2.3 候选尚未公开发布：** Apple Silicon Mac 与 Windows x64 已完成本地安装包、原生安装、免费首任务及升级验收。下方截图来自 local.26；现有下载链接仍是历史公开版，不包含全部新功能。需要新版新手引导，请等待新版发行说明。
+> **已验收平台：** Mac ARM64 与 Windows x64 已通过本地原生安装、实际界面、包审计和已有数据升级检查。其他架构与全部模型／账号组合不在本轮已验证范围。
 
 ## 为什么选择 Botogether
 
@@ -30,7 +30,7 @@
 
 ## 界面预览
 
-以下均为 **V2.3 local.26 当前界面截图**，使用隔离的界面示例，不含私人聊天。示例对话及手写文件用于展示功能，不代表真实模型交付或效果承诺。
+以下是 **V2.3 local.26 的历史界面示例**，使用隔离数据，不含私人聊天。preview.8 简化了助手招呼，并包含下方列出的更新。示例对话及手写文件用于展示界面，不代表真实模型交付或效果承诺。
 
 ![从免费助手开始](assets/screenshots/zh-CN/welcome.png)
 
@@ -62,24 +62,24 @@
 
 | 电脑 | 下载 | 怎么安装 |
 | --- | --- | --- |
-| Apple M 系列芯片 Mac | [v0.1.0-preview.7 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.dmg) | 打开 DMG，把 Botogether 拖入 Applications，再从 Applications 打开。 |
-| Intel 芯片 Mac | [实验性 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64.dmg) | 拖入 Applications；新版已通过 Rosetta 隔离启动；新版 Intel 实机界面与升级仍待验证。 |
-| Windows x64 | [等待新版预览](https://github.com/DmiyDing/botogether/releases) | V2.3 候选已完成本地验收。历史 preview.2 已确认有语言资源缺失／白屏问题，不建议新用户使用。 |
+| Apple M 系列芯片 Mac | [v0.1.0-preview.8 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64.dmg) | 打开 DMG，把 Botogether 拖入 Applications，再从 Applications 打开。 |
+| Intel 芯片 Mac（历史 preview.7） | [实验性 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64.dmg) | 拖入 Applications；preview.7 仅通过 Rosetta 隔离启动检查。本轮没有 Intel 更新，Intel 原生界面与升级仍待验证。 |
+| Windows x64 | [v0.1.0-preview.8 安装包](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-win-x64.exe) | 运行安装程序并按提示完成；当前没有厂商签名，请先看上方安装帮助。 |
 
-[版本说明](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.7) · [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64.zip) · [SHA256SUMS 校验文件](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-arm64-SHA256SUMS.txt)
+[版本说明](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8) · [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64.zip) · [SHA256SUMS 校验文件](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64-SHA256SUMS.txt)
 
 安装桌面包无需 Node.js 或 npm，首次安装建议使用 DMG。GitHub 自动生成的 **Source code** 压缩包仅包含此下载仓库的文档，不是应用安装包，也不包含私有应用源码。
 
 本仓库仅公开使用说明、产品截图、反馈模板及发行许可。原始需求、设计方案、研发记录和内部审查文档均保留在私有仓库。请从 Release 的 **Assets** 选择 DMG / EXE；无需下载 Source code。
 
-本版已做 ad-hoc 完整性签名，尚无 Apple Developer ID 签名和公证。macOS 可能拦截首次打开，请先阅读[安装帮助](docs/troubleshooting.md)，核对来源和校验和，保留系统安全保护。
+Mac 版已做 ad-hoc 完整性签名，尚无 Apple Developer ID 签名和公证；Windows 版仍无厂商签名。macOS 可能拦截首次打开，请先阅读[安装帮助](docs/troubleshooting.md)，核对来源和校验和，保留系统安全保护。
 
-运行 `shasum -a 256 Botogether-0.1.0-preview.7-mac-arm64.dmg`，与上面的 SHA256SUMS 文件比较。校验和用于核对文件完整性，不能替代厂商签名。
+运行 `shasum -a 256 Botogether-0.1.0-preview.8-mac-arm64.dmg`，与上面的 SHA256SUMS 文件比较。校验和用于核对文件完整性，不能替代厂商签名。
 
 Intel Mac 与 Windows 备用包和校验文件：
 
 - mac-x64: [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64-SHA256SUMS.txt)
-- win-x64 (preview.2): [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.2/Botogether-0.1.0-preview.2-win-x64-SHA256SUMS.txt)
+- win-x64：[备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-win-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-win-x64-SHA256SUMS.txt)
 
 Windows 可用 PowerShell 的 `Get-FileHash -Algorithm SHA256 文件名` 核对摘要。
 
@@ -101,15 +101,15 @@ Windows 可用 PowerShell 的 `Get-FileHash -Algorithm SHA256 文件名` 核对�
 
 手机远程、通用插件安装、完整 MCP 工具管理、记忆自动提取和主助手跨群自动派发目前尚不可用。智能体能力随引擎和版本变化；平台、签名和已知问题以对应版本说明为准。
 
-## Mac preview.7 更新
+## preview.8 更新
 
-- 需要补充的需求直接在聊天中回答；服务连接中断时可直接重新评审，已完成文件保留。
-- 团队开始前检查评审能否查看所需文件；讨论模式按实际参与情况显示“讨论”。
-- 使用受限截图预览帮助评审；本地网页与图片链接在受限预览中打开。
-- Apple Silicon 首次使用可主动选择私有安装 OpenCode；模型可用性和提供方政策仍适用，Intel 与 Windows 使用官方安装指南。
-- 超出已保存的智能体启动次数前须明确确认，任务截止时间继续生效。
+- 群聊保留原生 Agent 工具能力；实际联网和执行仍取决于所选工具、模型与授权。
+- 支持的连接可在输入时准备，不提前发送草稿或运行模型任务。
+- 多个待授权操作逐项展示；创建助手时可直接看到头像和颜色。
+- 新助手默认“小助 / Buddy”，用简短招呼引导交流；上下文和选定目录处理也有改进。
+- Windows 补齐语言资源与五种尺寸图标；所选双平台均通过本地包、真实界面与已有数据升级检查。
 
-Mac preview.7 已公开，提供 Apple Silicon 与实验性 Intel 的 DMG / ZIP 和校验文件，六附件均通过匿名完整下载校验。Windows 因无法核实当次 Actions 剩余额度暂缓；Intel 实机界面与升级仍待验证。
+外部工具延迟和免费模型可用性仍会变化，本版不宣称整体提速或生产稳定性。
 
 ## Mac preview.6 改进
 
@@ -138,7 +138,7 @@ Botogether 自有软件使用[专有发行许可证](LICENSE.md)。允许使用�
 
 ## 发布状态
 
-V2.3 local.26 的 Apple Silicon Mac 和 Windows x64 候选已通过本地原生安装、免费首任务、包审计和升级验收；尚未公开发布，旧下载链接不代表新候选。Intel Mac、Windows ARM64 不在本轮真机验收范围。当前没有 Apple Developer ID／公证或 Windows 厂商签名条件；公开预览应明确告知，不能宣传为生产稳定版。
+preview.8 已公开提供 Apple Silicon Mac 与 Windows x64 安装包。六个附件均通过匿名完整下载和哈希核验，本地原生安装、真实界面及已有数据升级检查通过。本轮不包含新版 Intel Mac 或 Windows ARM64；仍无 Apple Developer ID／公证或 Windows 厂商签名。此版本用于公开测试，不宣称覆盖全部模型／账号组合或达到生产稳定标准。
 
 ## 致谢
 

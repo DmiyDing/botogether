@@ -2,9 +2,9 @@
 
 ## A first useful result / 第一个有用的结果
 
-Get the available installers from the [release page](https://github.com/DmiyDing/botogether/releases) and read the [unsigned-preview installation help](troubleshooting.md). The V2.3 local.26 candidate is validated locally but not yet public; historical downloads may not include the flow below. The old Windows preview.2 has a known blank-window issue; wait for the new preview rather than using it for first setup. Repository source archives are not installers.
+Get the Apple Silicon Mac or Windows x64 preview.8 installer from the [release page](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8) and read the [unsigned-preview installation help](troubleshooting.md). Repository source archives are documentation, not installers.
 
-从[发行页](https://github.com/DmiyDing/botogether/releases)选择安装包，并先看[未签名预览安装帮助](troubleshooting.md)。V2.3 local.26 候选已通过本地验收但尚未公开，旧版不一定有下述流程。旧 Windows preview.2 存在已知白屏问题，请等待新版预览，不建议用于首次体验。Source code 压缩包不是安装包。
+从[preview.8 发行页](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8)选择 Apple Silicon Mac 或 Windows x64 安装包，并先看[未签名预览安装帮助](troubleshooting.md)。Source code 压缩包只有公开文档，不是安装包。
 
 **No Agent installed:** click **Start for free** → wait for OpenCode to download and be checked inside the app → choose an available free trial model → **Start chatting**. No Node.js, npm or terminal is needed. Availability is rechecked and never silently replaced by a paid model.
 
