@@ -1,26 +1,9 @@
 <p align="center"><img src="assets/mark.png" width="88" alt="Botogether" /></p>
 <h1 align="center">Botogether</h1>
 <p align="center"><strong>Your bots. One team.</strong><br/>Chat, assign work and inspect results from your local AI agents.</p>
-<p align="center"><a href="README.zh-CN.md">简体中文</a> · <a href="https://github.com/DmiyDing/botogether/releases">Downloads</a> · <a href="docs/getting-started.md">Get started</a> · <a href="docs/troubleshooting.md">Help</a></p>
+<p align="center"><a href="README.zh-CN.md">简体中文</a></p>
 
 Botogether brings the coding agents on your computer into direct and group chats. Give each bot a role, choose a project folder, and ask for a result. Your agents execute the work; Botogether keeps conversations, permissions, files and review history together.
-
-**Unsigned preview.8:** [Apple Silicon Mac DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64.dmg) · [Windows x64 installer](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-win-x64.exe). Intel Mac is not included in this release. This is an unsigned, unnotarized testing preview, not a stable release.
-
-> [!IMPORTANT]
-> **First installation blocked? Read this first.** This preview has no Apple Developer ID signature/notarization or Windows publisher signature. Download only from the [official Releases](https://github.com/DmiyDing/botogether/releases) and compare the checksums.
->
-> **Mac:** Drag Botogether into Applications and try opening it once → **System Settings → Privacy & Security → Open Anyway** beside the Botogether notice → confirm as prompted and open it again. [Apple's illustrated guide](https://support.apple.com/en-us/102445)
->
-> **Windows:** For “Windows protected your PC,” verify the source, then choose **More info → Run anyway** when offered. If the option is missing, or Smart App Control or organizational policy blocks it, stop and report the exact notice; keep protections enabled. [Microsoft guidance](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation)
->
-> Do not disable Gatekeeper, SmartScreen or antivirus. A damaged-app or malware warning calls for checking the download and integrity, not dismissing the warning.
-
-This repository contains download documentation and release assets; application source is private. No private repository access, Node.js or npm is needed to install the desktop app. No npm package has been published.
-
-> **Download status:** All six preview.8 attachments for Apple Silicon Mac and Windows x64 were downloaded anonymously in full and matched their reviewed byte counts and SHA-256 hashes.
-
-> **Validated platforms:** Mac ARM64 and Windows x64 passed local native installation, GUI, package and existing-data upgrade checks. Other architectures and the full model/account matrix remain outside this release acceptance.
 
 ## Why Botogether
 
@@ -30,7 +13,7 @@ This repository contains download documentation and release assets; application 
 
 ## Interface preview
 
-Earlier **V2.3 local.26 interface examples** in English; preview.8 adds a simpler assistant greeting and the changes listed below. These isolated UI examples contain no private conversations. Example dialogue and hand-written files illustrate the interface, not live AI delivery or performance claims.
+The first three images are isolated V2.3 interface examples. The fourth reuses our earlier image-generation showcase; capabilities depend on the selected Agent, model and tools.
 
 ![Start with a free assistant](assets/screenshots/en/welcome.png)
 
@@ -44,35 +27,40 @@ Earlier **V2.3 local.26 interface examples** in English; preview.8 adds a simple
 
 **Set up without the detour.** OpenCode, Codex and Claude Code offer in-app installation on supported systems. Other entries have explicit installation guides. Installing an Agent does not include its account or paid model usage.
 
-![Read and download a Markdown file](assets/screenshots/en/showcase.png)
+![Generate, preview and download an image](assets/screenshots/en/showcase.png)
 
-**Open a file and keep refining.** The current reader renders headings, checklists and tables, with source and download controls. This hand-written sample is not an AI-generated deliverable.
-
-## What you can do
-
-- Chat with a bot, or create a group and use `@` to select one or more members.
-- Choose a project folder for each conversation. Group members work toward the same goal in the same folder.
-- Assign execution and independent review roles. File tasks keep fixed snapshots for inspection and download; a bot saying “done” does not automatically accept a result.
-- Choose models in the composer or bot editor; inspect activity and permissions in task details.
-- Save scoped facts and preferences locally. Switching a bot’s model does not erase saved Botogether memories.
-- Read formatted answers, preview images fitted to a dialog or at original size, and download original files.
-- Use English or Simplified Chinese, with light and dark themes.
+**From an idea to a visual result.** Preview artwork in the conversation and download the original. This English image is a localized illustration of the authorized Chinese usage screenshot, not a separate English model-run receipt.
 
 ## Download and install
+
+This is a testing preview. macOS has no Developer ID/notarization; Windows has no publisher signature.
 
 | Computer | Download | Installation |
 | --- | --- | --- |
 | Mac with Apple M-series chip | [v0.1.0-preview.8 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64.dmg) | Open the DMG, drag Botogether into Applications, then open it from Applications. |
+| Windows x64 | [v0.1.0-preview.8 installer](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-win-x64.exe) | Run the installer and follow its prompts. It has no publisher signature; read the installation help below. |
 | Intel Mac (historical preview.7) | [Experimental DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64.dmg) | Drag into Applications; preview.7 passed isolated Rosetta startup; native Intel GUI and upgrades remain pending. |
-| Windows x64 | [v0.1.0-preview.8 installer](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-win-x64.exe) | Run the installer and follow its prompts. It has no publisher signature; read the installation help above. |
 
 [Release notes](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8) · [ZIP alternative](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64-SHA256SUMS.txt)
+
+<details>
+<summary>Blocked on first launch? Installation help</summary>
+
+**First installation blocked? Read this first.** This preview has no Apple Developer ID signature/notarization or Windows publisher signature. Download only from the [official Releases](https://github.com/DmiyDing/botogether/releases) and compare the checksums.
+
+**Mac:** Drag Botogether into Applications and try opening it once → **System Settings → Privacy & Security → Open Anyway** beside the Botogether notice → confirm as prompted and open it again. [Apple's illustrated guide](https://support.apple.com/en-us/102445)
+
+**Windows:** For “Windows protected your PC,” verify the source, then choose **More info → Run anyway** when offered. If the option is missing, or Smart App Control or organizational policy blocks it, stop and report the exact notice; keep protections enabled. [Microsoft guidance](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation)
+
+Do not disable Gatekeeper, SmartScreen or antivirus. A damaged-app or malware warning calls for checking the download and integrity, not dismissing the warning.
+
+</details>
 
 Desktop installers do not require Node.js or npm. Prefer the DMG for your first installation. The automatically generated **Source code** archives contain this distribution repository's documentation, not the application or its private source.
 
 This repository publishes user guides, product screenshots, feedback templates and the distribution license only. Original requirements, designs, development records and internal reviews remain private. Choose a DMG / EXE under Release **Assets**; you do not need the Source code download.
 
-This preview has an ad-hoc integrity signature, without Apple Developer ID or notarization. macOS may block the first launch. Read the [installation help](docs/troubleshooting.md), verify the download source and checksum, and keep system protections enabled.
+The macOS preview has an ad-hoc integrity signature, without Apple Developer ID or notarization. macOS may block the first launch. Read the [installation help](docs/troubleshooting.md), verify the download source and checksum, and keep system protections enabled.
 
 Check the download with `shasum -a 256 Botogether-0.1.0-preview.8-mac-arm64.dmg` and compare it with the SHA256SUMS file above. A checksum verifies file consistency, not publisher identity.
 
@@ -85,7 +73,7 @@ On Windows, use PowerShell `Get-FileHash -Algorithm SHA256 filename` to check th
 
 ## Your first task
 
-The following in-app installation flow is available in the validated V2.3 candidate; historical downloads may not include it.
+The following in-app installation flow is available in preview.8.
 
 1. **No AI tools installed:** click **Start for free**. OpenCode downloads and is checked inside the app; no Node.js, npm or terminal is needed.
 2. Choose a currently available **free trial model**, then click **Start chatting**. The app rechecks availability and never silently switches to a paid model.
@@ -94,6 +82,16 @@ The following in-app installation flow is available in the validated V2.3 candid
 5. Add teammates when useful. Choose who should prepare the result and who should check it. More members can add usage and coordination costs.
 
 Read [Getting started](docs/getting-started.md), [Help and updates](docs/troubleshooting.md), and [Privacy](docs/privacy.md).
+
+## What you can do
+
+- Chat with a bot, or create a group and use `@` to select one or more members.
+- Choose a project folder for each conversation. Group members work toward the same goal in the same folder.
+- Assign execution and independent review roles. File tasks keep fixed snapshots for inspection and download; a bot saying “done” does not automatically accept a result.
+- Choose models in the composer or bot editor; inspect activity and permissions in task details.
+- Save scoped facts and preferences locally. Switching a bot’s model does not erase saved Botogether memories.
+- Read formatted answers, preview images fitted to a dialog or at original size, and download original files.
+- Use English or Simplified Chinese, with light and dark themes.
 
 ## Updates and boundaries
 
@@ -111,16 +109,9 @@ Mobile remote control, general plugin installation, complete MCP tool management
 
 External tool delays and free-model availability still vary. This release does not establish an overall speedup or production stability.
 
-## Changes in the Mac preview.6 release
+## Release history
 
-- Both normal service-storage choices accept API keys directly. Existing environment-variable references have a separate advanced entry; no shell plaintext configuration or global Agent configuration is generated.
-- Static HTML layout checks use the bundled isolated Electron renderer instead of implicitly starting installed Chrome. Page scripts, external resources, navigation and permissions stay disabled; fixed screenshots, cancellation and process-stop evidence remain checked.
-- Identifiable installed-app directory requests require individual confirmation rather than reusable or automatic grants. Third-party native tools retain their own permissions; macOS may still show permission notices for their actions.
-- Read notifications persist locally, selected service credentials are prepared before task admission, results and handled permissions are more compact, and image-preview size/download controls share a footer.
-
-Validation: 365 checks passed with 7 conditional skips; 77 browser tests passed with 1 promotional screenshot skip; real isolated rendering passed 3/3 on each Mac architecture. Both packages passed privacy/dependency scans, strict ad-hoc signature integrity, clean authenticated startup/shutdown and DMG/ZIP content matching. Apple Silicon backup upgrade and actual installed GUI identity passed. All six Mac release assets were anonymously downloaded in full and matched the audited bytes and SHA-256 values. Intel native-device GUI/upgrades and a current Windows package remain pending.
-
-Group tasks continue to retain the original goal and declared checks through bounded execution, verification, review and repair. A completed reply does not mean verified delivery. Long mixed-engine workflows remain under validation. OpenCode model availability, limits and data handling depend on the provider; no automatic installation, login or paid-model fallback is implied.
+[preview.8 — current Mac ARM64 / Windows x64](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8) · [preview.7 — previous Mac and historical Intel](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.7) · [preview.6 — earlier milestone](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.6) · [preview.1 — first public release](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.1)
 
 ## npm and source
 

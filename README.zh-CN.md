@@ -1,26 +1,9 @@
 <p align="center"><img src="assets/mark.png" width="88" alt="Botogether" /></p>
 <h1 align="center">Botogether</h1>
 <p align="center"><strong>Your bots. One team.</strong><br/>让智能体，合力把事做好。</p>
-<p align="center"><a href="README.md">English</a> · <a href="https://github.com/DmiyDing/botogether/releases">下载安装</a> · <a href="docs/getting-started.md">开始使用</a> · <a href="docs/troubleshooting.md">常见问题</a></p>
+<p align="center"><a href="README.md">English</a></p>
 
 把电脑上的编程智能体变成你的助手。给每位 Bot 设置职责，在私聊或群聊中交代目标，选择项目文件夹，再查看回复、文件和检查结果。
-
-**未签名 preview.8：**[Apple Silicon Mac DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64.dmg) · [Windows x64 安装包](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-win-x64.exe)。本轮不含新版 Intel Mac。这是未签名、未公证的公开测试预览版，不是稳定版。
-
-> [!IMPORTANT]
-> **首次安装被系统拦截？请先看这里。** 当前预览版尚无 Apple Developer ID 签名／公证，也没有 Windows 厂商签名。请仅从[官方 Releases](https://github.com/DmiyDing/botogether/releases)下载并核对校验和。
->
-> **Mac：** 将 Botogether 拖入“应用程序”并尝试打开一次 → 打开 **系统设置 → 隐私与安全性** → 找到 Botogether 的拦截提示，点击 **“仍要打开”** → 按系统要求确认后再次打开。[Apple 图文说明](https://support.apple.com/zh-cn/102445)
->
-> **Windows：** 如果出现“Windows 已保护你的电脑”，核对来源后点击 **“更多信息” → “仍要运行”**。如果没有该按钮，或被 Smart App Control／单位策略阻止，请停止安装并反馈具体提示，保留系统保护。[Microsoft 说明](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation)
->
-> 不需要关闭 Gatekeeper、SmartScreen 或杀毒软件。提示“已损坏”或“包含恶意软件”时，请重新核对下载与完整性，不要直接忽略警告。
-
-此仓库用于安装包和用户说明，应用源码私有。安装桌面包无需私有仓库权限、Node.js 或 npm。目前没有已发布的 npm 包。
-
-> **下载状态：** preview.8 的 Apple Silicon Mac 与 Windows x64 六个附件均已匿名完整下载，并核对审核版本的字节数和 SHA-256。
-
-> **已验收平台：** Mac ARM64 与 Windows x64 已通过本地原生安装、实际界面、包审计和已有数据升级检查。其他架构与全部模型／账号组合不在本轮已验证范围。
 
 ## 为什么选择 Botogether
 
@@ -30,7 +13,7 @@
 
 ## 界面预览
 
-以下是 **V2.3 local.26 的历史界面示例**，使用隔离数据，不含私人聊天。preview.8 简化了助手招呼，并包含下方列出的更新。示例对话及手写文件用于展示界面，不代表真实模型交付或效果承诺。
+前三张为使用隔离数据的 V2.3 界面示例，第四张复用此前授权展示的生图使用截图。具体能力取决于所选智能体、模型和工具。
 
 ![从免费助手开始](assets/screenshots/zh-CN/welcome.png)
 
@@ -44,29 +27,34 @@
 
 **准备工具，少绕一步。** 支持的系统可一键安装 OpenCode、Codex、Claude Code；其他工具明确提供安装说明。安装程序不等于赠送账号或付费模型额度。
 
-![阅读和下载 Markdown 文件](assets/screenshots/zh-CN/showcase.png)
+![生成、预览和下载图片成果](assets/screenshots/zh-CN/showcase.png)
 
-**点开文件，就能阅读。** 当前阅读器支持标题、清单和表格，可切换源码、下载，再回到聊天继续修改。这是手工编写的样例文件，不是 AI 生成成果。
-
-## 可以做什么
-
-- 与一个助手聊天，或创建群聊，用 `@` 选择一位或多位成员。
-- 为每个会话选择项目文件夹，同一个群聊围绕同一目录和目标协作。
-- 指定谁执行、谁独立检查。文件结果保留固定快照，支持查看和下载；助手说“完成”不等于自动验收。
-- 在输入框或编辑助手时选择模型，在任务详情查看活动和权限请求。
-- 保存有使用范围的偏好与事实，更换 Bot 的模型不会删除 Botogether 已保存的记忆。
-- 阅读 Markdown、代码与表格；图片默认适应预览弹窗，也可查看原始尺寸、下载原文件。
-- 使用中文或英文界面，选择浅色、深色主题。
+**从想法到可查看的视觉成果。** 在聊天里预览生成的海报，再下载原图。复用此前已授权展示的使用截图；图片可见不代表任务已独立验收。
 
 ## 下载与安装
+
+这是公开测试预览版：Mac 尚无 Developer ID／公证，Windows 尚无厂商签名。
 
 | 电脑 | 下载 | 怎么安装 |
 | --- | --- | --- |
 | Apple M 系列芯片 Mac | [v0.1.0-preview.8 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64.dmg) | 打开 DMG，把 Botogether 拖入 Applications，再从 Applications 打开。 |
+| Windows x64 | [v0.1.0-preview.8 安装包](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-win-x64.exe) | 运行安装程序并按提示完成；当前没有厂商签名，请看下方安装帮助。 |
 | Intel 芯片 Mac（历史 preview.7） | [实验性 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64.dmg) | 拖入 Applications；preview.7 仅通过 Rosetta 隔离启动检查。本轮没有 Intel 更新，Intel 原生界面与升级仍待验证。 |
-| Windows x64 | [v0.1.0-preview.8 安装包](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-win-x64.exe) | 运行安装程序并按提示完成；当前没有厂商签名，请先看上方安装帮助。 |
 
 [版本说明](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8) · [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64.zip) · [SHA256SUMS 校验文件](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64-SHA256SUMS.txt)
+
+<details>
+<summary>首次打开被系统拦截？查看安装方法</summary>
+
+**首次安装被系统拦截？请先看这里。** 当前预览版尚无 Apple Developer ID 签名／公证，也没有 Windows 厂商签名。请仅从[官方 Releases](https://github.com/DmiyDing/botogether/releases)下载并核对校验和。
+
+**Mac：** 将 Botogether 拖入“应用程序”并尝试打开一次 → 打开 **系统设置 → 隐私与安全性** → 找到 Botogether 的拦截提示，点击 **“仍要打开”** → 按系统要求确认后再次打开。[Apple 图文说明](https://support.apple.com/zh-cn/102445)
+
+**Windows：** 如果出现“Windows 已保护你的电脑”，核对来源后点击 **“更多信息” → “仍要运行”**。如果没有该按钮，或被 Smart App Control／单位策略阻止，请停止安装并反馈具体提示，保留系统保护。[Microsoft 说明](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation)
+
+不需要关闭 Gatekeeper、SmartScreen 或杀毒软件。提示“已损坏”或“包含恶意软件”时，请重新核对下载与完整性，不要直接忽略警告。
+
+</details>
 
 安装桌面包无需 Node.js 或 npm，首次安装建议使用 DMG。GitHub 自动生成的 **Source code** 压缩包仅包含此下载仓库的文档，不是应用安装包，也不包含私有应用源码。
 
@@ -85,8 +73,6 @@ Windows 可用 PowerShell 的 `Get-FileHash -Algorithm SHA256 文件名` 核对�
 
 ## 第一次使用
 
-以下应用内安装流程已在 V2.3 候选验收，历史下载版本请以对应发行说明为准。
-
 1. **没装过 AI 工具：** 首页点 **免费开始**。保持应用打开，等待 OpenCode 下载和检查，不需要 Node.js、npm 或终端。
 2. 选择当前可用的 **免费体验模型**，点 **开始聊天**。免费名额会变化，应用会重新检查，不会悄悄切换付费模型。
 3. **已有 AI 工具：** 直接创建助手，选择检测到的工具；需要账号时按工具提示登录。
@@ -94,6 +80,16 @@ Windows 可用 PowerShell 的 `Get-FileHash -Algorithm SHA256 文件名` 核对�
 5. 需要协作时再组队，选谁制作、谁核对。成员更多会增加用量与协调成本，不保证更快。
 
 详细步骤见[使用指南](docs/getting-started.md)、[安装帮助](docs/troubleshooting.md)、[隐私说明](docs/privacy.md)。
+
+## 可以做什么
+
+- 与一个助手聊天，或创建群聊，用 `@` 选择一位或多位成员。
+- 为每个会话选择项目文件夹，同一个群聊围绕同一目录和目标协作。
+- 指定谁执行、谁独立检查。文件结果保留固定快照，支持查看和下载；助手说“完成”不等于自动验收。
+- 在输入框或编辑助手时选择模型，在任务详情查看活动和权限请求。
+- 保存有使用范围的偏好与事实，更换 Bot 的模型不会删除 Botogether 已保存的记忆。
+- 阅读 Markdown、代码与表格；图片默认适应预览弹窗，也可查看原始尺寸、下载原文件。
+- 使用中文或英文界面，选择浅色、深色主题。
 
 ## 更新与当前边界
 
@@ -111,16 +107,9 @@ Windows 可用 PowerShell 的 `Get-FileHash -Algorithm SHA256 文件名` 核对�
 
 外部工具延迟和免费模型可用性仍会变化，本版不宣称整体提速或生产稳定性。
 
-## Mac preview.6 改进
+## 历史版本
 
-- 普通两种保存方式都直接填写 API Key。引用已有环境变量放在独立高级入口；不会生成 shell 明文配置或修改 Agent 全局配置。
-- 静态 HTML 布局检查改用包内隔离 Electron，不再默认启动已安装 Chrome。页面脚本、外部资源、导航和权限禁用，保留固定截图、取消与进程停止验证。
-- 可识别的已安装应用目录请求需单次确认，不继承自动或复用授权。第三方原生工具仍有自己的权限，macOS 仍可能因其行为显示权限通知。
-- 已读通知持久化，任务入队前准备选定服务凭据；结果和已处理授权更紧凑，图片预览的尺寸与下载操作放在同一底栏。
-
-验收：完整检查365通过、7项条件跳过；浏览器77通过、1项宣传截图默认跳过；两架构实际包隔离渲染各3/3。两包的隐私/依赖扫描、严格ad-hoc签名完整性、空数据认证启动退出及DMG/ZIP内容一致通过；Apple Silicon备份升级和实际安装GUI版本核对通过。六个Mac发行附件已匿名完整下载，与审核包字节和SHA-256逐项一致。Intel实机界面/升级与Windows新版仍待验证。
-
-群聊仍保留原目标和检查，在预算内执行、验证、评审与返工；回复结束不等于交付已验证。长时间混合引擎任务仍在验证。OpenCode模型的可用性、额度和数据处理取决于服务方，不会静默安装、登录或回退到收费模型。
+[preview.8：当前 Mac ARM64／Windows x64](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8) · [preview.7：上一版 Mac 与历史 Intel 包](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.7) · [preview.6：早期主要里程碑](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.6) · [preview.1：首次公开版](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.1)
 
 ## npm 与源码
 
