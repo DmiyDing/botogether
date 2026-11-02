@@ -37,11 +37,11 @@
 
 | 电脑 | 下载 | 怎么安装 |
 | --- | --- | --- |
-| Apple M 系列芯片 Mac | [v0.1.0-preview.8 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64.dmg) | 打开 DMG，把 Botogether 拖入 Applications，再从 Applications 打开。 |
+| Apple M 系列芯片 Mac | [v0.1.0-preview.9 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.9/Botogether-0.1.0-preview.9-mac-arm64.dmg) | 打开 DMG，把 Botogether 拖入 Applications，再从 Applications 打开。 |
 | Windows x64 | [v0.1.0-preview.8 安装包](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-win-x64.exe) | 运行安装程序并按提示完成；当前没有厂商签名，请看下方安装帮助。 |
 | Intel 芯片 Mac（历史 preview.7） | [实验性 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64.dmg) | 拖入 Applications；preview.7 仅通过 Rosetta 隔离启动检查。本轮没有 Intel 更新，Intel 原生界面与升级仍待验证。 |
 
-[版本说明](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8) · [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64.zip) · [SHA256SUMS 校验文件](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64-SHA256SUMS.txt)
+[版本说明](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.9) · [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.9/Botogether-0.1.0-preview.9-mac-arm64.zip) · [SHA256SUMS 校验文件](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.9/Botogether-0.1.0-preview.9-mac-arm64-SHA256SUMS.txt)
 
 <details>
 <summary>首次打开被系统拦截？查看安装方法</summary>
@@ -62,7 +62,7 @@
 
 Mac 版已做 ad-hoc 完整性签名，尚无 Apple Developer ID 签名和公证；Windows 版仍无厂商签名。macOS 可能拦截首次打开，请先阅读[安装帮助](docs/troubleshooting.md)，核对来源和校验和，保留系统安全保护。
 
-运行 `shasum -a 256 Botogether-0.1.0-preview.8-mac-arm64.dmg`，与上面的 SHA256SUMS 文件比较。校验和用于核对文件完整性，不能替代厂商签名。
+运行 `shasum -a 256 Botogether-0.1.0-preview.9-mac-arm64.dmg`，与上面的 SHA256SUMS 文件比较。校验和用于核对文件完整性，不能替代厂商签名。
 
 Intel Mac 与 Windows 备用包和校验文件：
 
@@ -97,19 +97,19 @@ Windows 可用 PowerShell 的 `Get-FileHash -Algorithm SHA256 文件名` 核对�
 
 手机远程、通用插件安装、完整 MCP 工具管理、记忆自动提取和主助手跨群自动派发目前尚不可用。智能体能力随引擎和版本变化；平台、签名和已知问题以对应版本说明为准。
 
-## preview.8 更新
+## preview.9 更新
 
-- 群聊保留原生 Agent 工具能力；实际联网和执行仍取决于所选工具、模型与授权。
-- 支持的连接可在输入时准备，不提前发送草稿或运行模型任务。
-- 多个待授权操作逐项展示；创建助手时可直接看到头像和颜色。
-- 新助手默认“小助 / Buddy”，用简短招呼引导交流；上下文和选定目录处理也有改进。
-- Windows 补齐语言资源与五种尺寸图标；所选双平台均通过本地包、真实界面与已有数据升级检查。
+- 群聊按已保存分工执行、检查和定向返工；两位成员时，由牵头成员检查执行成员的成果。
+- 手动分工只保留牵头推进、具体执行、检查成果三个选项，默认仍为系统自动。
+- 免费开通按 OpenCode 当前价格核对；暂时没有已确认免费选项时，仍可手动创建助手。
+- 授权选择按会话记住，重启应用后沿用。人设只需选择并按需修改指令。
+- 输入时可准备连接，不发送草稿、不提前调用模型；外部模型延迟仍会变化，不宣称整体提速。
 
-外部工具延迟和免费模型可用性仍会变化，本版不宣称整体提速或生产稳定性。
+本次更新仅提供 Apple Silicon Mac。Windows x64 仍为 preview.8，不是同版更新；preview.9 不含 Intel Mac。
 
 ## 历史版本
 
-[preview.8：当前 Mac ARM64／Windows x64](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8) · [preview.7：上一版 Mac 与历史 Intel 包](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.7) · [preview.6：早期主要里程碑](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.6) · [preview.1：首次公开版](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.1)
+[preview.8：旧版 Mac／当前 Windows x64](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8) · [preview.7：上一版 Mac 与历史 Intel 包](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.7) · [preview.6：早期主要里程碑](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.6) · [preview.1：首次公开版](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.1)
 
 ## npm 与源码
 
@@ -127,7 +127,7 @@ Botogether 自有软件使用[专有发行许可证](LICENSE.md)。允许使用�
 
 ## 发布状态
 
-preview.8 已公开提供 Apple Silicon Mac 与 Windows x64 安装包。六个附件均通过匿名完整下载和哈希核验，本地原生安装、真实界面及已有数据升级检查通过。本轮不包含新版 Intel Mac 或 Windows ARM64；仍无 Apple Developer ID／公证或 Windows 厂商签名。此版本用于公开测试，不宣称覆盖全部模型／账号组合或达到生产稳定标准。
+preview.9 面向 Apple Silicon Mac；Windows x64 保持 preview.8。macOS 使用 ad-hoc 完整性签名，尚无 Apple Developer ID／公证。此版本用于公开测试，不宣称覆盖全部模型／账号组合或达到生产稳定标准；实际验收范围与限制以发行说明为准。
 
 ## 致谢
 

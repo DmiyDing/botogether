@@ -37,11 +37,11 @@ This is a testing preview. macOS has no Developer ID/notarization; Windows has n
 
 | Computer | Download | Installation |
 | --- | --- | --- |
-| Mac with Apple M-series chip | [v0.1.0-preview.8 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64.dmg) | Open the DMG, drag Botogether into Applications, then open it from Applications. |
+| Mac with Apple M-series chip | [v0.1.0-preview.9 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.9/Botogether-0.1.0-preview.9-mac-arm64.dmg) | Open the DMG, drag Botogether into Applications, then open it from Applications. |
 | Windows x64 | [v0.1.0-preview.8 installer](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-win-x64.exe) | Run the installer and follow its prompts. It has no publisher signature; read the installation help below. |
 | Intel Mac (historical preview.7) | [Experimental DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64.dmg) | Drag into Applications; preview.7 passed isolated Rosetta startup; native Intel GUI and upgrades remain pending. |
 
-[Release notes](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8) · [ZIP alternative](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.8/Botogether-0.1.0-preview.8-mac-arm64-SHA256SUMS.txt)
+[Release notes](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.9) · [ZIP alternative](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.9/Botogether-0.1.0-preview.9-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.9/Botogether-0.1.0-preview.9-mac-arm64-SHA256SUMS.txt)
 
 <details>
 <summary>Blocked on first launch? Installation help</summary>
@@ -62,7 +62,7 @@ This repository publishes user guides, product screenshots, feedback templates a
 
 The macOS preview has an ad-hoc integrity signature, without Apple Developer ID or notarization. macOS may block the first launch. Read the [installation help](docs/troubleshooting.md), verify the download source and checksum, and keep system protections enabled.
 
-Check the download with `shasum -a 256 Botogether-0.1.0-preview.8-mac-arm64.dmg` and compare it with the SHA256SUMS file above. A checksum verifies file consistency, not publisher identity.
+Check the download with `shasum -a 256 Botogether-0.1.0-preview.9-mac-arm64.dmg` and compare it with the SHA256SUMS file above. A checksum verifies file consistency, not publisher identity.
 
 Intel Mac and Windows alternatives and checksums:
 
@@ -99,19 +99,19 @@ Read [Getting started](docs/getting-started.md), [Help and updates](docs/trouble
 
 Mobile remote control, general plugin installation, complete MCP tool management, automatic memory extraction and autonomous cross-group dispatch are not currently available. Agent capabilities vary by engine and version. Release notes remain the source of truth for supported platforms, signing and known issues.
 
-## preview.8 update
+## preview.9 update
 
-- Group conversations retain native Agent tool access; actual search and execution depend on the selected engine, model and permissions.
-- Supported connections can prepare while you type, without sending the draft or starting a model task.
-- Pending approvals appear one at a time. Assistant avatars and colors are visible during creation.
-- New assistants use Buddy / 小助 and a short greeting. Conversation context and selected-folder handling were improved.
-- Windows includes supported language resources and five native icon sizes. Both selected platforms passed package, native GUI and existing-data upgrade checks locally.
+- Group work follows saved assignments through execution, result checking and targeted repair. With two members, the lead checks the executor’s result.
+- Manual duties use three choices: Lead, Execute and Check results. Automatic assignment remains the default.
+- Free setup checks current OpenCode prices. Manual assistant creation stays accessible when no free option can be confirmed.
+- Permission choices are remembered per conversation across app restarts. Persona setup uses a selector and editable instructions.
+- Connection preparation does not send your draft or run a model task. External model latency still varies; no overall speedup is claimed.
 
-External tool delays and free-model availability still vary. This release does not establish an overall speedup or production stability.
+This update is for Apple Silicon Mac. Windows x64 remains on preview.8; it is not the same build. Intel Mac is not included in preview.9.
 
 ## Release history
 
-[preview.8 — current Mac ARM64 / Windows x64](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8) · [preview.7 — previous Mac and historical Intel](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.7) · [preview.6 — earlier milestone](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.6) · [preview.1 — first public release](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.1)
+[preview.8 — previous Mac / current Windows x64](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8) · [preview.7 — previous Mac and historical Intel](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.7) · [preview.6 — earlier milestone](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.6) · [preview.1 — first public release](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.1)
 
 ## npm and source
 
@@ -129,7 +129,7 @@ Botogether-owned software uses a [proprietary distribution license](LICENSE.md).
 
 ## Release status
 
-preview.8 is published for Apple Silicon Mac and Windows x64. The six assets passed anonymous full download/hash checks; native installation, GUI and existing-data upgrades passed locally. Intel Mac and Windows ARM64 are not included. macOS has no Developer ID/notarization and Windows has no publisher signature. This is a testing preview; full model/account coverage and production stability are not claimed.
+preview.9 targets Apple Silicon Mac only. Windows x64 stays on preview.8. macOS has an ad-hoc integrity signature and no Developer ID or notarization. This is a testing preview; full model/account coverage and production stability are not claimed. See the release notes for validation scope and known limitations.
 
 ## Acknowledgments
 
