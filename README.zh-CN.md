@@ -37,11 +37,11 @@
 
 | 电脑 | 下载 | 怎么安装 |
 | --- | --- | --- |
-| Apple M 系列芯片 Mac | [v0.1.0-preview.9 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.9/Botogether-0.1.0-preview.9-mac-arm64.dmg) | 打开 DMG，把 Botogether 拖入 Applications，再从 Applications 打开。 |
+| Apple M 系列芯片 Mac | [v0.1.0-preview.10 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-mac-arm64.dmg) | 打开 DMG，把 Botogether 拖入 Applications，再从 Applications 打开。 |
 | Windows x64 | [v0.1.0-preview.10 安装包](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-win-x64.exe) | 运行安装程序并按提示完成；当前没有厂商签名，请看下方安装帮助。 |
 | Intel 芯片 Mac（历史 preview.7） | [实验性 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64.dmg) | 拖入 Applications；preview.7 仅通过 Rosetta 隔离启动检查。本轮没有 Intel 更新，Intel 原生界面与升级仍待验证。 |
 
-[Mac 版本说明](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.9) · [Windows 版本说明](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.10) · [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.9/Botogether-0.1.0-preview.9-mac-arm64.zip) · [SHA256SUMS 校验文件](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.9/Botogether-0.1.0-preview.9-mac-arm64-SHA256SUMS.txt)
+[版本说明](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.10) · [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-mac-arm64.zip) · [SHA256SUMS 校验文件](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-mac-arm64-SHA256SUMS.txt)
 
 <details>
 <summary>首次打开被系统拦截？查看安装方法</summary>
@@ -62,7 +62,7 @@
 
 Mac 版已做 ad-hoc 完整性签名，尚无 Apple Developer ID 签名和公证；Windows 版仍无厂商签名。macOS 可能拦截首次打开，请先阅读[安装帮助](docs/troubleshooting.md)，核对来源和校验和，保留系统安全保护。
 
-运行 `shasum -a 256 Botogether-0.1.0-preview.9-mac-arm64.dmg`，与上面的 SHA256SUMS 文件比较。校验和用于核对文件完整性，不能替代厂商签名。
+运行 `shasum -a 256 Botogether-0.1.0-preview.10-mac-arm64.dmg`，与上面的 SHA256SUMS 文件比较。校验和用于核对文件完整性，不能替代厂商签名。
 
 Intel Mac 与 Windows 备用包和校验文件：
 
@@ -99,14 +99,14 @@ Windows 可用 PowerShell 的 `Get-FileHash -Algorithm SHA256 文件名` 核对�
 
 ## 当前桌面版更新
 
-- Windows preview.10 修复返工计划将牵头成员的检查误判为制作任务的问题。Windows 真机的真实免费模型单聊、手动返工闭环和自动群聊已通过验收。
+- preview.10 修复返工计划将牵头成员的检查误判为制作任务的问题。Windows 官方免费模型与 Mac Cursor Auto 请求的真实单聊、手动故障返工闭环和自动群聊均已通过验收。
 - 群聊按已保存分工执行、检查和定向返工；两位成员时，由牵头成员检查执行成员的成果。
 - 手动分工只保留牵头推进、具体执行、检查成果三个选项，默认仍为系统自动。
 - 免费开通按 OpenCode 当前价格核对；暂时没有已确认免费选项时，仍可手动创建助手。
 - 授权选择按会话记住，重启应用后沿用。人设只需选择并按需修改指令。
 - 输入时可准备连接，不发送草稿、不提前调用模型；外部模型延迟仍会变化，不宣称整体提速。
 
-Windows x64 已更新至 preview.10，Apple Silicon Mac 保持 preview.9。请按自己的电脑选择下载；Intel Mac 仍为历史 preview.7 包。
+Apple Silicon Mac 与 Windows x64 现均为同源 preview.10。请按自己的电脑选择下载；Intel Mac 仍为历史 preview.7 包。
 
 ## 历史版本
 
@@ -128,7 +128,7 @@ Botogether 自有软件使用[专有发行许可证](LICENSE.md)。允许使用�
 
 ## 发布状态
 
-Windows x64 为 preview.10，Apple Silicon Mac 为 preview.9。Windows 尚无厂商签名。macOS 使用 ad-hoc 完整性签名，尚无 Apple Developer ID／公证。此版本用于公开测试，不宣称覆盖全部模型／账号组合或达到生产稳定标准；实际验收范围与限制以发行说明为准。
+Apple Silicon Mac 与 Windows x64 均为同源 preview.10。Windows 尚无厂商签名。macOS 使用 ad-hoc 完整性签名，尚无 Apple Developer ID／公证。此版本用于公开测试，不宣称覆盖全部模型／账号组合或达到生产稳定标准；实际验收范围与限制以发行说明为准。
 
 ## 致谢
 

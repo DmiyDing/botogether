@@ -37,11 +37,11 @@ This is a testing preview. macOS has no Developer ID/notarization; Windows has n
 
 | Computer | Download | Installation |
 | --- | --- | --- |
-| Mac with Apple M-series chip | [v0.1.0-preview.9 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.9/Botogether-0.1.0-preview.9-mac-arm64.dmg) | Open the DMG, drag Botogether into Applications, then open it from Applications. |
+| Mac with Apple M-series chip | [v0.1.0-preview.10 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-mac-arm64.dmg) | Open the DMG, drag Botogether into Applications, then open it from Applications. |
 | Windows x64 | [v0.1.0-preview.10 installer](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-win-x64.exe) | Run the installer and follow its prompts. It has no publisher signature; read the installation help below. |
 | Intel Mac (historical preview.7) | [Experimental DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64.dmg) | Drag into Applications; preview.7 passed isolated Rosetta startup; native Intel GUI and upgrades remain pending. |
 
-[Mac release notes](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.9) · [Windows release notes](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.10) · [ZIP alternative](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.9/Botogether-0.1.0-preview.9-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.9/Botogether-0.1.0-preview.9-mac-arm64-SHA256SUMS.txt)
+[Release notes](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.10) · [ZIP alternative](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-mac-arm64-SHA256SUMS.txt)
 
 <details>
 <summary>Blocked on first launch? Installation help</summary>
@@ -62,7 +62,7 @@ This repository publishes user guides, product screenshots, feedback templates a
 
 The macOS preview has an ad-hoc integrity signature, without Apple Developer ID or notarization. macOS may block the first launch. Read the [installation help](docs/troubleshooting.md), verify the download source and checksum, and keep system protections enabled.
 
-Check the download with `shasum -a 256 Botogether-0.1.0-preview.9-mac-arm64.dmg` and compare it with the SHA256SUMS file above. A checksum verifies file consistency, not publisher identity.
+Check the download with `shasum -a 256 Botogether-0.1.0-preview.10-mac-arm64.dmg` and compare it with the SHA256SUMS file above. A checksum verifies file consistency, not publisher identity.
 
 Intel Mac and Windows alternatives and checksums:
 
@@ -101,14 +101,14 @@ Mobile remote control, general plugin installation, complete MCP tool management
 
 ## Current desktop updates
 
-- Windows preview.10 fixes repair plans that ask the lead to check the executor’s result, so this step is not mistaken for production work. Real free-model single chat, manual repair and automatic group tasks passed on Windows.
+- preview.10 fixes repair plans that ask the lead to check the executor’s result, so this step is not mistaken for production work. Real single chat, manual fault repair and automatic group tasks passed with official free models on Windows and Cursor Auto requests on Mac.
 - Group work follows saved assignments through execution, result checking and targeted repair. With two members, the lead checks the executor’s result.
 - Manual duties use three choices: Lead, Execute and Check results. Automatic assignment remains the default.
 - Free setup checks current OpenCode prices. Manual assistant creation stays accessible when no free option can be confirmed.
 - Permission choices are remembered per conversation across app restarts. Persona setup uses a selector and editable instructions.
 - Connection preparation does not send your draft or run a model task. External model latency still varies; no overall speedup is claimed.
 
-Windows x64 is now on preview.10; Apple Silicon Mac remains on preview.9. Choose the download for your computer. Intel Mac remains a historical preview.7 build.
+Apple Silicon Mac and Windows x64 now both use preview.10 from the same product source. Choose the download for your computer. Intel Mac remains a historical preview.7 build.
 
 ## Release history
 
@@ -130,7 +130,7 @@ Botogether-owned software uses a [proprietary distribution license](LICENSE.md).
 
 ## Release status
 
-Windows x64 uses preview.10; Apple Silicon Mac uses preview.9. Windows has no publisher signature. macOS has an ad-hoc integrity signature and no Developer ID or notarization. This is a testing preview; full model/account coverage and production stability are not claimed. See the release notes for validation scope and known limitations.
+Apple Silicon Mac and Windows x64 use the same-source preview.10. Windows has no publisher signature. macOS has an ad-hoc integrity signature and no Developer ID or notarization. This is a testing preview; full model/account coverage and production stability are not claimed. See the release notes for validation scope and known limitations.
 
 ## Acknowledgments
 
