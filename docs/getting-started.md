@@ -59,3 +59,10 @@ Handled permissions and finished execution details are collapsed; pending decisi
 Settings → Models & services groups saved services by Agent. Claude Code and Codex have dedicated adapters. OpenCode supports experimental OpenAI Chat Completions services with an explicit model list; the service and model are injected only into the task process. Other agents continue to use their native account/configuration until a compatible adapter is implemented. A model service is not a system-wide network proxy. Terminal Claude changes require a separate reviewed confirmation; Codex App settings are not changed.
 
 设置 → 模型与代理按 Agent 分组保存和切换服务。Claude Code、Codex 已有专用适配；OpenCode 实验性支持 OpenAI Chat Completions 服务，需要填写模型名称，配置仅注入当前任务进程。其他 Agent 继续使用自己的账号与原生配置，不能把不兼容服务强行应用。模型服务不等于系统网络代理；终端 Claude 的同步需单独确认，Codex App 配置不变。
+
+
+## Acknowledgments
+
+Design references / 设计参考：[DeepSeek-Bot](https://github.com/Fei2411/DeepSeek-Bot)、[douchat](https://github.com/thinkany-ai/douchat)、[orca](https://github.com/stablyai/orca)、[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)、[Hermes Agent](https://github.com/NousResearch/hermes-agent)。
+
+These references do not imply affiliation or endorsement. Actual dependencies and their licenses are listed in the installer’s third-party notices. 参考不代表关联或背书，实际依赖及许可列于安装包第三方声明。

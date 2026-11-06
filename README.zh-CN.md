@@ -3,141 +3,92 @@
 <p align="center"><strong>Your bots. One team.</strong><br/>让智能体，合力把事做好。</p>
 <p align="center"><a href="README.md">English</a></p>
 
-把电脑上的编程智能体变成你的助手。给每位 Bot 设置职责，在私聊或群聊中交代目标，选择项目文件夹，再查看回复、文件和检查结果。
+把电脑上的编程智能体变成助手，在私聊或群聊中分工，查看实际文件与成果。Botogether 应用免费，无应用订阅；所选 Agent 或模型服务可能另行收费。
+
+## 下载
+
+| 你的电脑 | 安装包 | 版本 |
+| --- | --- | --- |
+| Apple Silicon Mac（M芯片） | [下载 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-mac-arm64.dmg) | preview.10 |
+| Windows x64 | [下载 EXE](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-win-x64.exe) | preview.10 |
+
+**测试预览版：** macOS 未公证，Windows 无发布者签名。首次打开请看[安装帮助](#安装帮助)。[版本说明](https://github.com/DmiyDing/botogether/releases)。
 
 ## 为什么选择 Botogether
 
-- **应用免费用。** Botogether 本身不收取应用订阅费；所选 Agent、模型或第三方服务可能另行收费，免费模型的额度与可用性由服务方决定。
-- **数据留在本机。** 会话、任务记录与项目上下文保存在你的电脑上；你选择的 Agent 和模型服务仍可能将提示词或文件发送到其云端。
-- **权限看得见，结果可检查。** 查看并控制执行授权，按服务管理密钥，保留任务记录和结果证据；保存密钥可使用系统加密。工具、服务和授权范围由你选择。
+- **同一个聊天，不同的分工。** 让一位助手处理，或由小队制作并检查成果。
+- **记录保存在本机。** 会话与任务文件留在你的电脑；所选 Agent 和服务仍可能向其云端发送提示词或文件。
+- **权限可见，成果可查。** 选择项目目录，处理授权，查看真实输出。智能体说“完成”不等于交付已通过检查。
 
 ## 界面预览
 
-前三张为使用隔离数据的 V2.3 界面示例，第四张复用此前授权展示的生图使用截图。具体能力取决于所选智能体、模型和工具。
+使用隔离数据的界面示例；具体能力取决于所选智能体、模型和工具。
 
 ![从免费助手开始](assets/screenshots/zh-CN/welcome.png)
+![让助手们在群聊里协作](assets/screenshots/zh-CN/group.png)
+![准备你的智能体](assets/screenshots/zh-CN/agents.png)
 
-**没有装过 AI 工具？点“免费开始”。** 在应用内安装 OpenCode，再选择当前可用的免费体验模型。折纸精灵会迎接、眨眼和跟随鼠标，静态截图无法呈现动画。
+## 第一个任务
 
-![让助手们在群聊里一起商量](assets/screenshots/zh-CN/group.png)
+1. **还没装 Agent？** 点击“免费开始”，在应用内安装 OpenCode。
+2. 选择当前可用的**免费体验模型**。额度与可用性由服务方决定，应用不会静默切到付费模型。
+3. **已有 Agent？** 从检测到的安装创建助手；需要时使用原生 Agent 登录。
+4. 选择项目文件夹，试试“创建一份周末清单”。打开结果，再要求修改。
+5. 需要时添加队友，选择谁制作、谁检查。成员增多可能增加服务用量与协调成本。
 
-**一支 AI 小队，一起把事做好。** 在同一个群聊中讨论、点名和分工。图中对话已明确标为界面示例。
-
-![在应用内安装支持的智能体](assets/screenshots/zh-CN/agents.png)
-
-**准备工具，少绕一步。** 支持的系统可一键安装 OpenCode、Codex、Claude Code；其他工具明确提供安装说明。安装程序不等于赠送账号或付费模型额度。
-
-![生成、预览和下载图片成果](assets/screenshots/zh-CN/showcase.png)
-
-**从想法到可查看的视觉成果。** 在聊天里预览生成的海报，再下载原图。复用此前已授权展示的使用截图；图片可见不代表任务已独立验收。
-
-## 下载与安装
-
-这是公开测试预览版：Mac 尚无 Developer ID／公证，Windows 尚无厂商签名。
-
-| 电脑 | 下载 | 怎么安装 |
-| --- | --- | --- |
-| Apple M 系列芯片 Mac | [v0.1.0-preview.10 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-mac-arm64.dmg) | 打开 DMG，把 Botogether 拖入 Applications，再从 Applications 打开。 |
-| Windows x64 | [v0.1.0-preview.10 安装包](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-win-x64.exe) | 运行安装程序并按提示完成；当前没有厂商签名，请看下方安装帮助。 |
-| Intel 芯片 Mac（历史 preview.7） | [实验性 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64.dmg) | 拖入 Applications；preview.7 仅通过 Rosetta 隔离启动检查。本轮没有 Intel 更新，Intel 原生界面与升级仍待验证。 |
-
-[版本说明](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.10) · [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-mac-arm64.zip) · [SHA256SUMS 校验文件](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-mac-arm64-SHA256SUMS.txt)
-
-<details>
-<summary>首次打开被系统拦截？查看安装方法</summary>
-
-**首次安装被系统拦截？请先看这里。** 当前预览版尚无 Apple Developer ID 签名／公证，也没有 Windows 厂商签名。请仅从[官方 Releases](https://github.com/DmiyDing/botogether/releases)下载并核对校验和。
-
-**Mac：** 将 Botogether 拖入“应用程序”并尝试打开一次 → 打开 **系统设置 → 隐私与安全性** → 找到 Botogether 的拦截提示，点击 **“仍要打开”** → 按系统要求确认后再次打开。[Apple 图文说明](https://support.apple.com/zh-cn/102445)
-
-**Windows：** 如果出现“Windows 已保护你的电脑”，核对来源后点击 **“更多信息” → “仍要运行”**。如果没有该按钮，或被 Smart App Control／单位策略阻止，请停止安装并反馈具体提示，保留系统保护。[Microsoft 说明](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation)
-
-不需要关闭 Gatekeeper、SmartScreen 或杀毒软件。提示“已损坏”或“包含恶意软件”时，请重新核对下载与完整性，不要直接忽略警告。
-
-</details>
-
-安装桌面包无需 Node.js 或 npm，首次安装建议使用 DMG。GitHub 自动生成的 **Source code** 压缩包仅包含此下载仓库的文档，不是应用安装包，也不包含私有应用源码。
-
-本仓库仅公开使用说明、产品截图、反馈模板及发行许可。原始需求、设计方案、研发记录和内部审查文档均保留在私有仓库。请从 Release 的 **Assets** 选择 DMG / EXE；无需下载 Source code。
-
-Mac 版已做 ad-hoc 完整性签名，尚无 Apple Developer ID 签名和公证；Windows 版仍无厂商签名。macOS 可能拦截首次打开，请先阅读[安装帮助](docs/troubleshooting.md)，核对来源和校验和，保留系统安全保护。
-
-运行 `shasum -a 256 Botogether-0.1.0-preview.10-mac-arm64.dmg`，与上面的 SHA256SUMS 文件比较。校验和用于核对文件完整性，不能替代厂商签名。
-
-Intel Mac 与 Windows 备用包和校验文件：
-
-- mac-x64: [备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.7/Botogether-0.1.0-preview.7-mac-x64-SHA256SUMS.txt)
-- win-x64：[备用 ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-win-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-win-x64-SHA256SUMS.txt)
-
-Windows 可用 PowerShell 的 `Get-FileHash -Algorithm SHA256 文件名` 核对摘要。
-
-## 第一次使用
-
-1. **没装过 AI 工具：** 首页点 **免费开始**。保持应用打开，等待 OpenCode 下载和检查，不需要 Node.js、npm 或终端。
-2. 选择当前可用的 **免费体验模型**，点 **开始聊天**。免费名额会变化，应用会重新检查，不会悄悄切换付费模型。
-3. **已有 AI 工具：** 直接创建助手，选择检测到的工具；需要账号时按工具提示登录。
-4. 先试一个小任务：“帮我做一份周末出行清单。”点开文件检查，再补一句继续修改。执行前留意权限，完成后核对结果。
-5. 需要协作时再组队，选谁制作、谁核对。成员更多会增加用量与协调成本，不保证更快。
-
-详细步骤见[使用指南](docs/getting-started.md)、[安装帮助](docs/troubleshooting.md)、[隐私说明](docs/privacy.md)。
+[入门指南](docs/getting-started.md) · [问题排查](docs/troubleshooting.md) · [隐私说明](docs/privacy.md)
 
 ## 可以做什么
 
-- 与一个助手聊天，或创建群聊，用 `@` 选择一位或多位成员。
-- 为每个会话选择项目文件夹，同一个群聊围绕同一目录和目标协作。
-- 指定谁执行、谁独立检查。文件结果保留固定快照，支持查看和下载；助手说“完成”不等于自动验收。
-- 在输入框或编辑助手时选择模型，在任务详情查看活动和权限请求。
-- 保存有使用范围的偏好与事实，更换 Bot 的模型不会删除 Botogether 已保存的记忆。
-- 阅读 Markdown、代码与表格；图片默认适应预览弹窗，也可查看原始尺寸、下载原文件。
-- 使用中文或英文界面，选择浅色、深色主题。
+- 私聊、群聊，以及用 `@` 点名成员。
+- 共用项目文件夹，保存分工，检查后定向修复。
+- 为助手选择模型和作用域内的指令。
+- 查看授权、执行记录，处理被中断的任务。
+- 预览文件与图片，下载原始文件。
+- 使用本地作用域记忆、中英文界面和浅深主题。
 
-## 更新与当前边界
+当前预览不提供手机远程控制、通用插件安装和完整 MCP 工具管理。各引擎与模型能力不同，实际验证范围见版本说明。
 
-在 **设置 → 关于与更新** 检查此仓库的更新。preview／alpha／beta 等测试版检查测试版及稳定版，稳定版只检查稳定更新；当前通道可在构建详情查看。下载和安装由你决定，不会为更新自动中断任务。安装新版前退出旧应用，保留一个正常安装入口，并备份数据。
+## 常见问题
 
-手机远程、通用插件安装、完整 MCP 工具管理、记忆自动提取和主助手跨群自动派发目前尚不可用。智能体能力随引擎和版本变化；平台、签名和已知问题以对应版本说明为准。
+**免费吗？** 应用没有订阅费；Agent 账号、模型和第三方服务各有自己的条款与价格。
 
-## 当前桌面版更新
+**数据在哪里？** Botogether 记录保存在本机。使用云模型时，任务内容可能发送给对应服务方，详见[隐私说明](docs/privacy.md)。
 
-- preview.10 修复返工计划将牵头成员的检查误判为制作任务的问题。Windows 官方免费模型与 Mac Cursor Auto 请求的真实单聊、手动故障返工闭环和自动群聊均已通过验收。
-- 群聊按已保存分工执行、检查和定向返工；两位成员时，由牵头成员检查执行成员的成果。
-- 手动分工只保留牵头推进、具体执行、检查成果三个选项，默认仍为系统自动。
-- 免费开通按 OpenCode 当前价格核对；暂时没有已确认免费选项时，仍可手动创建助手。
-- 授权选择按会话记住，重启应用后沿用。人设只需选择并按需修改指令。
-- 输入时可准备连接，不发送草稿、不提前调用模型；外部模型延迟仍会变化，不宣称整体提速。
+**支持哪些 Agent？** 应用检测支持的本地安装，并提供安装或配置说明；功能取决于引擎及版本，见[入门指南](docs/getting-started.md)。
 
-Apple Silicon Mac 与 Windows x64 现均为同源 preview.10。请按自己的电脑选择下载；Intel Mac 仍为历史 preview.7 包。
+**开源吗？** Botogether 使用[专有发行许可](LICENSE.md)。此仓库提供公开说明与下载，不包含应用源码。
 
-## 历史版本
+## 安装帮助
 
-[preview.9：Apple Silicon Mac](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.9) · [preview.8：旧版桌面安装包](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8) · [preview.7：上一版 Mac 与历史 Intel 包](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.7) · [preview.6：早期主要里程碑](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.6) · [preview.1：首次公开版](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.1)
+<details>
+<summary>首次启动被拦截？Mac 与 Windows 操作说明</summary>
 
-## npm 与源码
+仅从[官方 Releases](https://github.com/DmiyDing/botogether/releases)下载，并核对下方校验和。
 
-npm 包尚未发布，因此不提供无法使用的 `npm install` 或 `npx` 命令。以后若提供 npm 安装，会采用单独审核的包，不把私有源码项目整体发布到 npm 或此下载仓库。
+**Mac：** 打开 DMG，将 Botogether 拖入“应用程序”后尝试打开。如 macOS 拦截此预览版，在系统提供选项时，前往“系统设置 → 隐私与安全性”，对这个应用选择“仍要打开”。[Apple 官方说明](https://support.apple.com/zh-cn/102445)。
 
-长时间三引擎任务仍在验证。本版不提供并行 worktree、手机远程、通用插件、npm 安装或自动记忆提取。
+**Windows：** 运行 EXE。如出现“Windows 已保护你的电脑”，核对来源后，在系统提供选项时选择“更多信息 → 仍要运行”。若 Smart App Control 或单位策略阻止安装，请保留保护并反馈提示。[Microsoft 官方说明](https://learn.microsoft.com/en-us/windows/apps/package-and-deploy/smartscreen-reputation)。
 
-## 反馈
+保留 Gatekeeper、SmartScreen 和杀毒软件。遇到“已损坏”或恶意软件警告，应重新核对下载与完整性，不要盲目忽略。完整说明见[问题排查](docs/troubleshooting.md)。
 
-在应用“关于与更新”点击“导出诊断并反馈”，先检查脱敏摘要，再自行提交 Issue。也可以在[问题反馈](https://github.com/DmiyDing/botogether/issues)说明版本、操作系统和复现步骤，截图应遮盖私人信息。Issue 公开可见。不要上传密钥、聊天导出、记忆备份或私有项目文件。安装包附带第三方许可与 notices，各组件保留其对应条款。
+</details>
 
-## 许可证
+<details>
+<summary>校验和、ZIP 备用下载及其他平台</summary>
 
-Botogether 自有软件使用[专有发行许可证](LICENSE.md)。允许使用官方未修改版本，供个人或企业内部使用；不授予私有源码分发权。第三方组件保留各自许可与 notices。
+- **Mac ARM64 preview.10：** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-mac-arm64-SHA256SUMS.txt)。
+- **Windows x64 preview.10：** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-win-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-win-x64-SHA256SUMS.txt)。
+- **Intel Mac：** 暂停新构建；保留[历史 preview.7](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.7)，仍属实验版本，未通过 Intel 真机界面与升级验证。
 
-## 发布状态
+Mac 使用 `shasum -a 256 文件名`，Windows 使用 `Get-FileHash -Algorithm SHA256 文件名` 与校验表比对。校验和只证明字节一致，不代表发布者身份认证。
 
-Apple Silicon Mac 与 Windows x64 均为同源 preview.10。Windows 尚无厂商签名。macOS 使用 ad-hoc 完整性签名，尚无 Apple Developer ID／公证。此版本用于公开测试，不宣称覆盖全部模型／账号组合或达到生产稳定标准；实际验收范围与限制以发行说明为准。
+桌面安装无需 Node.js 或 npm。请选择 Release **Assets** 中的 DMG 或 EXE；自动生成的 **Source code** 档案只包含本公开仓库的说明资料。当前不提供 npm 安装。
 
-## 致谢
+</details>
 
-感谢以下项目公开分享的设计与实践：
+## 反馈与许可
 
-- [DeepSeek-Bot](https://github.com/Fei2411/DeepSeek-Bot)：Bot 角色交互、群聊轮次与可读记忆。
-- [douchat](https://github.com/thinkany-ai/douchat)：本地 Agent 会话、审批体验与桌面发行。
-- [orca](https://github.com/stablyai/orca)：项目工作区、任务归属与协作界面。
-- [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)：插件宿主与会话能力的架构边界。
-- [Hermes Agent](https://github.com/NousResearch/hermes-agent)：长会话连续性与上下文压缩设计。
+在[问题反馈](https://github.com/DmiyDing/botogether/issues)中提供版本、系统和复现步骤。Issue 公开可见，请遮盖截图中的私人信息，不上传凭据、数据库、聊天导出或私人项目文件。
 
-这些项目是设计参考，相关功能由 Botogether 独立实现；列举项目不表示合作或背书，也不表示所有参考能力均已实现。实际依赖及其许可另见安装包中的第三方说明。
+[发行许可](LICENSE.md) · [隐私说明](docs/privacy.md) · [项目致谢](docs/getting-started.md#acknowledgments)
