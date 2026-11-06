@@ -9,7 +9,7 @@ Chat with your coding agents, give each a role, and inspect their files and resu
 
 | Your computer | Installer | Version |
 | --- | --- | --- |
-| Apple Silicon Mac (M-series) | [Download DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-mac-arm64.dmg) | preview.10 |
+| Apple Silicon Mac (M-series) | [Download DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.11/Botogether-0.1.0-preview.11-mac-arm64.dmg) | preview.11 |
 | Windows x64 | [Download EXE](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-win-x64.exe) | preview.10 |
 
 **Testing preview:** macOS is not notarized and Windows has no publisher signature. See [installation help](#installation-help) before your first launch. [Release notes](https://github.com/DmiyDing/botogether/releases).
@@ -77,7 +77,7 @@ Keep Gatekeeper, SmartScreen and antivirus enabled. A damaged-app or malware war
 <details>
 <summary>Checksums, ZIP alternatives and other platforms</summary>
 
-- **Mac ARM64 preview.10:** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-mac-arm64-SHA256SUMS.txt).
+- **Mac ARM64 preview.11:** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.11/Botogether-0.1.0-preview.11-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.11/Botogether-0.1.0-preview.11-mac-arm64-SHA256SUMS.txt).
 - **Windows x64 preview.10:** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-win-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-win-x64-SHA256SUMS.txt).
 - **Intel Mac:** new builds are paused. [Historical preview.7](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.7) remains experimental; native Intel GUI and upgrades were not verified.
 
