@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  站点地址：https://dmiyding.github.io/botogether/
+  canonical 在运行时由 assets/js/app.js 按实际访问来源生成，无需手动维护。
+  若之后绑定自定义域名，需要同步修改这里与 robots.txt。
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://dmiyding.github.io/botogether/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://dmiyding.github.io/botogether/docs.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
