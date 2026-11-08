@@ -9,8 +9,8 @@
 
 | 你的电脑 | 安装包 | 版本 |
 | --- | --- | --- |
-| Apple Silicon Mac（M芯片） | [下载 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.11/Botogether-0.1.0-preview.11-mac-arm64.dmg) | preview.11 |
-| Windows x64 | [下载 EXE](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-win-x64.exe) | preview.10 |
+| Apple Silicon Mac（M芯片） | [下载 DMG](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.12/Botogether-0.1.0-preview.12-mac-arm64.dmg) | preview.12 |
+| Windows x64 | [下载 EXE](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.12/Botogether-0.1.0-preview.12-win-x64.exe) | preview.12 |
 
 **测试预览版：** macOS 未公证，Windows 无发布者签名。首次打开请看[安装帮助](#安装帮助)。[版本说明](https://github.com/DmiyDing/botogether/releases)。
 
@@ -77,8 +77,8 @@
 <details>
 <summary>校验和、ZIP 备用下载及其他平台</summary>
 
-- **Mac ARM64 preview.11：** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.11/Botogether-0.1.0-preview.11-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.11/Botogether-0.1.0-preview.11-mac-arm64-SHA256SUMS.txt)。
-- **Windows x64 preview.10：** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-win-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.10/Botogether-0.1.0-preview.10-win-x64-SHA256SUMS.txt)。
+- **Mac ARM64 preview.12：** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.12/Botogether-0.1.0-preview.12-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.12/Botogether-0.1.0-preview.12-mac-arm64-SHA256SUMS.txt)。
+- **Windows x64 preview.12：** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.12/Botogether-0.1.0-preview.12-win-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.12/Botogether-0.1.0-preview.12-win-x64-SHA256SUMS.txt)。
 - **Intel Mac：** 暂停新构建；保留[历史 preview.7](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.7)，仍属实验版本，未通过 Intel 真机界面与升级验证。
 
 Mac 使用 `shasum -a 256 文件名`，Windows 使用 `Get-FileHash -Algorithm SHA256 文件名` 与校验表比对。校验和只证明字节一致，不代表发布者身份认证。
