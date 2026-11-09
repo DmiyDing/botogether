@@ -4,23 +4,27 @@ This page records which model services can be used with which Botogether Agent, 
 to configure for each combination. It is based on end-to-end runs against a real Botogether
 installation, not on documentation alone.
 
-> **Scope.** Every row marked *verified* was executed against Botogether `0.1.0-preview.12`
-> on Windows 11 x64: the provider was created in Botogether, the credential was stored, a task
-> was sent, and the produced files were inspected. Unverified rows are marked as such and
-> should not be relied on.
+> **How to read this page.** Two different words are used, and they mean different things:
+>
+> - **Verified in Botogether** — the provider was created inside Botogether, the credential
+>   was stored, a task was sent through the Agent, and the produced files were inspected.
+> - **API-probed** — a direct request was sent to the provider's endpoint with that model id.
+>   This proves the model can be called, but it does **not** prove the Agent can use it.
+>
+> Rows that were not exercised at all are marked `not tested` and should not be relied on.
 
 ## Which Agent supports which protocol
 
 Botogether can inject a custom model service into exactly three Agents. The protocol is not
 interchangeable, and the engine picks the injection mechanism:
 
-| Agent | Accepted protocol | Injection mechanism | Custom models |
-|---|---|---|---|
-| Claude Code | `anthropic` | `ANTHROPIC_BASE_URL` + `ANTHROPIC_AUTH_TOKEN` / `ANTHROPIC_API_KEY` | Yes |
-| OpenCode (1.x) | `openai` | `OPENCODE_CONFIG_CONTENT` with an `@ai-sdk/openai-compatible` provider | Yes |
-| OpenCode (2.x) | — | — | **No** — see [#2](https://github.com/DmiyDing/botogether/issues/2) |
-| Codex | `openai` | `model_providers.<name>` with `wire_api: "responses"` | Yes, Responses-only |
-| All other Agents | — | — | No — they keep their native account and configuration |
+| Agent | Accepted protocol | Injection mechanism | Custom models | Status |
+|---|---|---|---|---|
+| Claude Code | `anthropic` | `ANTHROPIC_BASE_URL` + `ANTHROPIC_AUTH_TOKEN` / `ANTHROPIC_API_KEY` | Yes | Verified in Botogether |
+| OpenCode 1.x | `openai` | `OPENCODE_CONFIG_CONTENT` with an `@ai-sdk/openai-compatible` provider | Yes | Verified in Botogether (1.19.5) |
+| OpenCode 2.x | — | — | **No** | See [#2](https://github.com/DmiyDing/botogether/issues/2) |
+| Codex | `openai` | `model_providers.<name>` with `wire_api: "responses"` | Yes, Responses-only | By design; not executed here |
+| All other Agents | — | — | No | By design; they keep their native account and configuration |
 
 Two rules follow from the table:
 
@@ -28,7 +32,7 @@ Two rules follow from the table:
   adapter always sends `wire_api: "responses"`.
 - A service that only speaks the Anthropic Messages format cannot be used with OpenCode.
 
-## Verified: MiniMax
+## MiniMax
 
 Two MiniMax regions exist, and a key is valid in exactly one of them:
 
@@ -36,6 +40,9 @@ Two MiniMax regions exist, and a key is valid in exactly one of them:
 |---|---|---|
 | Mainland China | `https://api.minimaxi.com/v1` | `https://api.minimaxi.com/anthropic` |
 | International | `https://api.minimax.io/v1` | `https://api.minimax.io/anthropic` |
+
+Only the Mainland China endpoints were exercised for this page. The International row is
+included for completeness and is **not tested** here.
 
 ### Provider configuration that was verified to run
 
@@ -50,28 +57,30 @@ Two MiniMax regions exist, and a key is valid in exactly one of them:
 
 ### Models
 
-`GET /v1/models` lists more models than can actually be called. The table below was produced
-by sending a real request to every listed id on all three protocols.
+The table below is **API-probed**: a direct request was sent to each model id, on the
+protocols named in the column header. `not tested` means no request was made for that
+combination — it is not a claim of failure. A retired model answers with HTTP 404 and the
+message `The model "<id>" is no longer available. (2069)`.
 
 | Model | Chat Completions | Anthropic Messages | Responses |
 |---|---|---|---|
-| `MiniMax-M3.1-Flash` | verified | verified | verified |
-| `MiniMax-M3` | verified | verified | verified |
-| `MiniMax-M2.7` | verified | verified | — |
-| `MiniMax-M2.7-highspeed` | verified | verified | — |
-| `MiniMax-M2.5` | verified | verified | verified |
-| `MiniMax-M2.5-highspeed` | verified | verified | — |
-| `MiniMax-M2.1` | retired (404) | retired (404) | — |
-| `MiniMax-M2.1-highspeed` | retired (404) | retired (404) | — |
-| `MiniMax-M2` | retired (404) | retired (404) | — |
+| `MiniMax-M3.1-Flash` | callable | callable | callable |
+| `MiniMax-M3` | callable | callable | callable |
+| `MiniMax-M2.7` | callable | callable | not tested |
+| `MiniMax-M2.7-highspeed` | callable | callable | not tested |
+| `MiniMax-M2.5` | callable | callable | callable |
+| `MiniMax-M2.5-highspeed` | callable | callable | not tested |
+| `MiniMax-M2.1` | retired (404) | retired (404) | not tested |
+| `MiniMax-M2.1-highspeed` | retired (404) | retired (404) | not tested |
+| `MiniMax-M2` | retired (404) | retired (404) | not tested |
 
-The set of callable models is the same on all three protocols. Note that the retired ids are
-still returned by `/v1/models`, which Botogether surfaces as available — see
-[#3](https://github.com/DmiyDing/botogether/issues/3).
+The retired ids are still returned by `GET /v1/models`, which Botogether surfaces as
+available — see [#3](https://github.com/DmiyDing/botogether/issues/3).
 
 ### Observed differences between models
 
-Same task, same Agent (Claude Code), Anthropic-compatible endpoint:
+Same task, same Agent (Claude Code), Anthropic-compatible endpoint. Both runs completed and
+produced a file:
 
 | | `MiniMax-M3` | `MiniMax-M2.5` |
 |---|---|---|
@@ -81,12 +90,15 @@ Same task, same Agent (Claude Code), Anthropic-compatible endpoint:
 
 `MiniMax-M2.5` was roughly 40 % cheaper here and produced a third of the output tokens for
 the same deliverable; `MiniMax-M3` tended to add more documentation and edge-case handling.
-Both used the shell tool to run and verify their own output.
+Both used the shell tool to run and verify their own output. This is a single observation
+per model, not a benchmark.
 
-## Verified: Claude Code on Windows
+## Claude Code on Windows
 
-Registering the Agent by its npm shim path does not work on Windows, because modern npm
-CLIs ship a native binary behind an exe-forwarding `.cmd` shim. Register the binary itself:
+Registering the Agent by its npm shim path did not work on Windows for the CLIs tested
+(Claude Code 2.1.302, `opencode-ai` 1.19.5, `@tencent-ai/codebuddy-code` 2.63.5): they ship
+a native binary behind an exe-forwarding `.cmd` shim, which the discovery step rejected.
+Registering the binary itself works:
 
 ```
 POST /api/installations
@@ -94,8 +106,7 @@ POST /api/installations
   "path": "C:\\Users\\<user>\\AppData\\Roaming\\npm\\node_modules\\@anthropic-ai\\claude-code\\bin\\claude.exe" }
 ```
 
-The same applies to any npm-installed Agent whose package ships a native binary. Details and
-the reasoning are in [#1](https://github.com/DmiyDing/botogether/issues/1).
+Details and the reasoning are in [#1](https://github.com/DmiyDing/botogether/issues/1).
 
 ## How to check a service yourself
 
