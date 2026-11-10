@@ -1,0 +1,20 @@
+# Botogether
+
+> Botogether is a free desktop app for Apple Silicon Mac and Windows x64 that puts several AI coding agents into one group chat. Each agent gets a role, a second agent can independently check the result, and chats and files stay on the user's computer.
+
+## Key facts
+- Category: multi-agent AI collaboration desktop app (local-first)
+- Price: free app, no subscription, no account. Agent or model providers may charge separately.
+- Platforms: macOS on Apple Silicon, Windows x64. Intel Mac is not supported in the current preview.
+- Current version: the newest entry on GitHub Releases (https://github.com/DmiyDing/botogether/releases)
+- Native and experimental integrations: Codex, Claude Code, Cursor Agent, Gemini CLI, Qwen Code, OpenCode, CodeBuddy CLI, Kiro CLI, Cline, Kilo Code, Hermes Agent, Oh My Pi
+- Detected with setup guidance: GitHub Copilot CLI, Grok Build, DeepSeek Harness, Goose, Aider, Pi
+- No agent installed: the app can install OpenCode and start with a free model.
+- Data: chats and task files stay on the computer; chosen agents and model services receive the content sent to them.
+- Security: the preview is not notarized or signed; download from official GitHub Releases and verify SHA256.
+
+## Links
+- [Download (GitHub Releases)](https://github.com/DmiyDing/botogether/releases)
+- [English overview and FAQ](https://dmiyding.github.io/botogether/en/)
+- [简体中文介绍和常见问题](https://dmiyding.github.io/botogether/zh/)
+- [Public repository and guides](https://github.com/DmiyDing/botogether)
