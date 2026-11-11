@@ -5,6 +5,8 @@
 
 Chat with your coding agents, give each a role, and inspect their files and results. Botogether is free to use, with no app subscription. Your Agent or model provider may charge separately.
 
+![Coding agents working together in a group chat](assets/demo/en/group.gif)
+
 ## Download
 
 | Your computer | Installer | Version |
@@ -23,6 +25,10 @@ Chat with your coding agents, give each a role, and inspect their files and resu
 ## Interface preview
 
 Isolated interface examples; capabilities depend on the Agent, model and tools you select.
+
+![Generate an image and preview the result](assets/demo/en/image.gif)
+
+![Edit code and verify the changes](assets/demo/en/code-review.gif)
 
 ![Start with a free assistant](assets/screenshots/en/welcome.png)
 ![Work together in a group](assets/screenshots/en/group.png)

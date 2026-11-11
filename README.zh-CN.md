@@ -5,6 +5,8 @@
 
 把电脑上的编程智能体变成助手，在私聊或群聊中分工，查看实际文件与成果。Botogether 应用免费，无应用订阅；所选 Agent 或模型服务可能另行收费。
 
+![编程智能体在群聊中协作](assets/demo/zh-CN/group.gif)
+
 ## 下载
 
 | 你的电脑 | 安装包 | 版本 |
@@ -23,6 +25,10 @@
 ## 界面预览
 
 使用隔离数据的界面示例；具体能力取决于所选智能体、模型和工具。
+
+![生成图片并预览结果](assets/demo/zh-CN/image.gif)
+
+![修改代码并验收结果](assets/demo/zh-CN/code-review.gif)
 
 ![从免费助手开始](assets/screenshots/zh-CN/welcome.png)
 ![让助手们在群聊里协作](assets/screenshots/zh-CN/group.png)
