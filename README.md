@@ -26,10 +26,6 @@ Chat with your coding agents, give each a role, and inspect their files and resu
 
 Isolated interface examples; capabilities depend on the Agent, model and tools you select.
 
-![Generate an image and preview the result](assets/demo/en/image.gif)
-
-![Edit code and verify the changes](assets/demo/en/code-review.gif)
-
 ![Start with a free assistant](assets/screenshots/en/welcome.png)
 ![Work together in a group](assets/screenshots/en/group.png)
 ![Prepare your Agents](assets/screenshots/en/agents.png)
