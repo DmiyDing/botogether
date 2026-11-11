@@ -26,10 +26,6 @@
 
 使用隔离数据的界面示例；具体能力取决于所选智能体、模型和工具。
 
-![生成图片并预览结果](assets/demo/zh-CN/image.gif)
-
-![修改代码并验收结果](assets/demo/zh-CN/code-review.gif)
-
 ![从免费助手开始](assets/screenshots/zh-CN/welcome.png)
 ![让助手们在群聊里协作](assets/screenshots/zh-CN/group.png)
 ![准备你的智能体](assets/screenshots/zh-CN/agents.png)
