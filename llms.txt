@@ -7,11 +7,57 @@
 - Price: free app, no subscription, no account. Agent or model providers may charge separately.
 - Platforms: macOS on Apple Silicon, Windows x64. Intel Mac is not supported in the current preview.
 - Current version: the newest entry on GitHub Releases (https://github.com/DmiyDing/botogether/releases)
-- Native and experimental integrations: Codex, Claude Code, Cursor Agent, Gemini CLI, Qwen Code, OpenCode, CodeBuddy CLI, Kiro CLI, Cline, Kilo Code, Hermes Agent, Oh My Pi
+- Ready to use (some still being tuned): Codex, Claude Code, Cursor Agent, Gemini CLI, Qwen Code, OpenCode, CodeBuddy CLI, Kiro CLI, Cline, Kilo Code, Hermes Agent, Oh My Pi
 - Detected with setup guidance: GitHub Copilot CLI, Grok Build, DeepSeek Harness, Goose, Aider, Pi
 - No agent installed: the app can install OpenCode and start with a free model.
 - Data: chats and task files stay on the computer; chosen agents and model services receive the content sent to them.
 - Security: the preview is not notarized or signed; download from official GitHub Releases and verify SHA256.
+
+## Guides
+- [Mac or Windows warns when you open Botogether? Here is why and what to do](https://dmiyding.github.io/botogether/en/guides/first-launch/): The Botogether preview is not notarized by Apple and has no Windows publisher signature yet, so macOS or Windows may show a warning the first time you open it. Download it only from the official GitHub Releases, check the SHA256 checksum, then follow the installation help if your system offers an option to allow the app.
+- [How to make Claude Code and Codex check each other’s work](https://dmiyding.github.io/botogether/en/guides/claude-code-codex-review/): Create a group in Botogether with a Claude Code assistant and a Codex assistant, bind one shared project folder, and say who does what: for example “@Builder make the change, @Reviewer check it.” Check the task details to confirm the assignments before relying on the review.
+- [No AI agent installed? Start Botogether for free with OpenCode](https://dmiyding.github.io/botogether/en/guides/start-free/): Yes, you can use Botogether with no agent installed. Click “Start for free”: the app downloads and checks OpenCode, then lets you pick an available free trial model. You do not need Node.js, npm or a terminal, and the app never switches you to a paid model on its own.
+## How it works
+1. Say what you need: Post one message in a group. The lead agent splits it into tasks and hands each to the right teammate. Use @ to call on someone directly.
+2. Everyone works in parallel: Each assistant has its own model and instructions. They work in the same project folder, on real files.
+3. Someone checks the work: Turn on independent review and another agent tests the result first. If it fails, only the broken part goes back for a fix.
+4. You get the result: See which files changed, who checked them and what was not verified. Open the file and decide.
+
+## What it is not
+- Not an AI model and not a model reseller. Each agent runs with the account or model service the user configures.
+- Not a cloud service. There is no Botogether account; chats and files live on the user's computer.
+
+## FAQ
+### What is Botogether?
+A free desktop app for Mac and Windows that puts several AI agents, such as Claude Code, Codex and Cursor, into one group chat so they can split work and check each other.
+
+### Is it free?
+Yes. There is no subscription and no account. Your agent or model provider may charge separately.
+
+### Which agents work?
+Ready to use: Codex, Claude Code, Cursor Agent, Gemini CLI, Qwen Code, OpenCode, CodeBuddy CLI, Kiro CLI, Cline, Kilo Code, Hermes Agent and Oh My Pi. Some are still being tuned and depend on your CLI version. Gemini CLI no longer serves personal Google accounts, so it needs an API key or a work account. Detected with a setup guide: GitHub Copilot CLI, Grok Build, DeepSeek Harness, Goose, Aider and Pi.
+
+### Where is my data?
+Chats and task files stay on your computer. If you use a cloud model, the content you send goes to that provider.
+
+### I have no agent installed. Can I try it?
+Yes. Choose “Start for free” to install OpenCode and pick a free trial model.
+
+### Why does my computer warn me?
+The preview is not notarized by Apple and has no Windows publisher signature. Download only from the official GitHub Releases and compare the SHA256 checksum.
+
+### How do I install it?
+Mac: open the DMG and drag Botogether into Applications. Windows: run the EXE; if SmartScreen appears, check the source, then choose “More info” → “Run anyway”.
+
+### Is it open source?
+No. Botogether is free to use under a proprietary license. The public repository has the guides and downloads.
+
+## 中文摘要
+Botogether 是一款免费的 Mac 和 Windows 桌面应用，把你电脑上的 AI 智能体变成一支小队。它们在同一个群里聊、分工、互相检查，最后把真实的文件交到你选的目录里。
+- Botogether 是什么？ 一款免费的 Mac 和 Windows 桌面应用。它把 Claude Code、Codex、Cursor 等多个 AI 智能体拉进同一个群聊，让它们分工合作、互相检查。
+- 免费吗？ 免费，没有订阅，也不用注册。智能体或模型服务可能另外收费。
+- 支持哪些智能体？ 直接接入：Codex、Claude Code、Cursor Agent、Gemini CLI、Qwen Code、OpenCode、CodeBuddy CLI、Kiro CLI、Cline、Kilo Code、Hermes Agent、Oh My Pi，其中部分还在打磨。Gemini CLI 已不再支持个人 Google 账号，需要 API key 或企业账号。能识别并附接入指引：GitHub Copilot CLI、Grok Build、DeepSeek Harness、Goose、Aider、Pi。
+- 数据存在哪？ 会话和任务文件留在你的电脑上。用云端模型时，你发出的内容会发给对应的服务方。
 
 ## Links
 - [Download (GitHub Releases)](https://github.com/DmiyDing/botogether/releases)

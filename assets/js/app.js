@@ -47,6 +47,43 @@ if (stage && wrap) {
   tilt();
 }
 
+/* ---------- Hero constellation: pointer depth and check-in pings ---------- */
+const orbitField = document.querySelector('.orbit');
+if (stage && orbitField) {
+  const marks = [...orbitField.querySelectorAll('.orbit-mark')];
+  const fine = matchMedia('(pointer: fine)');
+  let frame = 0, point = null, visible = true;
+  const reset = () => { cancelAnimationFrame(frame); frame = 0; point = null; orbitField.style.setProperty('--px', '0px'); orbitField.style.setProperty('--py', '0px'); };
+  stage.addEventListener('pointermove', event => {
+    if (motion.matches || !fine.matches || !visible) return;
+    point = event;
+    frame ||= requestAnimationFrame(() => {
+      frame = 0;
+      if (!point) return;
+      const box = stage.getBoundingClientRect();
+      orbitField.style.setProperty('--px', `${(((point.clientX - box.left) / box.width - .5) * -40).toFixed(1)}px`);
+      orbitField.style.setProperty('--py', `${(((point.clientY - box.top) / Math.min(box.height, innerHeight) - .5) * -30).toFixed(1)}px`);
+    });
+  }, { passive: true });
+  stage.addEventListener('pointerleave', reset);
+  if ('IntersectionObserver' in window) new IntersectionObserver(([entry]) => {
+    visible = entry.isIntersecting;
+    stage.classList.toggle('offscreen', !visible);
+    if (!visible) reset();
+  }).observe(stage);
+  // One agent at a time "checks in": a soft ring, in a shuffled order.
+  let turn = 0;
+  const order = marks.map((_, i) => i).sort(() => Math.random() - .5);
+  setTimeout(() => setInterval(() => {
+    if (motion.matches || !visible || document.hidden) return;
+    const shown = order.map(i => marks[i]).filter(mark => mark.offsetParent);
+    if (!shown.length) return;
+    const mark = shown[turn++ % shown.length];
+    mark.classList.add('ping');
+    setTimeout(() => mark.classList.remove('ping'), 1500);
+  }, 1700), 2400);
+}
+
 /* ---------- Theme: follow the system until the visitor chooses ---------- */
 const root = document.documentElement;
 const systemDark = matchMedia('(prefers-color-scheme: dark)');
@@ -137,6 +174,7 @@ function runDemo(demo) {
   const templates = [...demo.querySelectorAll('[data-scene-template]')];
   const messages = demo.querySelector('#messages');
   const who = demo.querySelector('#chat-who');
+  const folder = demo.querySelector('#chat-folder');
   const to = demo.querySelector('#composer-to');
   const model = demo.querySelector('#composer-model');
   const send = demo.querySelector('.send');
@@ -170,6 +208,7 @@ function runDemo(demo) {
     }
     messages.classList.remove('switching'); void messages.offsetWidth; messages.classList.add('switching');
     who.innerHTML = template.dataset.who;
+    if (folder) folder.textContent = template.dataset.folder;
     to.textContent = template.dataset.to;
     to.classList.remove('filled');
     send.classList.remove('ready');
@@ -296,6 +335,7 @@ function runDemo(demo) {
     show(index);
     loadImages(messages);
     for (const card of messages.querySelectorAll('.card.check')) card.classList.add('done');
+    messages.scrollTop = messages.scrollHeight;
   };
   for (const button of [...tabs, ...side]) button.addEventListener('click', () => {
     if (side.includes(button)) sidebar.classList.add('used');
