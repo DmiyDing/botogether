@@ -14,10 +14,27 @@ const fallback = {
   mac: links.find(link => link.dataset.platform === 'mac')?.href,
   win: links.find(link => link.dataset.platform === 'win')?.href,
 };
-getRelease(fallback).then(release => {
-  if (version && release.version) version.textContent = release.version;
-  for (const link of links) link.href = release[link.dataset.platform] ?? releasesPage;
-});
+let releaseRequest;
+let releaseReady = false;
+function loadRelease() {
+  return releaseRequest ??= getRelease(fallback).then(release => {
+    if (version && release.version) version.textContent = release.version;
+    for (const link of links) link.href = release[link.dataset.platform] ?? releasesPage;
+    releaseReady = true;
+  });
+}
+
+for (const link of links) {
+  link.addEventListener('mouseenter', loadRelease, { once: true });
+  link.addEventListener('click', event => {
+    if (event.defaultPrevented || releaseReady) return;
+    const request = loadRelease();
+    // Let browser shortcuts use the current href while the lookup is pending.
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    void request.then(() => location.assign(link.href));
+  });
+}
 
 /* ---------- Reveal on scroll ---------- */
 const reveals = document.querySelectorAll('.reveal');

@@ -268,7 +268,7 @@ em.add, em.del { font-style: normal; font-weight: 700; } .add { color: #13804a; 
 .scene-strip .bar { width: 100%; min-width: 56px; height: 2px; border-radius: 2px; background: var(--line); overflow: hidden; }
 .scene-strip .bar i { display: block; width: 0; height: 100%; background: var(--heading); }
 .scene-strip button[aria-pressed="true"] .bar i { width: var(--progress, 0%); transition: width .5s linear; }
-.demo-note { margin: 10px 0 0; text-align: center; font-size: var(--fs-xs); color: var(--faint); }
+.demo-note { margin: 10px 0 0; text-align: center; font-size: var(--fs-xs); color: var(--muted); }
 
 /* Companions from the app's welcome screen. */
 .paper { --s: 40px; position: relative; display: inline-block; flex: none; width: var(--s); height: var(--s); background: center / contain no-repeat; filter: drop-shadow(0 3px 5px #11182722); }
@@ -457,7 +457,7 @@ ul.p2 li { display: flex; align-items: center; gap: 8px; padding: 6px 10px; bord
 .agent img { width: 30px; height: 30px; padding: 5px; border-radius: var(--r-sm); background: #fff; box-shadow: 0 0 0 1px var(--line); flex: none; }
 .agent .agent-glyph { --g: 30px !important; border-radius: var(--r-sm); }
 .agent b { font-size: 14px; font-weight: 550; line-height: 1.3; color: var(--heading); }
-.tier-note { margin-top: 18px; font-size: var(--fs-xs); color: var(--faint); }
+.tier-note { margin-top: 18px; font-size: var(--fs-xs); color: var(--muted); }
 
 /* Comparison. */
 .compare { max-width: 880px; }
@@ -555,7 +555,8 @@ ul.p2 li { display: flex; align-items: center; gap: 8px; padding: 6px 10px; bord
   .orbit-mark { left: calc(50% + var(--mx)); top: var(--my); width: var(--ms); height: var(--ms); margin-left: calc(var(--ms) / -2); }
   .om-cursor { --ms: 56px; --mx: -36vw; --my: 46px; } .om-codex { --ms: 56px; --mx: 36vw; --my: 46px; }
   .om-kilo { --ms: 44px; --mx: -20vw; --my: 22px; } .om-opencode { --ms: 44px; --mx: 20vw; --my: 22px; }
-  .om-deepseek { --ms: 38px; --mx: -6.5vw; --my: 8px; } .om-grok { --ms: 38px; --mx: 6.5vw; --my: 8px; }
+  .om-deepseek { --ms: 38px; --mx: -11.5vw; --my: 8px; } .om-grok { --ms: 38px; --mx: 11.5vw; --my: 8px; }
+  .om-antigravity { --ms: 32px; --mx: 0px; --my: 0px; }
 }
 @media (max-width: 640px) {
   :root { --shell: calc(100% - 32px); --section: 88px; }

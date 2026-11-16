@@ -7,7 +7,7 @@
 - Price: free app, no subscription, no account. Agent or model providers may charge separately.
 - Platforms: macOS on Apple Silicon, Windows x64. Intel Mac is not supported in the current preview.
 - Current version: the newest entry on GitHub Releases (https://github.com/DmiyDing/botogether/releases)
-- Ready to use (some still being tuned): Codex, Claude Code, Cursor Agent, Gemini CLI, Qwen Code, OpenCode, CodeBuddy CLI, Kiro CLI, Cline, Kilo Code, Hermes Agent, Oh My Pi
+- Ready to use (some still being tuned): Codex, Claude Code, Cursor Agent, Antigravity, Gemini CLI, Qwen Code, OpenCode, CodeBuddy CLI, Kiro CLI, Cline, Kilo Code, Hermes Agent, Oh My Pi
 - Detected with setup guidance: GitHub Copilot CLI, Grok Build, DeepSeek Harness, Goose, Aider, Pi
 - No agent installed: the app can install OpenCode and start with a free model.
 - Data: chats and task files stay on the computer; chosen agents and model services receive the content sent to them.
@@ -35,7 +35,7 @@ A free desktop app for Mac and Windows that puts several AI agents, such as Clau
 Yes. There is no subscription and no account. Your agent or model provider may charge separately.
 
 ### Which agents work?
-Ready to use: Codex, Claude Code, Cursor Agent, Gemini CLI, Qwen Code, OpenCode, CodeBuddy CLI, Kiro CLI, Cline, Kilo Code, Hermes Agent and Oh My Pi. Some are still being tuned and depend on your CLI version. Gemini CLI no longer serves personal Google accounts, so it needs an API key or a work account. Detected with a setup guide: GitHub Copilot CLI, Grok Build, DeepSeek Harness, Goose, Aider and Pi.
+Ready to use: Codex, Claude Code, Cursor Agent, Antigravity, Gemini CLI, Qwen Code, OpenCode, CodeBuddy CLI, Kiro CLI, Cline, Kilo Code, Hermes Agent and Oh My Pi. Some are still being tuned and depend on your CLI version. Gemini CLI no longer serves personal Google accounts, so it needs an API key or a work account. Detected with a setup guide: GitHub Copilot CLI, Grok Build, DeepSeek Harness, Goose, Aider and Pi.
 
 ### Where is my data?
 Chats and task files stay on your computer. If you use a cloud model, the content you send goes to that provider.
@@ -56,7 +56,7 @@ No. Botogether is free to use under a proprietary license. The public repository
 Botogether 是一款免费的 Mac 和 Windows 桌面应用，把你电脑上的 AI 智能体变成一支小队。它们在同一个群里聊、分工、互相检查，最后把真实的文件交到你选的目录里。
 - Botogether 是什么？ 一款免费的 Mac 和 Windows 桌面应用。它把 Claude Code、Codex、Cursor 等多个 AI 智能体拉进同一个群聊，让它们分工合作、互相检查。
 - 免费吗？ 免费，没有订阅，也不用注册。智能体或模型服务可能另外收费。
-- 支持哪些智能体？ 直接接入：Codex、Claude Code、Cursor Agent、Gemini CLI、Qwen Code、OpenCode、CodeBuddy CLI、Kiro CLI、Cline、Kilo Code、Hermes Agent、Oh My Pi，其中部分还在打磨。Gemini CLI 已不再支持个人 Google 账号，需要 API key 或企业账号。能识别并附接入指引：GitHub Copilot CLI、Grok Build、DeepSeek Harness、Goose、Aider、Pi。
+- 支持哪些智能体？ 直接接入：Codex、Claude Code、Cursor Agent、Antigravity、Gemini CLI、Qwen Code、OpenCode、CodeBuddy CLI、Kiro CLI、Cline、Kilo Code、Hermes Agent、Oh My Pi，其中部分还在打磨。Gemini CLI 已不再支持个人 Google 账号，需要 API key 或企业账号。能识别并附接入指引：GitHub Copilot CLI、Grok Build、DeepSeek Harness、Goose、Aider、Pi。
 - 数据存在哪？ 会话和任务文件留在你的电脑上。用云端模型时，你发出的内容会发给对应的服务方。
 
 ## Links
