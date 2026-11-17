@@ -37,7 +37,21 @@
 <meta name="twitter:image" content="https://dmiyding.github.io/botogether/assets/img/share.jpg">
 <meta name="twitter:image:alt" content="Two paper companions saying hi, one with a pink heart above its head">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","name":"How to make Claude Code and Codex check each other’s work","description":"Put Claude Code and Codex in one Botogether group chat: one builds, the other reviews, and you get real files in a shared project folder. Step-by-step.","inLanguage":"en","step":[{"@type":"HowToStep","position":1,"name":"Install both agents","text":"Botogether finds Claude Code and Codex if they are already on your computer. In Settings → Agents it can also install them on supported systems. You still sign in with your own account."},{"@type":"HowToStep","position":2,"name":"Create two assistants","text":"Click + and create one assistant on Claude Code and one on Codex. Give each a clear name, like Builder and Reviewer, and its own model."},{"@type":"HowToStep","position":3,"name":"Make a group with one folder","text":"Click + again, create a group with both assistants and bind the project folder they should work in."},{"@type":"HowToStep","position":4,"name":"Say who builds and who checks","text":"Use their real names: “@Builder fix the checkout layout on small phones. @Reviewer check it on three screen sizes.”"},{"@type":"HowToStep","position":5,"name":"Read the result","text":"Check who was assigned in the task details and inspect the file evidence. If a check or change is still needed, address the appropriate assistant by name."}],"tool":[{"@type":"HowToTool","name":"Botogether"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How to make Claude Code and Codex check each other’s work","acceptedAnswer":{"@type":"Answer","text":"Create a group in Botogether with a Claude Code assistant and a Codex assistant, bind one shared project folder, and say who does what: for example “@Builder make the change, @Reviewer check it.” Check the task details to confirm the assignments before relying on the review."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dmiyding.github.io/botogether/en/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://dmiyding.github.io/botogether/en/guides/all/"},{"@type":"ListItem","position":3,"name":"Let Claude Code and Codex check each other","item":"https://dmiyding.github.io/botogether/en/guides/claude-code-codex-review/"}]}]</script>
-<script type="module" src="../../../assets/js/app.js?v=5cd5fcba089f"></script>
+<link rel="modulepreload" href="../../../assets/js/app.js?v=5cd5fcba089f">
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const belowViewport = Array.from(document.querySelectorAll('.reveal')).filter(
+      el => el.getBoundingClientRect().top >= window.innerHeight
+    );
+    for (const el of belowViewport) el.classList.add('reveal-pending');
+  }
+  import('../../../assets/js/app.js?v=5cd5fcba089f').catch(error => {
+    for (const el of document.querySelectorAll('.reveal-pending')) el.classList.remove('reveal-pending');
+    console.error(error);
+  });
+}, { once: true });
+</script>
 </head>
 <body class="guide-page">
 <div class="hero-stage guide-top">

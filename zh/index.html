@@ -37,7 +37,21 @@
 <meta name="twitter:image" content="https://dmiyding.github.io/botogether/assets/img/share.jpg">
 <meta name="twitter:image:alt" content="两个折纸伙伴在打招呼，其中一个头顶冒出粉色爱心">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Botogether","url":"https://dmiyding.github.io/botogether/zh/","image":"https://dmiyding.github.io/botogether/assets/img/share.jpg","description":"Botogether 是一款本地优先的 AI 协作桌面应用，支持 Mac 和 Windows。让 Claude Code、Codex、Cursor 等助手在同一个项目群聊里分工，由你验收交付文件。","operatingSystem":"macOS (Apple Silicon), Windows (x64)","applicationCategory":"DeveloperApplication","applicationSubCategory":"Multi-agent AI collaboration","screenshot":"https://dmiyding.github.io/botogether/assets/img/share.jpg","isAccessibleForFree":true,"inLanguage":["en","zh-CN"],"downloadUrl":"https://github.com/DmiyDing/botogether/releases","sameAs":["https://github.com/DmiyDing/botogether"],"featureList":["说一句需求","大家同时开工","有人专门挑错","结果交到你手上"],"keywords":"Codex, Claude Code, Cursor Agent, Antigravity, Gemini CLI, Qwen Code, OpenCode, CodeBuddy CLI, Kiro CLI, Cline, Kilo Code, Hermes Agent, Oh My Pi, GitHub Copilot CLI, Grok Build, DeepSeek Harness, Goose, Aider, Pi","offers":{"@type":"Offer","price":0,"priceCurrency":"USD"},"author":{"@type":"Person","name":"DmiyDing","url":"https://github.com/DmiyDing"}},{"@context":"https://schema.org","@type":"WebSite","name":"Botogether","url":"https://dmiyding.github.io/botogether/","inLanguage":"zh-CN"},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Botogether 是什么？","acceptedAnswer":{"@type":"Answer","text":"一款免费的 Mac 和 Windows 桌面应用。它把 Claude Code、Codex、Cursor 等多个 AI 智能体拉进同一个群聊，让它们分工合作、互相检查。"}},{"@type":"Question","name":"免费吗？","acceptedAnswer":{"@type":"Answer","text":"免费，没有订阅，也不用注册。智能体或模型服务可能另外收费。"}},{"@type":"Question","name":"支持哪些智能体？","acceptedAnswer":{"@type":"Answer","text":"直接接入：Codex、Claude Code、Cursor Agent、Antigravity、Gemini CLI、Qwen Code、OpenCode、CodeBuddy CLI、Kiro CLI、Cline、Kilo Code、Hermes Agent、Oh My Pi，其中部分还在打磨。Gemini CLI 已不再支持个人 Google 账号，需要 API key 或企业账号。能识别并附接入指引：GitHub Copilot CLI、Grok Build、DeepSeek Harness、Goose、Aider、Pi。"}},{"@type":"Question","name":"数据存在哪？","acceptedAnswer":{"@type":"Answer","text":"会话和任务文件留在你的电脑上。用云端模型时，你发出的内容会发给对应的服务方。"}},{"@type":"Question","name":"一个智能体都没装，能用吗？","acceptedAnswer":{"@type":"Answer","text":"能。点「免费开始」，会帮你装好 OpenCode，选一个免费体验模型就能用。"}},{"@type":"Question","name":"为什么电脑会提示有风险？","acceptedAnswer":{"@type":"Answer","text":"预览版还没做 Apple 公证，也没有 Windows 签名。请只从官方 GitHub Releases 下载，并核对 SHA256 校验值。"}},{"@type":"Question","name":"怎么安装？","acceptedAnswer":{"@type":"Answer","text":"Mac：打开 DMG，把 Botogether 拖进「应用程序」。Windows：运行 EXE；出现 SmartScreen 提示时，确认来源后点「更多信息」→「仍要运行」。"}},{"@type":"Question","name":"开源吗？","acceptedAnswer":{"@type":"Answer","text":"不开源。应用免费使用，采用专有许可。公开仓库里有使用说明和下载。"}}]}]</script>
-<script type="module" src="../assets/js/app.js?v=5cd5fcba089f"></script>
+<link rel="modulepreload" href="../assets/js/app.js?v=5cd5fcba089f">
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const belowViewport = Array.from(document.querySelectorAll('.reveal')).filter(
+      el => el.getBoundingClientRect().top >= window.innerHeight
+    );
+    for (const el of belowViewport) el.classList.add('reveal-pending');
+  }
+  import('../assets/js/app.js?v=5cd5fcba089f').catch(error => {
+    for (const el of document.querySelectorAll('.reveal-pending')) el.classList.remove('reveal-pending');
+    console.error(error);
+  });
+}, { once: true });
+</script>
 </head>
 <body>
 <div class="hero-stage">
