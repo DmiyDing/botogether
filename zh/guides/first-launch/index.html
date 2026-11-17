@@ -18,7 +18,7 @@
 <link rel="icon" href="../../../assets/img/mark.png">
 <link rel="apple-touch-icon" href="../../../assets/img/mark.png">
 <link rel="alternate" type="text/plain" title="LLM summary" href="../../../llms.txt">
-<link rel="stylesheet" href="../../../assets/css/style.css?v=24a0309e6f37">
+<link rel="stylesheet" href="../../../assets/css/style.css?v=3fd0cbf1422b">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Botogether">
 <meta property="og:locale" content="zh_CN">
@@ -37,7 +37,7 @@
 <meta name="twitter:image" content="https://dmiyding.github.io/botogether/assets/img/share.jpg">
 <meta name="twitter:image:alt" content="两个折纸伙伴在打招呼，其中一个头顶冒出粉色爱心">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","name":"Mac 或 Windows 打开 Botogether 时提示有风险，怎么办？","description":"Botogether 预览版还没做 Apple 公证和 Windows 签名，首次打开会被系统提示。教你核对下载文件，在 Mac 和 Windows 上安全打开。","inLanguage":"zh-CN","step":[{"@type":"HowToStep","position":1,"name":"从官方页面下载","text":"在 GitHub Releases 下载 DMG（Mac）或 EXE（Windows）。Source code 压缩包只有文档，不是安装包。"},{"@type":"HowToStep","position":2,"name":"核对校验值","text":"Mac 运行 shasum -a 256 加文件名；Windows 运行 Get-FileHash -Algorithm SHA256 加文件名。与发行页上对应平台的校验文件核对。"},{"@type":"HowToStep","position":3,"name":"Mac：允许一次","text":"打开 DMG，把 Botogether 拖进「应用程序」并尝试打开。如果被拦住，到「系统设置 → 隐私与安全性」，点 Botogether 旁边的「仍要打开」。"},{"@type":"HowToStep","position":4,"name":"Windows：允许一次","text":"运行 EXE。出现「Windows 已保护你的电脑」时，确认来源后点「更多信息」→「仍要运行」。"}],"tool":[{"@type":"HowToTool","name":"Botogether"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Mac 或 Windows 打开 Botogether 时提示有风险，怎么办？","acceptedAnswer":{"@type":"Answer","text":"Botogether 预览版还没做 Apple 公证，也没有 Windows 签名，首次打开时系统可能提示风险。只从官方 GitHub Releases 下载，核对 SHA256 校验值，系统提供放行选项时，再按安装说明操作。"}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dmiyding.github.io/botogether/zh/"},{"@type":"ListItem","position":2,"name":"教程","item":"https://dmiyding.github.io/botogether/zh/guides/all/"},{"@type":"ListItem","position":3,"name":"首次打开有安全提示","item":"https://dmiyding.github.io/botogether/zh/guides/first-launch/"}]}]</script>
-<link rel="modulepreload" href="../../../assets/js/app.js?v=24a0309e6f37">
+<link rel="modulepreload" href="../../../assets/js/app.js?v=3fd0cbf1422b">
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     for (const el of belowViewport) el.classList.add('reveal-pending');
   }
-  import('../../../assets/js/app.js?v=24a0309e6f37').catch(error => {
+  import('../../../assets/js/app.js?v=3fd0cbf1422b').catch(error => {
     for (const el of document.querySelectorAll('.reveal-pending')) el.classList.remove('reveal-pending');
     console.error(error);
   });

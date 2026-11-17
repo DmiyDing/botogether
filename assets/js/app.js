@@ -37,19 +37,16 @@ for (const link of links) {
 }
 
 /* ---------- Reveal on scroll ---------- */
-if (!motion.matches && 'IntersectionObserver' in window) {
+if ('IntersectionObserver' in window) {
   const io = new IntersectionObserver(entries => {
     for (const entry of entries) {
-      // Only hide sections below the viewport, including when scroll is restored.
-      if (!entry.isIntersecting && entry.rootBounds && entry.boundingClientRect.top >= entry.rootBounds.bottom) {
-        entry.target.classList.add('reveal-pending');
-      } else {
+      if (entry.isIntersecting) {
         entry.target.classList.remove('reveal-pending');
         io.unobserve(entry.target);
       }
     }
   });
-  for (const el of document.querySelectorAll('.reveal')) io.observe(el);
+  for (const el of document.querySelectorAll('.reveal.reveal-pending')) io.observe(el);
 }
 
 /* ---------- Hero depth: pointer parallax and window tilt ---------- */
