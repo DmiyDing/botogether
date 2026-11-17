@@ -1,7 +1,7 @@
 <p align="center"><img src="assets/mark.png" width="72" alt="Botogether" /></p>
 <h1 align="center">Botogether</h1>
-<p align="center"><strong>让你的 AI 助手组队做事</strong></p>
-<p align="center">把 Claude Code、Codex、Cursor 等助手拉进同一个项目群聊。<br />一位动手，一位复查，你来验收交付文件。</p>
+<p align="center"><strong>本地优先的 AI 智能体协作桌面应用，支持 Mac 和 Windows。</strong></p>
+<p align="center">用 Claude Code、Codex、Cursor 等工具创建助手，让它们在同一个项目里分工、复查，交付可核对的文件。</p>
 <p align="center">简体中文 · <a href="README.en.md">English</a></p>
 
 <p align="center">
@@ -10,7 +10,7 @@
 </p>
 <p align="center"><a href="https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.14">preview.14 发行说明</a> · <a href="#安装帮助">安装帮助</a> · <a href="https://github.com/DmiyDing/botogether/releases">所有版本</a></p>
 
-Botogether 是一款本地优先的 AI 协作桌面应用，支持 Mac 和 Windows。应用免费使用，所选智能体或模型服务可能另行收费。
+应用免费使用，所选工具或模型服务可能另行收费。
 
 ## 试试让两位助手一起做
 
