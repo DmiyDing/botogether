@@ -2,9 +2,9 @@
 
 ## A first useful result / 第一个有用的结果
 
-Get the Apple Silicon Mac or Windows x64 preview.8 installer from the [release page](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8) and read the [unsigned-preview installation help](troubleshooting.md). Repository source archives are documentation, not installers.
+Choose the Apple silicon Mac or Windows x64 installer from [Releases](https://github.com/DmiyDing/botogether/releases) and read the [preview installation help](troubleshooting.md). Installers are listed under **Assets** as DMG or EXE files.
 
-从[preview.8 发行页](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.8)选择 Apple Silicon Mac 或 Windows x64 安装包，并先看[未签名预览安装帮助](troubleshooting.md)。Source code 压缩包只有公开文档，不是安装包。
+在[发行列表](https://github.com/DmiyDing/botogether/releases)中选择 Apple 芯片 Mac 或 Windows x64 安装包，并查看[预览版安装帮助](troubleshooting.md)。DMG 和 EXE 安装包位于 **Assets** 下。
 
 **No Agent installed:** click **Start for free** → wait for OpenCode to download and be checked inside the app → choose an available free trial model → **Start chatting**. No Node.js, npm or terminal is needed. Availability is rechecked and never silently replaced by a paid model.
 
