@@ -558,7 +558,6 @@ ul.p2 li { display: flex; align-items: center; gap: 8px; padding: 6px 10px; bord
   .om-cursor { --ms: 56px; --mx: -36vw; --my: 46px; } .om-codex { --ms: 56px; --mx: 36vw; --my: 46px; }
   .om-kilo { --ms: 44px; --mx: -20vw; --my: 22px; } .om-opencode { --ms: 44px; --mx: 20vw; --my: 22px; }
   .om-deepseek { --ms: 38px; --mx: -11.5vw; --my: 8px; } .om-grok { --ms: 38px; --mx: 11.5vw; --my: 8px; }
-  .om-antigravity { --ms: 32px; --mx: 0px; --my: 0px; }
 }
 @media (max-width: 640px) {
   :root { --shell: calc(100% - 32px); --section: 88px; }

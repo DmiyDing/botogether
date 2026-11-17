@@ -18,7 +18,7 @@
 <link rel="icon" href="../../../assets/img/mark.png">
 <link rel="apple-touch-icon" href="../../../assets/img/mark.png">
 <link rel="alternate" type="text/plain" title="LLM summary" href="../../../llms.txt">
-<link rel="stylesheet" href="../../../assets/css/style.css?v=3fd0cbf1422b">
+<link rel="stylesheet" href="../../../assets/css/style.css?v=5c0347cf95b1">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Botogether">
 <meta property="og:locale" content="en_US">
@@ -37,7 +37,7 @@
 <meta name="twitter:image" content="https://dmiyding.github.io/botogether/assets/img/share.jpg">
 <meta name="twitter:image:alt" content="Two paper companions saying hi, one with a pink heart above its head">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","name":"Mac or Windows warns when you open Botogether? Here is why and what to do","description":"Botogether is a preview that is not yet notarized by Apple or signed for Windows. How to check the download and open it safely on Mac and Windows.","inLanguage":"en","step":[{"@type":"HowToStep","position":1,"name":"Download from the official page","text":"Get the DMG (Mac) or EXE (Windows) from GitHub Releases. Source code archives are documentation only, not installers."},{"@type":"HowToStep","position":2,"name":"Check the checksum","text":"Mac: run shasum -a 256 with the file name. Windows: run Get-FileHash -Algorithm SHA256 with the file name. Compare it with the checksum file for your platform on the release page."},{"@type":"HowToStep","position":3,"name":"Mac: allow it once","text":"Open the DMG and drag Botogether into Applications and try opening it. If macOS blocks it, go to System Settings → Privacy & Security and click Open Anyway for Botogether."},{"@type":"HowToStep","position":4,"name":"Windows: allow it once","text":"Run the EXE. If “Windows protected your PC” appears, check the source, then choose More info → Run anyway."}],"tool":[{"@type":"HowToTool","name":"Botogether"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Mac or Windows warns when you open Botogether? Here is why and what to do","acceptedAnswer":{"@type":"Answer","text":"The Botogether preview is not notarized by Apple and has no Windows publisher signature yet, so macOS or Windows may show a warning the first time you open it. Download it only from the official GitHub Releases, check the SHA256 checksum, then follow the installation help if your system offers an option to allow the app."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dmiyding.github.io/botogether/en/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://dmiyding.github.io/botogether/en/guides/all/"},{"@type":"ListItem","position":3,"name":"Security warning on first open","item":"https://dmiyding.github.io/botogether/en/guides/first-launch/"}]}]</script>
-<link rel="modulepreload" href="../../../assets/js/app.js?v=3fd0cbf1422b">
+<link rel="modulepreload" href="../../../assets/js/app.js?v=5c0347cf95b1">
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     for (const el of belowViewport) el.classList.add('reveal-pending');
   }
-  import('../../../assets/js/app.js?v=3fd0cbf1422b').catch(error => {
+  import('../../../assets/js/app.js?v=5c0347cf95b1').catch(error => {
     for (const el of document.querySelectorAll('.reveal-pending')) el.classList.remove('reveal-pending');
     console.error(error);
   });
