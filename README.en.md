@@ -1,7 +1,7 @@
 <p align="center"><img src="assets/mark.png" width="72" alt="Botogether" /></p>
 <h1 align="center">Botogether</h1>
-<p align="center"><strong>Your AI agents. One team.</strong></p>
-<p align="center">Bring Claude Code, Codex, and Cursor into one project chat.<br />One agent does the work, another reviews it, and you inspect the files before accepting them.</p>
+<p align="center"><strong>A local-first desktop app for AI agent collaboration on Mac and Windows.</strong></p>
+<p align="center">Create assistants with tools like Claude Code, Codex, and Cursor. Give them roles in one project to split up work, review changes, and deliver files you can inspect.</p>
 <p align="center"><a href="README.md">简体中文</a> · English</p>
 
 <p align="center">
@@ -10,7 +10,7 @@
 </p>
 <p align="center"><a href="https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.14">preview.14 release notes</a> · <a href="#installation-help">Installation help</a> · <a href="https://github.com/DmiyDing/botogether/releases">All releases</a></p>
 
-Botogether is a local-first desktop app for AI agent collaboration on Mac and Windows. The app is free to use. Your agent or model provider may charge separately.
+The app is free to use. Your tool or model provider may charge separately.
 
 ## Try a task with two agents
 
