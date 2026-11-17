@@ -37,13 +37,19 @@ for (const link of links) {
 }
 
 /* ---------- Reveal on scroll ---------- */
-const reveals = document.querySelectorAll('.reveal');
-if (motion.matches || !('IntersectionObserver' in window)) for (const el of reveals) el.classList.add('in');
-else {
+if (!motion.matches && 'IntersectionObserver' in window) {
   const io = new IntersectionObserver(entries => {
-    for (const entry of entries) if (entry.isIntersecting) { entry.target.classList.add('in'); io.unobserve(entry.target); }
-  }, { rootMargin: '0px 0px -10% 0px' });
-  for (const el of reveals) io.observe(el);
+    for (const entry of entries) {
+      // Only hide sections below the viewport, including when scroll is restored.
+      if (!entry.isIntersecting && entry.rootBounds && entry.boundingClientRect.top >= entry.rootBounds.bottom) {
+        entry.target.classList.add('reveal-pending');
+      } else {
+        entry.target.classList.remove('reveal-pending');
+        io.unobserve(entry.target);
+      }
+    }
+  });
+  for (const el of document.querySelectorAll('.reveal')) io.observe(el);
 }
 
 /* ---------- Hero depth: pointer parallax and window tilt ---------- */

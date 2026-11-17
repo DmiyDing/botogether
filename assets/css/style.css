@@ -61,8 +61,10 @@ h3 { font-size: var(--fs-md); line-height: 1.35; font-weight: 600; letter-spacin
 .section-head { max-width: 720px; margin: 0 auto; text-align: center; }
 .section-head p:not(.kicker), .body { margin: 18px auto 0; max-width: 560px; color: var(--muted); font-size: var(--fs-md); }
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
-.reveal { opacity: 0; transform: translateY(16px); transition: opacity .8s var(--ease), transform .8s var(--ease); }
-.reveal.in { opacity: 1; transform: none; }
+.reveal { transition: opacity .8s var(--ease), transform .8s var(--ease); }
+@media (prefers-reduced-motion: no-preference) {
+  .reveal.reveal-pending { opacity: 0; transform: translateY(16px); transition: none; }
+}
 
 /* ---------- Buttons ---------- */
 .downloads { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; }
