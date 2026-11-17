@@ -119,7 +119,7 @@ h3 { font-size: var(--fs-md); line-height: 1.35; font-weight: 600; letter-spacin
 .hero { position: relative; z-index: 1; padding: 88px 0 72px; text-align: center; }
 .hero > :not(.orbit) { animation: rise .9s var(--ease) both; }
 .hero > :nth-child(2) { animation-delay: .06s; } .hero > :nth-child(3) { animation-delay: .12s; } .hero > :nth-child(4) { animation-delay: .18s; } .hero > :nth-child(5) { animation-delay: .24s; }
-@keyframes rise { from { opacity: 0; transform: translateY(12px); } }
+@keyframes rise { from { transform: translateY(12px); } }
 .eyebrow { display: inline-flex; align-items: center; gap: 8px; margin: 0 0 28px; padding: 5px 12px 5px 10px; border-radius: 999px; font-size: var(--fs-sm); color: var(--fg); background: var(--panel); border: 1px solid var(--line); box-shadow: var(--shadow-sm); }
 .eyebrow [data-version] { font: 500 var(--fs-xs) var(--mono); color: var(--muted); }
 .eyebrow [data-version]:empty { display: none; }
