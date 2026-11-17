@@ -53,7 +53,7 @@ Mac: open the DMG and drag Botogether into Applications. Windows: run the EXE; i
 No. Botogether is free to use under a proprietary license. The public repository has the guides and downloads.
 
 ## 中文摘要
-Botogether 是一款免费的 Mac 和 Windows 桌面应用，把你电脑上的 AI 智能体变成一支小队。它们在同一个群里聊、分工、互相检查，最后把真实的文件交到你选的目录里。
+Botogether 是一款免费的 Mac 和 Windows 桌面应用。用电脑上已有的智能体工具创建助手，再到群聊里给它们分配职责。它们可以分工、复查，把文件交到你选的项目目录。
 - Botogether 是什么？ 一款免费的 Mac 和 Windows 桌面应用。它把 Claude Code、Codex、Cursor 等多个 AI 智能体拉进同一个群聊，让它们分工合作、互相检查。
 - 免费吗？ 免费，没有订阅，也不用注册。智能体或模型服务可能另外收费。
 - 支持哪些智能体？ 直接接入：Codex、Claude Code、Cursor Agent、Antigravity、Gemini CLI、Qwen Code、OpenCode、CodeBuddy CLI、Kiro CLI、Cline、Kilo Code、Hermes Agent、Oh My Pi，其中部分还在打磨。Gemini CLI 已不再支持个人 Google 账号，需要 API key 或企业账号。能识别并附接入指引：GitHub Copilot CLI、Grok Build、DeepSeek Harness、Goose、Aider、Pi。
