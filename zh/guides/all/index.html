@@ -8,7 +8,7 @@
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fbfbfc">
 <script>(()=>{const s=localStorage.getItem('botogether-theme');document.documentElement.dataset.theme=s==='light'||s==='dark'?s:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')})()</script>
 <title>Botogether 教程 · Botogether</title>
-<meta name="description" content="Botogether 使用教程：首次打开有安全提示怎么办、让 Claude Code 和 Codex 互相检查、没装智能体怎么免费开始。">
+<meta name="description" content="Botogether 完整使用教程与排错指南：涵盖 Apple Silicon Mac 与 Windows x64 安装包 SHA256 校验与首次打开放行、Claude Code 与 Codex 双助手互相复查、无本地工具免费上手 OpenCode、本地隐私目录边界与高频报错恢复方案。">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <meta name="google-site-verification" content="p2SVXH1ITFJIUvOnRRZTWdaZ8JIAjGaPMrZXjqE2w30">
 <link rel="canonical" href="https://dmiyding.github.io/botogether/zh/guides/all/">
@@ -18,26 +18,26 @@
 <link rel="icon" href="../../../assets/img/mark.png">
 <link rel="apple-touch-icon" href="../../../assets/img/mark.png">
 <link rel="alternate" type="text/plain" title="LLM summary" href="../../../llms.txt">
-<link rel="stylesheet" href="../../../assets/css/style.css?v=5c0347cf95b1">
+<link rel="stylesheet" href="../../../assets/css/style.css?v=3a430ff45b9a">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Botogether">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:locale:alternate" content="en_US">
 <meta property="og:title" content="Botogether 教程 · Botogether">
-<meta property="og:description" content="Botogether 使用教程：首次打开有安全提示怎么办、让 Claude Code 和 Codex 互相检查、没装智能体怎么免费开始。">
+<meta property="og:description" content="Botogether 完整使用教程与排错指南：涵盖 Apple Silicon Mac 与 Windows x64 安装包 SHA256 校验与首次打开放行、Claude Code 与 Codex 双助手互相复查、无本地工具免费上手 OpenCode、本地隐私目录边界与高频报错恢复方案。">
 <meta property="og:url" content="https://dmiyding.github.io/botogether/zh/guides/all/">
 <meta property="og:image" content="https://dmiyding.github.io/botogether/assets/img/share.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="两个折纸伙伴在打招呼，其中一个头顶冒出粉色爱心">
+<meta property="og:image:alt" content="Botogether 桌面应用预览卡片，支持 Apple Silicon Mac 与 Windows x64，兼容 Claude Code、Codex 与 Cursor">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Botogether 教程 · Botogether">
-<meta name="twitter:description" content="Botogether 使用教程：首次打开有安全提示怎么办、让 Claude Code 和 Codex 互相检查、没装智能体怎么免费开始。">
+<meta name="twitter:description" content="Botogether 完整使用教程与排错指南：涵盖 Apple Silicon Mac 与 Windows x64 安装包 SHA256 校验与首次打开放行、Claude Code 与 Codex 双助手互相复查、无本地工具免费上手 OpenCode、本地隐私目录边界与高频报错恢复方案。">
 <meta name="twitter:image" content="https://dmiyding.github.io/botogether/assets/img/share.jpg">
-<meta name="twitter:image:alt" content="两个折纸伙伴在打招呼，其中一个头顶冒出粉色爱心">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"CollectionPage","name":"Botogether 教程","description":"Botogether 使用教程：首次打开有安全提示怎么办、让 Claude Code 和 Codex 互相检查、没装智能体怎么免费开始。","url":"https://dmiyding.github.io/botogether/zh/guides/all/","hasPart":[{"@type":"HowTo","name":"Mac 或 Windows 打开 Botogether 时提示有风险，怎么办？","url":"https://dmiyding.github.io/botogether/zh/guides/first-launch/"},{"@type":"HowTo","name":"怎么让 Claude Code 和 Codex 互相检查代码？","url":"https://dmiyding.github.io/botogether/zh/guides/claude-code-codex-review/"},{"@type":"HowTo","name":"没装任何 AI 智能体，能用 Botogether 吗？","url":"https://dmiyding.github.io/botogether/zh/guides/start-free/"}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dmiyding.github.io/botogether/zh/"},{"@type":"ListItem","position":2,"name":"教程","item":"https://dmiyding.github.io/botogether/zh/guides/all/"}]}]</script>
-<link rel="modulepreload" href="../../../assets/js/app.js?v=5c0347cf95b1">
+<meta name="twitter:image:alt" content="Botogether 桌面应用预览卡片，支持 Apple Silicon Mac 与 Windows x64，兼容 Claude Code、Codex 与 Cursor">
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"CollectionPage","name":"Botogether 教程","description":"Botogether 完整使用教程与排错指南：涵盖 Apple Silicon Mac 与 Windows x64 安装包 SHA256 校验与首次打开放行、Claude Code 与 Codex 双助手互相复查、无本地工具免费上手 OpenCode、本地隐私目录边界与高频报错恢复方案。","url":"https://dmiyding.github.io/botogether/zh/guides/all/","inLanguage":"zh-CN","dateModified":"2026-11-23","hasPart":[{"@type":"HowTo","name":"Mac 或 Windows 打开 Botogether 时提示有风险，怎么办？","url":"https://dmiyding.github.io/botogether/zh/guides/first-launch/"},{"@type":"HowTo","name":"怎么让 Claude Code 和 Codex 互相检查代码？","url":"https://dmiyding.github.io/botogether/zh/guides/claude-code-codex-review/"},{"@type":"HowTo","name":"没装任何 AI 智能体，能用 Botogether 吗？","url":"https://dmiyding.github.io/botogether/zh/guides/start-free/"},{"@type":"HowTo","name":"Botogether 的聊天记录、密钥与项目文件存在哪？本地隐私边界全说明","url":"https://dmiyding.github.io/botogether/zh/guides/local-data-privacy/"},{"@type":"HowTo","name":"Botogether 常见问题排查：找不到智能体、更新检查失败、超时与安全重试","url":"https://dmiyding.github.io/botogether/zh/guides/troubleshooting/"}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dmiyding.github.io/botogether/"},{"@type":"ListItem","position":2,"name":"教程","item":"https://dmiyding.github.io/botogether/zh/guides/all/"}]}]</script>
+<link rel="modulepreload" href="../../../assets/js/app.js?v=3a430ff45b9a">
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     for (const el of belowViewport) el.classList.add('reveal-pending');
   }
-  import('../../../assets/js/app.js?v=5c0347cf95b1').catch(error => {
+  import('../../../assets/js/app.js?v=3a430ff45b9a').catch(error => {
     for (const el of document.querySelectorAll('.reveal-pending')) el.classList.remove('reveal-pending');
     console.error(error);
   });
@@ -57,21 +57,28 @@ document.addEventListener('DOMContentLoaded', () => {
 <div class="hero-stage guide-top">
   <div class="sky" aria-hidden="true"><span class="glow"></span></div>
   <header class="site-header shell">
-    <a class="brand" href="../../"><img src="../../../assets/img/mark.png" width="30" height="30" alt="">Botogether</a>
+    <a class="brand" href="../../../"><img src="../../../assets/img/mark.png" width="30" height="30" alt="">Botogether</a>
     <nav>
-      <a href="../../#how">怎么用</a><a href="../../guides/all/">教程</a><a href="../../#agents">智能体</a><a href="../../#faq">常见问题</a>
+      <a href="../../../#how">怎么用</a><a href="../../guides/all/">教程</a><a href="../../../#agents">智能体</a><a href="../../../#faq">常见问题</a>
       <a class="nav-icon lang-toggle" href="../../../en/guides/all/" lang="en" hreflang="en" aria-label="EN · English" title="EN · English"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.5 3.9 5.5 3.9 9s-1.3 6.5-3.9 9c-2.6-2.5-3.9-5.5-3.9-9S9.4 5.5 12 3z"/></svg><b>EN</b></a>
       <a class="nav-icon" href="https://github.com/DmiyDing/botogether" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.7-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7c-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg><span>GitHub</span></a>
       <button type="button" class="nav-icon theme-toggle" aria-label="切换浅色或深色" title="切换浅色或深色"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button>
-      <a class="nav-download" href="../../#download">下载</a>
+      <a class="nav-download" href="../../../#download">下载</a>
     </nav>
   </header>
 </div>
 <main class="guide shell">
-  <nav class="crumbs" aria-label="Breadcrumb"><a href="../../">首页</a></nav>
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="../../../">首页</a></nav>
   <h1>Botogether 教程</h1>
-  <p class="answer">短小、能照着做。每篇只回答一个问题。</p>
-  <div class="guide-grid"><a class="guide-card" href="../first-launch/"><b>首次打开有安全提示</b><span>Botogether 预览版还没做 Apple 公证和 Windows 签名，首次打开会被系统提示。教你核对下载文件，在 Mac 和 Windows 上安全打开。</span><i aria-hidden="true">阅读教程 →</i></a><a class="guide-card" href="../claude-code-codex-review/"><b>让 Claude Code 和 Codex 互相检查</b><span>把 Claude Code 和 Codex 拉进同一个 Botogether 群：一个写，一个查，在同一个项目目录里交付真实文件。一步步教你配置。</span><i aria-hidden="true">阅读教程 →</i></a><a class="guide-card" href="../start-free/"><b>没装智能体，免费开始</b><span>没装过 Claude Code 或 Codex 也能用。Botogether 可以在应用里装好 OpenCode，选一个免费体验模型就能开始。不需要 Node.js、npm 或终端。</span><i aria-hidden="true">阅读教程 →</i></a></div>
+  <p class="guide-updated">更新于 <time datetime="2026-11-23">2026-11-23</time></p>
+  <p class="answer">短小、能直接照着做。涵盖安装校验、免费上手、双助手互相复查、本地隐私与常见排错。</p>
+  <div class="guide-grid"><a class="guide-card" href="../first-launch/"><b>首次打开有安全提示</b><span>Botogether 公开预览版暂未完成 Apple 公证和 Windows 发布者签名，首次打开会被 Gatekeeper 或 SmartScreen 提示。教你从官方 GitHub Releases 核对 SHA256 校验值、区分风险与损坏警告，并仅对本应用安全放行。</span><i aria-hidden="true">阅读教程 →</i></a><a class="guide-card" href="../claude-code-codex-review/"><b>让 Claude Code 和 Codex 互相检查</b><span>把 Claude Code、Codex 或 Cursor Agent 拉进同一个 Botogether 项目群聊：绑定本机共用目录、套用可复制的 @ 分工提示词模板，让一位写代码或写文档，另一位做独立边界检查与 Diff 复核，交付前由你确认文件。</span><i aria-hidden="true">阅读教程 →</i></a><a class="guide-card" href="../start-free/"><b>没装智能体，免费开始</b><span>电脑上没装过 Claude Code、Codex、Node.js 或 npm 也能用 Botogether。点「免费开始」即可在应用内自动安装并核验 OpenCode，挑选当前可用的免费体验模型跑通小任务，全程不会私自切换或跳转到付费模型服务。</span><i aria-hidden="true">阅读教程 →</i></a><a class="guide-card" href="../local-data-privacy/"><b>本地数据、密钥与隐私边界</b><span>详解 Botogether 在 Mac（~/Library/Application Support/Botogether）和 Windows 上的本地存储结构、本地保存与云端模型处理的隐私边界、四种 API 密钥管理模式，以及隔离渲染的静态布局检查机制。</span><i aria-hidden="true">阅读教程 →</i></a><a class="guide-card" href="../troubleshooting/"><b>问题排查与安全恢复</b><span>解决 Botogether Apple Silicon Mac 与 Windows x64 预览版高频问题：设置里检测不到可用智能体、升级后界面未更新、无法检查更新、协议与选模型准备超时、图片与 SVG 预览受限，以及提交公开 Issue 前的日志截图脱敏与安全重试排查步骤。</span><i aria-hidden="true">阅读教程 →</i></a></div>
+  <section class="guide-section"><h2>从下载到协作的 3 步上手路线</h2><ol class="guide-roadmap"><li><h3>1. 下载并核对安装包</h3><p>从官方 GitHub Releases 下载 Apple 芯片 Mac 版（DMG）或 Windows x64 版（EXE），先核对 SHA256 校验值，再按系统正常放行入口允许打开这一次。</p></li><li><h3>2. 免费体验或接入已有工具</h3><p>还没装任何 AI 工具？点「免费开始」在应用内安装 OpenCode 并选可用免费体验模型。已有 Claude Code、Codex 或 Cursor？打开「设置 → 智能体」重新检测。</p></li><li><h3>3. 绑定目录并核对交付结果</h3><p>单聊试试小任务，或建群放进两位助手并绑定同一个项目目录。在任务详情核对分工，点开文件差异与预览后再决定是否收下。</p></li></ol></section>
+  <section class="guide-section"><h2>支持平台与准备条件速查</h2><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>项目</th><th>当前公开预览版现状</th><th>查看位置</th></tr></thead><tbody><tr><th scope="row">支持系统与架构</th><td>Apple 芯片 Mac（DMG/ZIP）与 Windows x64（EXE/ZIP）；Intel Mac 新版构建已暂停</td><td>GitHub Releases</td></tr><tr><th scope="row">应用许可与收费</th><td>应用本身免费使用，采用专有发行许可；无需注册账号或订阅</td><td>LICENSE.md</td></tr><tr><th scope="row">模型与额度来源</th><td>使用你自己的工具账号 / API Key，或选用当时可用的 OpenCode 免费体验模型</td><td>对应工具或模型服务商</td></tr><tr><th scope="row">数据保存位置</th><td>聊天记录、设置、分范围记忆与文件快照默认保存在你的本机电脑上</td><td>本地数据与隐私说明</td></tr><tr><th scope="row">签名与公证状态</th><td>预览版尚未完成 Apple 公证与 Windows 发布者签名，请先核对 SHA256</td><td>首次打开安全提示教程</td></tr></tbody></table></div></section>
+  <aside class="guide-cta"><h2>自己试试</h2><p>免费，支持 Apple Silicon Mac 和 Windows x64。 <a href="../first-launch/">首次打开有安全提示？</a></p><div class="downloads ">
+    <a class="button primary" data-platform="mac" href="https://github.com/DmiyDing/botogether/releases"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 5c.7-.8 1.2-2 1-3.2-1 .1-2.3.7-3 1.5-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.4z"/></svg><span>下载 Mac 版</span></a>
+    <a class="button secondary" data-platform="win" href="https://github.com/DmiyDing/botogether/releases"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5 10.5 4.5v7H3zm8.5-1.1L21 3v8.5h-9.5zM3 12.5h7.5v7L3 18.5zm8.5 0H21V21l-9.5-1.3z"/></svg><span>下载 Windows 版</span></a>
+  </div></aside>
 </main>
 <footer class="site-footer shell">
   <span class="brand small"><img src="../../../assets/img/mark.png" width="20" height="20" alt="">Botogether</span>

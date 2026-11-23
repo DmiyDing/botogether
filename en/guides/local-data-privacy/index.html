@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#08090c">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#fbfbfc">
+<script>(()=>{const s=localStorage.getItem('botogether-theme');document.documentElement.dataset.theme=s==='light'||s==='dark'?s:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')})()</script>
+<title>Where does Botogether store chats, API keys, and project data? · Botogether</title>
+<meta name="description" content="Learn where Botogether stores chats and scoped memory on Mac and Windows, what goes to cloud models, and how API key storage modes keep secrets safe.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="google-site-verification" content="p2SVXH1ITFJIUvOnRRZTWdaZ8JIAjGaPMrZXjqE2w30">
+<link rel="canonical" href="https://dmiyding.github.io/botogether/en/guides/local-data-privacy/">
+<link rel="alternate" hreflang="en" href="https://dmiyding.github.io/botogether/en/guides/local-data-privacy/">
+<link rel="alternate" hreflang="zh" href="https://dmiyding.github.io/botogether/zh/guides/local-data-privacy/">
+<link rel="alternate" hreflang="x-default" href="https://dmiyding.github.io/botogether/en/guides/local-data-privacy/">
+<link rel="icon" href="../../../assets/img/mark.png">
+<link rel="apple-touch-icon" href="../../../assets/img/mark.png">
+<link rel="alternate" type="text/plain" title="LLM summary" href="../../../llms.txt">
+<link rel="stylesheet" href="../../../assets/css/style.css?v=3a430ff45b9a">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Botogether">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:title" content="Where does Botogether store chats, API keys, and project data? · Botogether">
+<meta property="og:description" content="Learn where Botogether stores chats and scoped memory on Mac and Windows, what goes to cloud models, and how API key storage modes keep secrets safe.">
+<meta property="og:url" content="https://dmiyding.github.io/botogether/en/guides/local-data-privacy/">
+<meta property="og:image" content="https://dmiyding.github.io/botogether/assets/img/share.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Botogether desktop app preview card for Apple Silicon Mac and Windows x64 supporting Claude Code, Codex, and Cursor">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Where does Botogether store chats, API keys, and project data? · Botogether">
+<meta name="twitter:description" content="Learn where Botogether stores chats and scoped memory on Mac and Windows, what goes to cloud models, and how API key storage modes keep secrets safe.">
+<meta name="twitter:image" content="https://dmiyding.github.io/botogether/assets/img/share.jpg">
+<meta name="twitter:image:alt" content="Botogether desktop app preview card for Apple Silicon Mac and Windows x64 supporting Claude Code, Codex, and Cursor">
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","name":"Where does Botogether store chats, API keys, and project data?","description":"Learn where Botogether stores chats and scoped memory on Mac and Windows, what goes to cloud models, and how API key storage modes keep secrets safe.","inLanguage":"en","dateModified":"2026-11-23","step":[{"@type":"HowToStep","position":1,"name":"Know your local data directory","text":"On macOS, desktop data lives under ~/Library/Application Support/Botogether. On Windows, it lives in the current user’s application-data location for Botogether. Review any exported files or folders carefully before sharing them."},{"@type":"HowToStep","position":2,"name":"Distinguish local storage from cloud model processing","text":"Switching models keeps your saved local Botogether memory intact, while changing which external provider processes subsequent tasks. External memory integrations (if enabled) only receive records permitted for the current task."},{"@type":"HowToStep","position":3,"name":"Pick the credential storage mode that fits your threat model","text":"Native CLI sign-ins stay managed by each agent CLI. For custom services in Settings → Models & services, choose between local system-encrypted storage, Mac session-only memory keys, or referencing an existing environment variable name."},{"@type":"HowToStep","position":4,"name":"Control memory scope and isolated previews","text":"Use Settings → Memory to keep memories scoped per project or personal use—automatic background extraction is not enabled. On Mac, static HTML layout checks run in an isolated Electron renderer with scripts, network access, and permissions disabled."}],"tool":[{"@type":"HowToTool","name":"Botogether"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where does Botogether store chats, API keys, and project data?","acceptedAnswer":{"@type":"Answer","text":"Botogether stores conversations, settings, scoped memories, and file snapshots locally on your computer (under ~/Library/Application Support/Botogether on macOS and your user application-data folder on Windows). Local storage does not mean offline inference: when you run a task, your chosen agent or cloud model provider receives the authorized prompt, project context, and permitted scoped memory."}},{"@type":"Question","name":"Does Botogether upload my entire project folder to a Botogether cloud?","acceptedAnswer":{"@type":"Answer","text":"No. There is no Botogether cloud account or sync server. Your selected agent may send task prompts, project data, and scoped memories to its model provider; third-party tools have their own authentication and telemetry practices. Review their privacy terms and permission prompts."}},{"@type":"Question","name":"Are model services in Settings acting as a system-wide network proxy?","acceptedAnswer":{"@type":"Answer","text":"No. Saved model services are injected only into the targeted Agent task process—they do not act as a system-wide VPN or proxy, and terminal Claude sync requires separate confirmation while Codex App settings remain untouched."}},{"@type":"Question","name":"Do static HTML layout checks open my installed Chrome browser?","acceptedAnswer":{"@type":"Answer","text":"No. Since Mac preview.6, static HTML layout verification uses an isolated renderer inside Botogether’s bundled Electron runtime with page scripts, network access, and permission requests disabled."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dmiyding.github.io/botogether/en/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://dmiyding.github.io/botogether/en/guides/all/"},{"@type":"ListItem","position":3,"name":"Local data, credentials & privacy","item":"https://dmiyding.github.io/botogether/en/guides/local-data-privacy/"}]}]</script>
+<link rel="modulepreload" href="../../../assets/js/app.js?v=3a430ff45b9a">
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    const belowViewport = Array.from(document.querySelectorAll('.reveal')).filter(
+      el => el.getBoundingClientRect().top >= window.innerHeight
+    );
+    for (const el of belowViewport) el.classList.add('reveal-pending');
+  }
+  import('../../../assets/js/app.js?v=3a430ff45b9a').catch(error => {
+    for (const el of document.querySelectorAll('.reveal-pending')) el.classList.remove('reveal-pending');
+    console.error(error);
+  });
+}, { once: true });
+</script>
+</head>
+<body class="guide-page">
+<div class="hero-stage guide-top">
+  <div class="sky" aria-hidden="true"><span class="glow"></span></div>
+  <header class="site-header shell">
+    <a class="brand" href="../../"><img src="../../../assets/img/mark.png" width="30" height="30" alt="">Botogether</a>
+    <nav>
+      <a href="../../#how">How it works</a><a href="../../guides/all/">Guides</a><a href="../../#agents">Agents</a><a href="../../#faq">FAQ</a>
+      <a class="nav-icon lang-toggle" href="../../../zh/guides/local-data-privacy/" lang="zh-CN" hreflang="zh" aria-label="中 · 简体中文" title="中 · 简体中文"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.5 3.9 5.5 3.9 9s-1.3 6.5-3.9 9c-2.6-2.5-3.9-5.5-3.9-9S9.4 5.5 12 3z"/></svg><b>中</b></a>
+      <a class="nav-icon" href="https://github.com/DmiyDing/botogether" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.4 1.1 2.9.8.1-.6.4-1.1.7-1.3-2.2-.3-4.6-1.1-4.6-5a3.9 3.9 0 0 1 1-2.7c-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7a3.9 3.9 0 0 1 1 2.7c0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg><span>GitHub</span></a>
+      <button type="button" class="nav-icon theme-toggle" aria-label="Toggle light or dark theme" title="Toggle light or dark theme"><svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button>
+      <a class="nav-download" href="../../#download">Download</a>
+    </nav>
+  </header>
+</div>
+<main class="guide shell">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="../../">Home</a><span aria-hidden="true">/</span><a href="../all/">Guides</a></nav>
+  <article>
+    <h1>Where does Botogether store chats, API keys, and project data?</h1>
+    <p class="guide-updated">Updated <time datetime="2026-11-23">2026-11-23</time></p>
+    <p class="answer">Botogether stores conversations, settings, scoped memories, and file snapshots locally on your computer (under ~/Library/Application Support/Botogether on macOS and your user application-data folder on Windows). Local storage does not mean offline inference: when you run a task, your chosen agent or cloud model provider receives the authorized prompt, project context, and permitted scoped memory.</p>
+    <h2>Steps</h2>
+    <ol class="guide-steps"><li><h3>Know your local data directory</h3><p>On macOS, desktop data lives under ~/Library/Application Support/Botogether. On Windows, it lives in the current user’s application-data location for Botogether. Review any exported files or folders carefully before sharing them.</p></li><li><h3>Distinguish local storage from cloud model processing</h3><p>Switching models keeps your saved local Botogether memory intact, while changing which external provider processes subsequent tasks. External memory integrations (if enabled) only receive records permitted for the current task.</p></li><li><h3>Pick the credential storage mode that fits your threat model</h3><p>Native CLI sign-ins stay managed by each agent CLI. For custom services in Settings → Models &amp; services, choose between local system-encrypted storage, Mac session-only memory keys, or referencing an existing environment variable name.</p></li><li><h3>Control memory scope and isolated previews</h3><p>Use Settings → Memory to keep memories scoped per project or personal use—automatic background extraction is not enabled. On Mac, static HTML layout checks run in an isolated Electron renderer with scripts, network access, and permissions disabled.</p></li></ol>
+    
+    <section class="guide-section"><h2>Credential storage modes compared</h2><p>Botogether passes selected custom-service credentials directly to the running task process without rewriting your shell profiles or global agent config files.</p><div class="guide-table-wrap"><table class="guide-table"><thead><tr><th>Mode</th><th>Where the key lives</th><th>Persistence &amp; trade-offs</th></tr></thead><tbody><tr><th scope="row">Native Agent login</th><td>Managed by that Agent CLI (e.g., Claude / Codex login)</td><td>Follows the upstream tool’s own credential and auth rules.</td></tr><tr><th scope="row">System-encrypted ciphertext</th><td>Stored encrypted locally (macOS Keychain protects the key)</td><td>Persists across restarts; macOS may ask Keychain permission. Keys are never copied across modes.</td></tr><tr><th scope="row">Session-only (Mac preview.4+)</th><td>App memory only</td><td>Cleared on quit, no Botogether Keychain access, no persistent terminal sync; re-enter after restart.</td></tr><tr><th scope="row">Environment variable reference</th><td>Stores only the variable name, not the secret value</td><td>Reads the value from your environment at launch; ideal if you already manage secrets externally.</td></tr></tbody></table></div></section><section class="guide-section"><h2>Update checks and external tools</h2><p>Official update checks only query the public DmiyDing/botogether release repository and never transmit model credentials, chat messages, or local memories. Keep in mind that third-party agent CLIs and any browser tools those agents invoke remain separate native programs with their own authentication, telemetry, and OS permission behavior.</p></section>
+    <h2>Good to know</h2>
+    <ul class="guide-notes"><li>Never place API keys, tokens, or private passwords inside bot names, system instructions, chat prompts, filenames, or GitHub Issues.</li><li>Botogether does not automatically migrate or decrypt keys saved in one storage mode into another mode.</li><li>Deleting a chat hides it from the sidebar and search; internal tombstones may remain for task consistency, so deletion is not a cryptographic disk wipe.</li></ul>
+    <section class="guide-section guide-faq"><h2>Questions about this guide</h2><div class="guide-faq-list"><details><summary>Does Botogether upload my entire project folder to a Botogether cloud?</summary><p>No. There is no Botogether cloud account or sync server. Your selected agent may send task prompts, project data, and scoped memories to its model provider; third-party tools have their own authentication and telemetry practices. Review their privacy terms and permission prompts.</p></details><details><summary>Are model services in Settings acting as a system-wide network proxy?</summary><p>No. Saved model services are injected only into the targeted Agent task process—they do not act as a system-wide VPN or proxy, and terminal Claude sync requires separate confirmation while Codex App settings remain untouched.</p></details><details><summary>Do static HTML layout checks open my installed Chrome browser?</summary><p>No. Since Mac preview.6, static HTML layout verification uses an isolated renderer inside Botogether’s bundled Electron runtime with page scripts, network access, and permission requests disabled.</p></details></div></section>
+    <p class="guide-links"><a href="https://github.com/DmiyDing/botogether/blob/main/docs/privacy.md" target="_blank" rel="noopener noreferrer">Public Privacy documentation ↗</a></p>
+  </article>
+  <aside class="guide-cta"><h2>Try it yourself</h2><p>Free for Apple Silicon Mac and Windows x64. <a href="../first-launch/">Security warning on first open?</a></p><div class="downloads ">
+    <a class="button primary" data-platform="mac" href="https://github.com/DmiyDing/botogether/releases"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9-1.2-1.8-3.1-2-3.7-2-1.6-.2-3.1.9-3.9.9-.8 0-2-.9-3.4-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.7-4.1zM13.9 5c.7-.8 1.2-2 1-3.2-1 .1-2.3.7-3 1.5-.7.8-1.2 2-1.1 3.1 1.2.1 2.3-.6 3.1-1.4z"/></svg><span>Download for Mac</span></a>
+    <a class="button secondary" data-platform="win" href="https://github.com/DmiyDing/botogether/releases"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5 10.5 4.5v7H3zm8.5-1.1L21 3v8.5h-9.5zM3 12.5h7.5v7L3 18.5zm8.5 0H21V21l-9.5-1.3z"/></svg><span>Download for Windows</span></a>
+  </div></aside>
+  <section class="guide-related"><h2>More guides</h2><div class="guide-grid"><a class="guide-card" href="../first-launch/"><b>Security warning on first open</b><span>Botogether preview is not yet Apple-notarized or Windows-signed. Learn how to verify official SHA256 checksums and open it safely on Mac and Windows.</span><i aria-hidden="true">Read guide →</i></a><a class="guide-card" href="../claude-code-codex-review/"><b>Let Claude Code and Codex check each other</b><span>Pair Claude Code and Codex in one Botogether project chat: assign roles, bind a shared folder, review diffs, and verify file evidence step by step.</span><i aria-hidden="true">Read guide →</i></a><a class="guide-card" href="../start-free/"><b>Start free without an agent</b><span>Never installed Claude Code or Codex? Botogether installs OpenCode in-app and finds available free trial models with no terminal, Node.js, or subscription.</span><i aria-hidden="true">Read guide →</i></a><a class="guide-card" href="../troubleshooting/"><b>Troubleshooting &amp; safe recovery</b><span>Fix common Botogether preview issues on Mac and Windows: no agent detected, update check errors, model selection timeouts, and safe bug reporting.</span><i aria-hidden="true">Read guide →</i></a></div></section>
+</main>
+<footer class="site-footer shell">
+  <span class="brand small"><img src="../../../assets/img/mark.png" width="20" height="20" alt="">Botogether</span>
+  <div><a href="../../guides/all/">Guides</a><a href="https://github.com/DmiyDing/botogether/releases" target="_blank" rel="noopener noreferrer">GitHub Releases</a><a href="https://github.com/DmiyDing/botogether/blob/main/README.en.md" target="_blank" rel="noopener noreferrer">English README</a><a href="https://github.com/DmiyDing/botogether/issues" target="_blank" rel="noopener noreferrer">Feedback</a><a href="https://github.com/DmiyDing/botogether/blob/main/LICENSE.md" target="_blank" rel="noopener noreferrer">License</a></div>
+</footer>
+</body>
+</html>
