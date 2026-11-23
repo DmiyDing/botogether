@@ -5,10 +5,10 @@
 <p align="center">简体中文 · <a href="README.en.md">English</a></p>
 
 <p align="center">
-  <strong><a href="https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.14/Botogether-0.1.0-preview.14-mac-arm64.dmg">下载 Apple 芯片 Mac 版（DMG）</a></strong><br />
-  <strong><a href="https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.14/Botogether-0.1.0-preview.14-win-x64.exe">下载 Windows x64 版（EXE）</a></strong>
+  <strong><a href="https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.15/Botogether-0.1.0-preview.15-mac-arm64.dmg">下载 Apple 芯片 Mac 版（DMG）</a></strong><br />
+  <strong><a href="https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.15/Botogether-0.1.0-preview.15-win-x64.exe">下载 Windows x64 版（EXE）</a></strong>
 </p>
-<p align="center"><a href="https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.14">preview.14 发行说明</a> · <a href="#安装帮助">安装帮助</a> · <a href="https://github.com/DmiyDing/botogether/releases">所有版本</a></p>
+<p align="center"><a href="https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.15">preview.15 发行说明</a> · <a href="#安装帮助">安装帮助</a> · <a href="https://github.com/DmiyDing/botogether/releases">所有版本</a></p>
 
 应用免费使用，所选工具或模型服务可能另行收费。
 
@@ -58,8 +58,8 @@
 <details>
 <summary>校验和与备用下载</summary>
 
-- **Mac ARM64 preview.14：** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.14/Botogether-0.1.0-preview.14-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.14/Botogether-0.1.0-preview.14-mac-arm64-SHA256SUMS.txt)
-- **Windows x64 preview.14：** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.14/Botogether-0.1.0-preview.14-win-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.14/Botogether-0.1.0-preview.14-win-x64-SHA256SUMS.txt)
+- **Mac ARM64 preview.15：** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.15/Botogether-0.1.0-preview.15-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.15/Botogether-0.1.0-preview.15-mac-arm64-SHA256SUMS.txt)
+- **Windows x64 preview.15：** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.15/Botogether-0.1.0-preview.15-win-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.15/Botogether-0.1.0-preview.15-win-x64-SHA256SUMS.txt)
 - **Intel Mac：** 暂停新构建，保留[历史 preview.7](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.7)（实验版本）
 
 Mac 核对：`shasum -a 256 文件名`；Windows 核对：`Get-FileHash -Algorithm SHA256 文件名`

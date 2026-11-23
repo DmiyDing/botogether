@@ -5,10 +5,10 @@
 <p align="center"><a href="README.md">简体中文</a> · English</p>
 
 <p align="center">
-  <strong><a href="https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.14/Botogether-0.1.0-preview.14-mac-arm64.dmg">Download for Apple silicon Mac (DMG)</a></strong><br />
-  <strong><a href="https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.14/Botogether-0.1.0-preview.14-win-x64.exe">Download for Windows x64 (EXE)</a></strong>
+  <strong><a href="https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.15/Botogether-0.1.0-preview.15-mac-arm64.dmg">Download for Apple silicon Mac (DMG)</a></strong><br />
+  <strong><a href="https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.15/Botogether-0.1.0-preview.15-win-x64.exe">Download for Windows x64 (EXE)</a></strong>
 </p>
-<p align="center"><a href="https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.14">preview.14 release notes</a> · <a href="#installation-help">Installation help</a> · <a href="https://github.com/DmiyDing/botogether/releases">All releases</a></p>
+<p align="center"><a href="https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.15">preview.15 release notes</a> · <a href="#installation-help">Installation help</a> · <a href="https://github.com/DmiyDing/botogether/releases">All releases</a></p>
 
 The app is free to use. Your tool or model provider may charge separately.
 
@@ -58,8 +58,8 @@ A "damaged" or malware warning means you should re-verify the download — don't
 <details>
 <summary>Checksums and ZIP alternatives</summary>
 
-- **Mac ARM64 preview.14:** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.14/Botogether-0.1.0-preview.14-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.14/Botogether-0.1.0-preview.14-mac-arm64-SHA256SUMS.txt)
-- **Windows x64 preview.14:** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.14/Botogether-0.1.0-preview.14-win-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.14/Botogether-0.1.0-preview.14-win-x64-SHA256SUMS.txt)
+- **Mac ARM64 preview.15:** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.15/Botogether-0.1.0-preview.15-mac-arm64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.15/Botogether-0.1.0-preview.15-mac-arm64-SHA256SUMS.txt)
+- **Windows x64 preview.15:** [ZIP](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.15/Botogether-0.1.0-preview.15-win-x64.zip) · [SHA256SUMS](https://github.com/DmiyDing/botogether/releases/download/v0.1.0-preview.15/Botogether-0.1.0-preview.15-win-x64-SHA256SUMS.txt)
 - **Intel Mac:** builds are paused; [historical preview.7](https://github.com/DmiyDing/botogether/releases/tag/v0.1.0-preview.7) is experimental and unverified on real Intel hardware.
 
 Verify on Mac: `shasum -a 256 filename` · on Windows: `Get-FileHash -Algorithm SHA256 filename`
