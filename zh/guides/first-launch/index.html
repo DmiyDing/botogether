@@ -18,7 +18,7 @@
 <link rel="icon" href="../../../assets/img/mark.png">
 <link rel="apple-touch-icon" href="../../../assets/img/mark.png">
 <link rel="alternate" type="text/plain" title="LLM summary" href="../../../llms.txt">
-<link rel="stylesheet" href="../../../assets/css/style.css?v=3a430ff45b9a">
+<link rel="stylesheet" href="../../../assets/css/style.css?v=8af61c262cf5">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Botogether">
 <meta property="og:locale" content="zh_CN">
@@ -37,7 +37,7 @@
 <meta name="twitter:image" content="https://dmiyding.github.io/botogether/assets/img/share.jpg">
 <meta name="twitter:image:alt" content="Botogether 桌面应用预览卡片，支持 Apple Silicon Mac 与 Windows x64，兼容 Claude Code、Codex 与 Cursor">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","name":"Mac 或 Windows 打开 Botogether 时提示有风险，怎么办？","description":"Botogether 公开预览版暂未完成 Apple 公证和 Windows 发布者签名，首次打开会被 Gatekeeper 或 SmartScreen 提示。教你从官方 GitHub Releases 核对 SHA256 校验值、区分风险与损坏警告，并仅对本应用安全放行。","inLanguage":"zh-CN","dateModified":"2026-11-23","step":[{"@type":"HowToStep","position":1,"name":"只从官方 Releases 页面下载","text":"在官方 GitHub Releases 的 Assets 下获取 Apple 芯片 Mac 版 DMG（或 ZIP）或 Windows x64 版 EXE（或 ZIP）。Source code 压缩包里只有文档，不是安装包。"},{"@type":"HowToStep","position":2,"name":"打开前先核对 SHA256 校验值","text":"将下方示例命令中的文件名替换为你下载的安装包路径，算出哈希值后与发布页上对应的 *-SHA256SUMS.txt 逐字比对。注意：校验值一致证明下载字节完整一致，并不等同于官方公证或安全背书。"},{"@type":"HowToStep","position":3,"name":"Mac：在隐私与安全性里允许这一次","text":"打开 DMG，把 Botogether 拖进「应用程序」并尝试打开一次。如果被拦截，打开「系统设置 → 隐私与安全性」，找到 Botogether 旁的「仍要打开」按钮点击放行。"},{"@type":"HowToStep","position":4,"name":"Windows：通过「更多信息 → 仍要运行」放行","text":"运行 EXE 安装包。若弹出「Windows 已保护你的电脑」，确认来源为官方 Releases 且 SHA256 一致后，点击「更多信息」→「仍要运行」。"}],"tool":[{"@type":"HowToTool","name":"Botogether"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Mac 或 Windows 打开 Botogether 时提示有风险，怎么办？","acceptedAnswer":{"@type":"Answer","text":"Botogether 预览版还没做 Apple 公证，也没有 Windows 发布者签名，首次打开时 macOS Gatekeeper 或 Windows SmartScreen 可能提示风险。请只从官方 DmiyDing/botogether Releases 下载，先核对 SHA256 校验值确认文件字节一致，再在系统提供放行按钮时对这一个应用允许打开。"}},{"@type":"Question","name":"为什么现在打开还会有风险提示？","acceptedAnswer":{"@type":"Answer","text":"预览阶段尚未完成 Apple Developer ID 公证和 Windows 代码签名，系统会按常规策略对所有未签名桌面应用弹窗提示。请以所下载版本的发布说明为准。"}},{"@type":"Question","name":"SHA256 对上了就一定代表绝对安全吗？","acceptedAnswer":{"@type":"Answer","text":"SHA256 只保证你拿到的文件与官方发布页上的文件一模一样、没有在传输中被篡改或损坏；在软件内部依然要留意权限批准范围与所选云端服务的数据边界。"}},{"@type":"Question","name":"Mac「隐私与安全性」里没有出现「仍要打开」怎么办？","acceptedAnswer":{"@type":"Answer","text":"先从「访达 → 应用程序」里双击尝试打开一次让系统记录拦截，再重新打开「系统设置 → 隐私与安全性」就会看到提示按钮。若电脑受公司策略管控禁止未签名应用，请遵守安全策略勿强行绕过。"}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dmiyding.github.io/botogether/"},{"@type":"ListItem","position":2,"name":"教程","item":"https://dmiyding.github.io/botogether/zh/guides/all/"},{"@type":"ListItem","position":3,"name":"首次打开有安全提示","item":"https://dmiyding.github.io/botogether/zh/guides/first-launch/"}]}]</script>
-<link rel="modulepreload" href="../../../assets/js/app.js?v=3a430ff45b9a">
+<link rel="modulepreload" href="../../../assets/js/app.js?v=8af61c262cf5">
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     for (const el of belowViewport) el.classList.add('reveal-pending');
   }
-  import('../../../assets/js/app.js?v=3a430ff45b9a').catch(error => {
+  import('../../../assets/js/app.js?v=8af61c262cf5').catch(error => {
     for (const el of document.querySelectorAll('.reveal-pending')) el.classList.remove('reveal-pending');
     console.error(error);
   });

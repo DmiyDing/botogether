@@ -18,7 +18,7 @@
 <link rel="icon" href="../../../assets/img/mark.png">
 <link rel="apple-touch-icon" href="../../../assets/img/mark.png">
 <link rel="alternate" type="text/plain" title="LLM summary" href="../../../llms.txt">
-<link rel="stylesheet" href="../../../assets/css/style.css?v=3a430ff45b9a">
+<link rel="stylesheet" href="../../../assets/css/style.css?v=8af61c262cf5">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Botogether">
 <meta property="og:locale" content="en_US">
@@ -37,7 +37,7 @@
 <meta name="twitter:image" content="https://dmiyding.github.io/botogether/assets/img/share.jpg">
 <meta name="twitter:image:alt" content="Botogether desktop app preview card for Apple Silicon Mac and Windows x64 supporting Claude Code, Codex, and Cursor">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","name":"Mac or Windows warns when you open Botogether? Here is why and what to do","description":"Botogether preview is not yet Apple-notarized or Windows-signed. Learn how to verify official SHA256 checksums and open it safely on Mac and Windows.","inLanguage":"en","dateModified":"2026-11-23","step":[{"@type":"HowToStep","position":1,"name":"Download from the official Releases page","text":"Get the Apple Silicon Mac DMG (or ZIP) or Windows x64 EXE (or ZIP) from official GitHub Releases. Source code archives contain documentation only and are not application installers."},{"@type":"HowToStep","position":2,"name":"Verify the SHA256 checksum before opening","text":"Replace the example filename in the command below with your downloaded installer path, then compare its SHA256 hash with the matching *-SHA256SUMS.txt file on the release page. Remember that a matching checksum proves byte consistency with the release asset—it does not replace publisher notarization."},{"@type":"HowToStep","position":3,"name":"macOS: allow this single app once","text":"Open the DMG, drag Botogether into Applications, and try launching it. If macOS blocks it as an unidentified developer, open System Settings → Privacy & Security, scroll to the notice for Botogether, and click Open Anyway."},{"@type":"HowToStep","position":4,"name":"Windows: allow via More info → Run anyway","text":"Run the EXE installer. If “Windows protected your PC” appears, verify that the file came from the official GitHub Releases page and matches SHA256, then click More info → Run anyway."}],"tool":[{"@type":"HowToTool","name":"Botogether"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Mac or Windows warns when you open Botogether? Here is why and what to do","acceptedAnswer":{"@type":"Answer","text":"The Botogether preview is not notarized by Apple and has no Windows publisher signature yet, so macOS Gatekeeper or Windows SmartScreen may show a warning on first launch. Download only from the official DmiyDing/botogether Releases page, verify the SHA256 checksum against the published checksum file, and use the per-app allow option only if your system offers one."}},{"@type":"Question","name":"Why does Botogether show a security warning right now?","acceptedAnswer":{"@type":"Answer","text":"Current public previews are not notarized with an Apple Developer ID or signed with a Windows Authenticode certificate yet. Check the release notes for the signing status of the version you download."}},{"@type":"Question","name":"Does a matching SHA256 mean the file is completely safe?","acceptedAnswer":{"@type":"Answer","text":"A matching SHA256 proves the bytes you downloaded match the checksum published on the GitHub Release page. You should still confirm you downloaded from DmiyDing/botogether and review the privacy and permission prompts inside the app."}},{"@type":"Question","name":"What if macOS Privacy & Security does not show “Open Anyway”?","acceptedAnswer":{"@type":"Answer","text":"Try launching Botogether once from Finder → Applications first so macOS logs the blocked attempt, then reopen System Settings → Privacy & Security. If your Mac is managed by a company policy that forbids unsigned apps, keep the policy intact."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dmiyding.github.io/botogether/en/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://dmiyding.github.io/botogether/en/guides/all/"},{"@type":"ListItem","position":3,"name":"Security warning on first open","item":"https://dmiyding.github.io/botogether/en/guides/first-launch/"}]}]</script>
-<link rel="modulepreload" href="../../../assets/js/app.js?v=3a430ff45b9a">
+<link rel="modulepreload" href="../../../assets/js/app.js?v=8af61c262cf5">
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     for (const el of belowViewport) el.classList.add('reveal-pending');
   }
-  import('../../../assets/js/app.js?v=3a430ff45b9a').catch(error => {
+  import('../../../assets/js/app.js?v=8af61c262cf5').catch(error => {
     for (const el of document.querySelectorAll('.reveal-pending')) el.classList.remove('reveal-pending');
     console.error(error);
   });

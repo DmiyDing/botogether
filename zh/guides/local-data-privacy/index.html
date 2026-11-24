@@ -18,7 +18,7 @@
 <link rel="icon" href="../../../assets/img/mark.png">
 <link rel="apple-touch-icon" href="../../../assets/img/mark.png">
 <link rel="alternate" type="text/plain" title="LLM summary" href="../../../llms.txt">
-<link rel="stylesheet" href="../../../assets/css/style.css?v=3a430ff45b9a">
+<link rel="stylesheet" href="../../../assets/css/style.css?v=8af61c262cf5">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Botogether">
 <meta property="og:locale" content="zh_CN">
@@ -37,7 +37,7 @@
 <meta name="twitter:image" content="https://dmiyding.github.io/botogether/assets/img/share.jpg">
 <meta name="twitter:image:alt" content="Botogether 桌面应用预览卡片，支持 Apple Silicon Mac 与 Windows x64，兼容 Claude Code、Codex 与 Cursor">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","name":"Botogether 的聊天记录、密钥与项目文件存在哪？本地隐私边界全说明","description":"详解 Botogether 在 Mac（~/Library/Application Support/Botogether）和 Windows 上的本地存储结构、本地保存与云端模型处理的隐私边界、四种 API 密钥管理模式，以及隔离渲染的静态布局检查机制。","inLanguage":"zh-CN","dateModified":"2026-11-23","step":[{"@type":"HowToStep","position":1,"name":"了解本机数据目录位置","text":"Mac 桌面版数据位于 ~/Library/Application Support/Botogether，Windows 位于当前用户的 Botogether 应用数据路径。向外分享目录或记忆导出文件前，请先检查内容是否含敏感信息。"},{"@type":"HowToStep","position":2,"name":"分清「本地存储」和「模型云端处理」","text":"切换模型或引擎时，Botogether 里的本地聊天与记忆记录会完整保留，但后续发送出去的数据处理方会变为新选的服务商。若启用外部记忆引擎，它也只读取当前任务获准使用的记录。"},{"@type":"HowToStep","position":3,"name":"按需选择合适的 API 密钥保存方式","text":"原生 CLI 工具的登录仍由工具自身管理。在「设置 → 模型与代理」配置自定义服务时，你可以选择本机系统加密保存、Mac 仅本次打开有效（内存态），或引用已有环境变量名。"},{"@type":"HowToStep","position":4,"name":"检查记忆范围与独立权限边界","text":"在「设置 → 记忆」中可手动管理事实偏好与生效范围（目前不提供后台自动提取记忆）。Mac 版的静态 HTML 布局验证使用包内隔离渲染进程，禁用脚本、网络和权限请求。"}],"tool":[{"@type":"HowToTool","name":"Botogether"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Botogether 的聊天记录、密钥与项目文件存在哪？本地隐私边界全说明","acceptedAnswer":{"@type":"Answer","text":"Botogether 把所有对话、配置、分范围记忆和文件快照都保存在你的本机电脑上（Mac 位于 ~/Library/Application Support/Botogether，Windows 位于当前用户的应用数据目录）。但「本地保存」不等于「模型离线运行」：执行任务时，你所选的智能体或云端模型服务会收到本次获准发送的提示词、项目内容和允许范围内的记忆。"}},{"@type":"Question","name":"Botogether 会把我的整个项目仓库上传到官方服务器吗？","acceptedAnswer":{"@type":"Answer","text":"不会。Botogether 没有账号体系和云端托管服务，所有历史都留在本机；所选智能体可能将任务提示词、项目数据和范围内记忆发送给对应模型服务；第三方工具也有自己的认证和遥测行为，请核对其隐私条款与权限提示。"}},{"@type":"Question","name":"使用免费 OpenCode 或自定义模型服务，会被当成系统代理影响其他软件吗？","acceptedAnswer":{"@type":"Answer","text":"不会。模型服务配置只在 Botogether 启动该 Agent 任务进程时注入，不会接管系统全局网络流量。"}},{"@type":"Question","name":"静态网页布局检查会偷偷启动我的 Chrome 浏览器吗？","acceptedAnswer":{"@type":"Answer","text":"不会。自 Mac preview.6 起，静态 HTML 布局检查已改为使用应用内置的隔离 Electron 渲染进程，关闭了页面脚本、网络访问和系统权限请求。"}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dmiyding.github.io/botogether/"},{"@type":"ListItem","position":2,"name":"教程","item":"https://dmiyding.github.io/botogether/zh/guides/all/"},{"@type":"ListItem","position":3,"name":"本地数据、密钥与隐私边界","item":"https://dmiyding.github.io/botogether/zh/guides/local-data-privacy/"}]}]</script>
-<link rel="modulepreload" href="../../../assets/js/app.js?v=3a430ff45b9a">
+<link rel="modulepreload" href="../../../assets/js/app.js?v=8af61c262cf5">
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     for (const el of belowViewport) el.classList.add('reveal-pending');
   }
-  import('../../../assets/js/app.js?v=3a430ff45b9a').catch(error => {
+  import('../../../assets/js/app.js?v=8af61c262cf5').catch(error => {
     for (const el of document.querySelectorAll('.reveal-pending')) el.classList.remove('reveal-pending');
     console.error(error);
   });

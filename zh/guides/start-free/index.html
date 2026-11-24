@@ -18,7 +18,7 @@
 <link rel="icon" href="../../../assets/img/mark.png">
 <link rel="apple-touch-icon" href="../../../assets/img/mark.png">
 <link rel="alternate" type="text/plain" title="LLM summary" href="../../../llms.txt">
-<link rel="stylesheet" href="../../../assets/css/style.css?v=3a430ff45b9a">
+<link rel="stylesheet" href="../../../assets/css/style.css?v=8af61c262cf5">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Botogether">
 <meta property="og:locale" content="zh_CN">
@@ -37,7 +37,7 @@
 <meta name="twitter:image" content="https://dmiyding.github.io/botogether/assets/img/share.jpg">
 <meta name="twitter:image:alt" content="Botogether 桌面应用预览卡片，支持 Apple Silicon Mac 与 Windows x64，兼容 Claude Code、Codex 与 Cursor">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","name":"没装任何 AI 智能体，能用 Botogether 吗？","description":"电脑上没装过 Claude Code、Codex、Node.js 或 npm 也能用 Botogether。点「免费开始」即可在应用内自动安装并核验 OpenCode，挑选当前可用的免费体验模型跑通小任务，全程不会私自切换或跳转到付费模型服务。","inLanguage":"zh-CN","dateModified":"2026-11-23","step":[{"@type":"HowToStep","position":1,"name":"下载并打开 Botogether","text":"从官方 GitHub Releases 下载 Mac（Apple Silicon）或 Windows x64 安装包。首次打开若遇系统提示，先看「首次打开有安全提示」教程完成校验并放行。"},{"@type":"HowToStep","position":2,"name":"点击欢迎页的「免费开始」","text":"无需手动跑命令，应用会在内部完成 OpenCode 的下载与安装校验，省去装 Node.js 和配置环境变量的门槛。"},{"@type":"HowToStep","position":3,"name":"挑一个当前可用的免费体验模型","text":"应用会先探测上游当前可用的免费模型列表供你选择。免费额度、速率限制和可用时段由模型服务方提供并决定。"},{"@type":"HowToStep","position":4,"name":"选一个文件夹试一个小任务","text":"随便选一个你熟悉的本地目录，发一句小需求（例如「帮我整理这个目录的文件说明」或「列一份周末清单」），点开生成的文件看效果。"}],"tool":[{"@type":"HowToTool","name":"Botogether"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"没装任何 AI 智能体，能用 Botogether 吗？","acceptedAnswer":{"@type":"Answer","text":"能用。在 Botogether 欢迎页点击「免费开始」，应用会自动下载并检查 OpenCode，再把上游当前可用的免费体验模型列给你选。全程不需要配置 Node.js、npm 或打开终端，也不会在免费名额用完后悄悄切到付费模型。"}},{"@type":"Question","name":"我电脑上没装 Node.js、Homebrew 或 npm，也能用吗？","acceptedAnswer":{"@type":"Answer","text":"可以。「免费开始」会在应用内部自动下载并校验 OpenCode，不需要你自己折腾终端或前端环境。"}},{"@type":"Question","name":"免费名额用完后会突然扣费吗？","acceptedAnswer":{"@type":"Answer","text":"不会。Botogether 没有账号和支付体系，也不会擅自帮你切换成付费接口；需要换模型时会明确交由你选择。"}},{"@type":"Question","name":"以后买了 Claude Code 或 Codex，以前的聊天和记忆还能留着吗？","acceptedAnswer":{"@type":"Answer","text":"全部保留在本地。打开「设置 → 智能体」检测或安装新工具后，就能在原有项目目录或群聊里继续配合使用。"}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dmiyding.github.io/botogether/"},{"@type":"ListItem","position":2,"name":"教程","item":"https://dmiyding.github.io/botogether/zh/guides/all/"},{"@type":"ListItem","position":3,"name":"没装智能体，免费开始","item":"https://dmiyding.github.io/botogether/zh/guides/start-free/"}]}]</script>
-<link rel="modulepreload" href="../../../assets/js/app.js?v=3a430ff45b9a">
+<link rel="modulepreload" href="../../../assets/js/app.js?v=8af61c262cf5">
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     for (const el of belowViewport) el.classList.add('reveal-pending');
   }
-  import('../../../assets/js/app.js?v=3a430ff45b9a').catch(error => {
+  import('../../../assets/js/app.js?v=8af61c262cf5').catch(error => {
     for (const el of document.querySelectorAll('.reveal-pending')) el.classList.remove('reveal-pending');
     console.error(error);
   });

@@ -18,7 +18,7 @@
 <link rel="icon" href="../../../assets/img/mark.png">
 <link rel="apple-touch-icon" href="../../../assets/img/mark.png">
 <link rel="alternate" type="text/plain" title="LLM summary" href="../../../llms.txt">
-<link rel="stylesheet" href="../../../assets/css/style.css?v=3a430ff45b9a">
+<link rel="stylesheet" href="../../../assets/css/style.css?v=8af61c262cf5">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Botogether">
 <meta property="og:locale" content="zh_CN">
@@ -37,7 +37,7 @@
 <meta name="twitter:image" content="https://dmiyding.github.io/botogether/assets/img/share.jpg">
 <meta name="twitter:image:alt" content="Botogether 桌面应用预览卡片，支持 Apple Silicon Mac 与 Windows x64，兼容 Claude Code、Codex 与 Cursor">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","name":"怎么让 Claude Code 和 Codex 互相检查代码？","description":"把 Claude Code、Codex 或 Cursor Agent 拉进同一个 Botogether 项目群聊：绑定本机共用目录、套用可复制的 @ 分工提示词模板，让一位写代码或写文档，另一位做独立边界检查与 Diff 复核，交付前由你确认文件。","inLanguage":"zh-CN","dateModified":"2026-11-23","step":[{"@type":"HowToStep","position":1,"name":"先确认两个智能体已经就绪","text":"打开「设置 → 智能体」，确认电脑上的 Claude Code 和 Codex 已被识别。支持的系统上，应用内也提供 OpenCode、Codex、Claude Code 的一键安装入口；账号登录与额度依然由你自己的工具管理。"},{"@type":"HowToStep","position":2,"name":"创建两位职责清晰的助手","text":"点左侧边栏 + 创建助手：一个选 Claude Code，一个选 Codex。起容易区分的名字，比如「开发」和「检查」，各自配置模型和人设提示词。"},{"@type":"HowToStep","position":3,"name":"建群并绑定同一个项目目录","text":"再点 + 创建一个群聊，把刚建好的两位助手选进来，并绑定它们要共同操作的本机项目目录。所有成员面对的是同一份真实文件。"},{"@type":"HowToStep","position":4,"name":"用真实的助手名字 @ 点名分工","text":"在群里发一条清晰指令，明确谁动手改、谁负责挑错或跑检查。需要调整分工或针对复查意见返工时，继续用真实名称 @ 对应助手。"},{"@type":"HowToStep","position":5,"name":"核对任务详情与文件证据后再验收","text":"点开任务详情确认究竟是谁执行了哪一步、实际跑了哪些检查。独立评审只覆盖它实际查过的内容，收下前务必自己看一眼改动 diff 或交付文件。"}],"tool":[{"@type":"HowToTool","name":"Botogether"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"怎么让 Claude Code 和 Codex 互相检查代码？","acceptedAnswer":{"@type":"Answer","text":"在 Botogether 里分别建一个用 Claude Code 的助手和一个用 Codex（或 Cursor Agent）的助手，把它们拉进同一个群聊并绑定项目目录，然后用真实的助手名字 @ 点名分工（如「@开发 修好某问题，@检查 对照真实文件做复查」）。结束后先看任务详情里的分工记录和文件差异，再决定是否收下。"}},{"@type":"Question","name":"两个助手是在各自隔离的副本里改代码，还是改同一份文件？","acceptedAnswer":{"@type":"Answer","text":"目前群聊绑定同一个项目目录并串行执行工作项，两位助手直接看到并操作同一份真实文件，避免合并冲突或不知改到哪份副本。"}},{"@type":"Question","name":"能把付费的 Claude Code / Codex 和免费的 OpenCode 混在同一个群里吗？","acceptedAnswer":{"@type":"Answer","text":"可以。每个助手各自绑定引擎和模型配置，互不干扰，非常适合在群里跨厂商搭配使用。"}},{"@type":"Question","name":"如果检查助手挑出问题，会自动无限循环改到好为止吗？","acceptedAnswer":{"@type":"Answer","text":"不会无限失控循环，决策权在你手上。你可以查看评审详情后用 @ 点名指定助手返工，或自己改完再收下结果。"}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://dmiyding.github.io/botogether/"},{"@type":"ListItem","position":2,"name":"教程","item":"https://dmiyding.github.io/botogether/zh/guides/all/"},{"@type":"ListItem","position":3,"name":"让 Claude Code 和 Codex 互相检查","item":"https://dmiyding.github.io/botogether/zh/guides/claude-code-codex-review/"}]}]</script>
-<link rel="modulepreload" href="../../../assets/js/app.js?v=3a430ff45b9a">
+<link rel="modulepreload" href="../../../assets/js/app.js?v=8af61c262cf5">
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     for (const el of belowViewport) el.classList.add('reveal-pending');
   }
-  import('../../../assets/js/app.js?v=3a430ff45b9a').catch(error => {
+  import('../../../assets/js/app.js?v=8af61c262cf5').catch(error => {
     for (const el of document.querySelectorAll('.reveal-pending')) el.classList.remove('reveal-pending');
     console.error(error);
   });

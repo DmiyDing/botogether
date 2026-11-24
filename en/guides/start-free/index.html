@@ -18,7 +18,7 @@
 <link rel="icon" href="../../../assets/img/mark.png">
 <link rel="apple-touch-icon" href="../../../assets/img/mark.png">
 <link rel="alternate" type="text/plain" title="LLM summary" href="../../../llms.txt">
-<link rel="stylesheet" href="../../../assets/css/style.css?v=3a430ff45b9a">
+<link rel="stylesheet" href="../../../assets/css/style.css?v=8af61c262cf5">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Botogether">
 <meta property="og:locale" content="en_US">
@@ -37,7 +37,7 @@
 <meta name="twitter:image" content="https://dmiyding.github.io/botogether/assets/img/share.jpg">
 <meta name="twitter:image:alt" content="Botogether desktop app preview card for Apple Silicon Mac and Windows x64 supporting Claude Code, Codex, and Cursor">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","name":"No AI agent installed? Start Botogether for free with OpenCode","description":"Never installed Claude Code or Codex? Botogether installs OpenCode in-app and finds available free trial models with no terminal, Node.js, or subscription.","inLanguage":"en","dateModified":"2026-11-23","step":[{"@type":"HowToStep","position":1,"name":"Install and open Botogether","text":"Download the DMG (Apple Silicon Mac) or EXE (Windows x64) from official GitHub Releases. If your OS shows a first-launch warning, follow the First-Launch Security guide to verify SHA256 and allow the app once."},{"@type":"HowToStep","position":2,"name":"Click “Start for free”","text":"On the welcome screen, choose “Start for free”. Botogether downloads OpenCode, verifies the installation inside the app, and checks which free trial models are currently offered by the upstream catalog."},{"@type":"HowToStep","position":3,"name":"Pick an available free model","text":"Select one of the free options listed as available now. Free model availability, context limits, and rate limits come from the upstream provider rather than Botogether."},{"@type":"HowToStep","position":4,"name":"Run a small real-folder task","text":"Pick a local project folder (or create a small test folder) and try a concrete prompt like creating a project checklist or summarizing markdown notes. Open the delivered file in chat to inspect or download it."}],"tool":[{"@type":"HowToTool","name":"Botogether"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"No AI agent installed? Start Botogether for free with OpenCode","acceptedAnswer":{"@type":"Answer","text":"Yes. Click “Start for free” on Botogether’s welcome screen: the app downloads and verifies OpenCode inside the app and shows currently available free trial models. You do not need Node.js, npm, or terminal setup, and Botogether never silently switches you to a paid model."}},{"@type":"Question","name":"Do I need to install Node.js, Homebrew, or npm first?","acceptedAnswer":{"@type":"Answer","text":"No. When you click “Start for free”, Botogether handles downloading and checking OpenCode inside the app without requiring terminal commands."}},{"@type":"Question","name":"Will Botogether ever charge my card or switch to a paid model automatically?","acceptedAnswer":{"@type":"Answer","text":"No. Botogether does not have user accounts, billing, or subscriptions, and it will not silently fall back from a free trial model to a paid model."}},{"@type":"Question","name":"Can I add Claude Code or Codex later without losing my chats?","acceptedAnswer":{"@type":"Answer","text":"Yes. Your chats, folders, and local Botogether memories stay on your machine. You can detect or install additional agents anytime in Settings → Agents and add them to existing or new groups."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dmiyding.github.io/botogether/en/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://dmiyding.github.io/botogether/en/guides/all/"},{"@type":"ListItem","position":3,"name":"Start free without an agent","item":"https://dmiyding.github.io/botogether/en/guides/start-free/"}]}]</script>
-<link rel="modulepreload" href="../../../assets/js/app.js?v=3a430ff45b9a">
+<link rel="modulepreload" href="../../../assets/js/app.js?v=8af61c262cf5">
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     for (const el of belowViewport) el.classList.add('reveal-pending');
   }
-  import('../../../assets/js/app.js?v=3a430ff45b9a').catch(error => {
+  import('../../../assets/js/app.js?v=8af61c262cf5').catch(error => {
     for (const el of document.querySelectorAll('.reveal-pending')) el.classList.remove('reveal-pending');
     console.error(error);
   });

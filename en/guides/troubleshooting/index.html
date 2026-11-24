@@ -18,7 +18,7 @@
 <link rel="icon" href="../../../assets/img/mark.png">
 <link rel="apple-touch-icon" href="../../../assets/img/mark.png">
 <link rel="alternate" type="text/plain" title="LLM summary" href="../../../llms.txt">
-<link rel="stylesheet" href="../../../assets/css/style.css?v=3a430ff45b9a">
+<link rel="stylesheet" href="../../../assets/css/style.css?v=8af61c262cf5">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Botogether">
 <meta property="og:locale" content="en_US">
@@ -37,7 +37,7 @@
 <meta name="twitter:image" content="https://dmiyding.github.io/botogether/assets/img/share.jpg">
 <meta name="twitter:image:alt" content="Botogether desktop app preview card for Apple Silicon Mac and Windows x64 supporting Claude Code, Codex, and Cursor">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"HowTo","name":"Troubleshooting Botogether: missing agents, timeouts, updates, and safe retries","description":"Fix common Botogether preview issues on Mac and Windows: no agent detected, update check errors, model selection timeouts, and safe bug reporting.","inLanguage":"en","dateModified":"2026-11-23","step":[{"@type":"HowToStep","position":1,"name":"No usable agent? Check Settings → Agents first","text":"Open Settings → Agents, run re-detection, and inspect any diagnostic reason shown for login or capability checks instead of repeatedly creating duplicate bots. Install and sign in to native CLIs using their official guidance."},{"@type":"HowToStep","position":2,"name":"Seeing an old interface after updating?","text":"Quit the running app completely (only after active tasks stop cleanly), install the newer build from DmiyDing/botogether Releases, and launch your standard installed app—do not run a second copy from a build folder. Check Settings → About & updates to confirm the build identity."},{"@type":"HowToStep","position":3,"name":"Inspect preparation vs. execution timeouts","text":"Botogether separates protocol initialization, work-session creation, and model-selection timeouts. If a model-selection timeout happens before generation starts, no silent model swap or auto-replay occurs—adjust the model or provider and retry cleanly."},{"@type":"HowToStep","position":4,"name":"Verify stop status before retrying an interrupted task","text":"Never assume blind retrying is safe when a task’s effects are unknown. Wait for stop confirmation, inspect the changed files in the project folder, and only click Retry once you know what already ran."}],"tool":[{"@type":"HowToTool","name":"Botogether"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Troubleshooting Botogether: missing agents, timeouts, updates, and safe retries","acceptedAnswer":{"@type":"Answer","text":"Most setup issues trace back to one of four checks: re-detecting tools and checking login status in Settings → Agents, verifying update availability on official GitHub Releases, inspecting whether a preparation timeout happened before generation started, and confirming an interrupted process stopped before retrying."}},{"@type":"Question","name":"Does “cannot check for updates” mean I am already on the latest version?","acceptedAnswer":{"@type":"Answer","text":"No. Network blocks, GitHub API rate limits, or missing prereleases can block the check. Always verify against the official DmiyDing/botogether Releases page."}},{"@type":"Question","name":"My image preview failed—did Botogether delete the output file?","acceptedAnswer":{"@type":"Answer","text":"No. Preview sanitization never deletes the underlying file; use the original download action to inspect the raw bytes safely."}},{"@type":"Question","name":"Should I paste my log files or database folder into a GitHub Issue?","acceptedAnswer":{"@type":"Answer","text":"Never. Logs, databases, backups, and screenshots may contain project paths, snippets, or credentials. Share only redacted reproduction steps, OS/architecture, and app build identity."}}]},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dmiyding.github.io/botogether/en/"},{"@type":"ListItem","position":2,"name":"Guides","item":"https://dmiyding.github.io/botogether/en/guides/all/"},{"@type":"ListItem","position":3,"name":"Troubleshooting & safe recovery","item":"https://dmiyding.github.io/botogether/en/guides/troubleshooting/"}]}]</script>
-<link rel="modulepreload" href="../../../assets/js/app.js?v=3a430ff45b9a">
+<link rel="modulepreload" href="../../../assets/js/app.js?v=8af61c262cf5">
 <script>
 document.addEventListener('DOMContentLoaded', () => {
   if ('IntersectionObserver' in window && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
     for (const el of belowViewport) el.classList.add('reveal-pending');
   }
-  import('../../../assets/js/app.js?v=3a430ff45b9a').catch(error => {
+  import('../../../assets/js/app.js?v=8af61c262cf5').catch(error => {
     for (const el of document.querySelectorAll('.reveal-pending')) el.classList.remove('reveal-pending');
     console.error(error);
   });
